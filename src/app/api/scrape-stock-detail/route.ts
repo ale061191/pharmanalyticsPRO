@@ -151,7 +151,7 @@ export async function POST(request: Request) {
                 success: true,
                 product_name: resolvedProductName,
                 cities: cityData,
-                source: apiData ? 'api' : 'dom',
+                source: capturedData.length > 0 ? 'api' : 'dom',
                 timestamp: new Date().toISOString()
             });
 
