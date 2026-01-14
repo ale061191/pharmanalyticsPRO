@@ -106,7 +106,7 @@ export async function GET(request: Request) {
                 }
             } else {
                 const productHash = (product.name || '').split('').reduce(
-                    (hash, char) => hash + char.charCodeAt(0), 0
+                    (hash: number, char: string) => hash + char.charCodeAt(0), 0
                 );
                 depletionPercent = 30 + (productHash % 56);
             }
