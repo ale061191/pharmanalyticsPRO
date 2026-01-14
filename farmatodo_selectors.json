@@ -1,0 +1,13 @@
+{
+  "totalLinks": 32,
+  "productLinks": 0,
+  "allClassesWithCard": [
+    "row cont-items",
+    "cont-items-right",
+    "col-2 d-flex align-items-center flex-column text-center",
+    "col-3 text-center social-network-item"
+  ],
+  "productContainers": [],
+  "foundCandidates": 0,
+  "extractedProducts": []
+}

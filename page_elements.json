@@ -1,0 +1,243 @@
+[
+  {
+    "tag": "button",
+    "text": "Reintentar",
+    "class": "btn-offline",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "",
+    "class": "close",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "",
+    "class": "close",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "",
+    "class": "close pull-right",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "Siguiente",
+    "class": "btn-next disabled",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "",
+    "class": "close pull-right",
+    "id": ""
+  },
+  {
+    "tag": "button",
+    "text": "Enviar",
+    "class": "app-button full-width main sign-up-button disabled btn",
+    "id": "reset-password"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/cuenta"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/"
+  },
+  {
+    "tag": "a",
+    "text": "Ven",
+    "class": "color-blue country-name",
+    "href": "https://www.farmatodo.com.ve/cuenta/perfil"
+  },
+  {
+    "tag": "a",
+    "text": "Entendido",
+    "class": "button shadow",
+    "href": ""
+  },
+  {
+    "tag": "a",
+    "text": "Entendido",
+    "class": "button shadow",
+    "href": ""
+  },
+  {
+    "tag": "a",
+    "text": "Volver al Home",
+    "class": "btn btn-primary btn-lg",
+    "href": "https://www.farmatodo.com.ve/"
+  },
+  {
+    "tag": "a",
+    "text": "Ubicar Tienda",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/tiendas"
+  },
+  {
+    "tag": "a",
+    "text": "Salud y medicamentos",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/salud-y-medicamentos"
+  },
+  {
+    "tag": "a",
+    "text": "Belleza",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/belleza"
+  },
+  {
+    "tag": "a",
+    "text": "Cuidado del bebé",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/bebe"
+  },
+  {
+    "tag": "a",
+    "text": "Cuidado personal",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/cuidado-personal"
+  },
+  {
+    "tag": "a",
+    "text": "Alimentos y bebidas",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/alimentos-y-bebidas"
+  },
+  {
+    "tag": "a",
+    "text": "Hogar, mascotas y otros.",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/categorias/hogar-mascota-y-otros"
+  },
+  {
+    "tag": "a",
+    "text": "Sitemap",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/sitemap"
+  },
+  {
+    "tag": "a",
+    "text": "Políticas de privacidad",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/legal/politicas-de-privacidad"
+  },
+  {
+    "tag": "a",
+    "text": "Términos y condiciones",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/terminos-y-condiciones"
+  },
+  {
+    "tag": "a",
+    "text": "Contacto",
+    "class": "",
+    "href": ""
+  },
+  {
+    "tag": "a",
+    "text": "Peticiones, quejas o reclamos",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/support/open-chat"
+  },
+  {
+    "tag": "a",
+    "text": "Empleos",
+    "class": "",
+    "href": "https://www.farmatodo.com.ve/empleo"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "",
+    "href": "https://imaginamos.com/"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://www.facebook.com/farmatodovenezuela/"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://twitter.com/farmatodo"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://www.instagram.com/farmatodovzla/?hl=es"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://co.linkedin.com/company/farmatodo"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://www.facebook.com/farmatodovenezuela/"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://twitter.com/farmatodo"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://www.instagram.com/farmatodovzla/?hl=es"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "class": "link-social-img",
+    "href": "https://co.linkedin.com/company/farmatodo"
+  },
+  {
+    "tag": "a",
+    "text": "Diseñado por:",
+    "class": "link-disenamos",
+    "href": "https://imaginamos.com/"
+  },
+  {
+    "tag": "div",
+    "text": "Agrega una direcciónCiudad:Seleccione ciudad ... Anaco  Araure  BARCELONA  Barinas  Barquisimeto  Ca",
+    "class": "modal-dialog modal-md"
+  },
+  {
+    "tag": "div",
+    "text": "Agrega una direcciónCiudad:Seleccione ciudad ... Anaco  Araure  BARCELONA  Barinas  Barquisimeto  Ca",
+    "class": "modal-content"
+  },
+  {
+    "tag": "div",
+    "text": "Ciudad:Seleccione ciudad ... Anaco  Araure  BARCELONA  Barinas  Barquisimeto  Cabimas  Cabudare  Cal",
+    "class": "edit-address-modal modal-body"
+  },
+  {
+    "tag": "div",
+    "text": "Dirección:* (Ubicación actual)",
+    "class": "row"
+  },
+  {
+    "tag": "div",
+    "text": "Dirección:* (Ubicación actual)",
+    "class": "col"
+  }
+]
