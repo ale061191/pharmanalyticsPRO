@@ -24,7 +24,7 @@ interface ProductWithScore {
     rank: number;
     global_rank?: number;
     category_rank?: number;
-    depletion_percent: number;
+
 }
 
 export async function GET(request: Request) {
