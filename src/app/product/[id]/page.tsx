@@ -145,42 +145,49 @@ export default function ProductDetail() {
             }
         }
 
-        // Fetch stock by city for this product
+        // Fetch stock by city using the new HYBRID API
         async function fetchStockByCity(productName: string) {
             setStockLoading(true);
             try {
-                // Fetch from new detailed stock API
-                const res = await fetch(`/api/scrape-stock-detail?product_name=${encodeURIComponent(productName)}`);
+                // Use the new HYBRID endpoint that combines Algolia + Cache + Queue
+                const res = await fetch(`/api/stock/hybrid?product_name=${encodeURIComponent(productName)}`);
                 const json = await res.json();
 
-                if (json.success && json.cities && json.cities.length > 0) {
-                    // Cache the detailed data for the modal
-                    setCityDetailData(json.cities);
+                if (json.success) {
+                    // 1. Update total product stock using Algolia data (Layer 1 - Instant)
+                    if (json.aggregate && json.aggregate.total_stock !== undefined) {
+                        setProduct((prev: any) => ({
+                            ...prev,
+                            stock: `Disponible: ${json.aggregate.total_stock} u`,
+                            stock_count: json.aggregate.total_stock,
+                            stores_count: json.aggregate.stores_with_stock
+                        }));
+                    }
 
-                    // Transform for sidebar display
-                    const cityData: CityStockData[] = json.cities.map((c: any) => ({
-                        city: c.city,
-                        status: getStockStatus(c.total_stock),
-                        count: c.total_stock
-                    }));
-                    setStockByRegion(cityData);
-                } else {
-                    // No data - show placeholder
-                    setStockByRegion([
-                        { city: 'Caracas', status: 'Low', count: 0 },
-                        { city: 'Valencia', status: 'Low', count: 0 },
-                        { city: 'Maracaibo', status: 'Low', count: 0 },
-                        { city: 'Barquisimeto', status: 'Low', count: 0 },
-                        { city: 'Maracay', status: 'Low', count: 0 },
-                        { city: 'Puerto La Cruz', status: 'Low', count: 0 }
-                    ]);
+                    // 2. Load detailed store data if available (Layer 2 - Cache)
+                    if (json.detail && json.detail.cities && json.detail.cities.length > 0) {
+                        setCityDetailData(json.detail.cities);
+                        const cityData: CityStockData[] = json.detail.cities.map((c: any) => ({
+                            city: c.city,
+                            status: getStockStatus(c.total_stock),
+                            count: c.total_stock
+                        }));
+                        setStockByRegion(cityData);
+                    } else if (json.aggregate && json.aggregate.stores_with_stock > 0) {
+                        // Fallback: If no granular cache, show a representative placeholder based on Algolia count
+                        setStockByRegion([
+                            { city: 'Nacional (Algolia)', status: 'High', count: json.aggregate.total_stock }
+                        ]);
+                    } else {
+                        // No data anywhere
+                        setStockByRegion([
+                            { city: 'Consultando...', status: 'Low', count: 0 }
+                        ]);
+                    }
                 }
             } catch (e) {
-                console.error("Error fetching stock by city:", e);
-                // Fallback placeholder
-                setStockByRegion([
-                    { city: 'Error de conexión', status: 'Low', count: 0 }
-                ]);
+                console.error("Error fetching hybrid stock:", e);
+                setStockByRegion([{ city: 'Error de carga', status: 'Low', count: 0 }]);
             } finally {
                 setStockLoading(false);
             }
