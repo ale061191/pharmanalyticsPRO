@@ -1,0 +1,78 @@
+﻿=== UNIQUE API ENDPOINTS ===
+https://api-search.farmatodo.com/1/indexes/items_seo_vzla/236450032
+https://api-search.farmatodo.com/1/indexes/products-venezuela/236450032
+https://api-search.farmatodo.com/1/indexes/properties-vzla/WEB.HEADER.CONFIG
+https://api-search.farmatodo.com/1/indexes/properties-vzla/WEB.HEADER.CONFIG.DEV
+https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/
+https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/locations/
+https://api-transactional.farmatodo.com/config/r/VE/v1/property/CUSTOM.TAG.PRODUCT.CONFIG
+https://api-transactional.farmatodo.com/config/r/VE/v1/property/country/active
+https://api-transactional.farmatodo.com/crm/w/VE/v1/customers
+https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby
+
+
+=== STORES DATA STRUCTURE ===
+City: ANA - Anaco
+Number of stores: 2
+
+First store structure:
+  id: 426
+  name: CORAL
+  address: AV JOSE ANTONIO ANZOATEGUI AL LADO DE MCDONALDS Y FRENTE AL UNICASA
+  latitude: 9.433
+  longitude: -64.4659
+  city: ANA
+  active: True
+  operationStartTime: None
+  operationEndTime: None
+  photo: http://images.farmatodo.com/bduc/img/ve/store/big/ve_store_426_big.png
+  phone: 0800-3276286
+  scheduleMsn: ABIERTA 24 HORAS
+  deliveryType: EXPRESS
+  country: VE
+  commercialName: ANACO- AV. JOS╔ A. ANZO┴TEGUI
+  cityName: Anaco
+  municipality: ANACO
+  locationCustomAttribute: [{'customAttribute': 'default_location', 'customAttributeValue': '426', 'label':...
+
+
+=== NEARBY STORES ENDPOINT ===
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}
+URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+Number of nearby stores: 1
+Store structure: {'id': 118, 'name': 'CHUAO', 'city': 'CCS', 'latitude': 10.4823007, 'longitude': -66.8459645, 'address': 'Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda', 'distanceInKm': 1.94}

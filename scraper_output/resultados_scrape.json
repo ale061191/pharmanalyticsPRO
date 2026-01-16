@@ -1,0 +1,52 @@
+[
+  {
+    "producto": "Acetaminofen Dolipral Forte 650 Mg X 10 Tabletas",
+    "url": "https://www.farmatodo.com.ve/producto/acetaminofen-dolipral-forte-650-mg-x-10-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T18:51:14.014405",
+    "success": false,
+    "extraction_method": "",
+    "error": "Posible CAPTCHA o bloqueo detectado"
+  },
+  {
+    "producto": "Ibuprofeno 400 Mg Calox X 10 Tabletas",
+    "url": "https://www.farmatodo.com.ve/producto/ibuprofeno-400-mg-calox-x-10-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T18:52:35.462237",
+    "success": false,
+    "extraction_method": "",
+    "error": "Posible CAPTCHA o bloqueo detectado"
+  },
+  {
+    "producto": "Omeprazol 20 Mg Calox X 14 Capsulas",
+    "url": "https://www.farmatodo.com.ve/producto/omeprazol-20-mg-calox-x-14-capsulas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T18:53:54.741814",
+    "success": false,
+    "extraction_method": "",
+    "error": "Posible CAPTCHA o bloqueo detectado"
+  },
+  {
+    "producto": "Losartan 50 Mg Calox X 30 Tabletas",
+    "url": "https://www.farmatodo.com.ve/producto/losartan-50-mg-calox-x-30-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T18:55:15.464620",
+    "success": false,
+    "extraction_method": "",
+    "error": "Posible CAPTCHA o bloqueo detectado"
+  },
+  {
+    "producto": "Metformina 850 Mg Calox X 30 Tabletas",
+    "url": "https://www.farmatodo.com.ve/producto/metformina-850-mg-calox-x-30-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T18:56:35.002151",
+    "success": false,
+    "extraction_method": "",
+    "error": "Posible CAPTCHA o bloqueo detectado"
+  }
+]

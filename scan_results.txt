@@ -1,0 +1,282 @@
+Total lines in HAR analysis: 3046
+Line 5: URL: https://www.farmatodo.com.ve/producto/23645003297
+  -> Method: GET | Status: 200
+Line 309: URL: https://www.farmatodo.com.ve/assets/gif/p2c-sppiner.gif
+  -> Method: GET | Status: 200
+Line 313: URL: https://d21y75miwcfqoq.cloudfront.net/e1743d7a
+  -> Method: GET | Status: 200
+Line 317: URL: https://api.amplitude.com/
+  -> Method: POST | Status: 200
+Line 321: URL: https://gw-backend-ve.farmatodo.com/_ah/api/algoliaEndpoint/getDeliveryTimeLabelConfig?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 342: URL: https://api-transactional.farmatodo.com/config/r/VE/v1/property/CUSTOM.TAG.PRODUCT.CONFIG
+  -> Method: GET | Status: 200
+Line 346: URL: https://us-central1-stunning-base-164402.cloudfunctions.net/modulesConfiguration?pais=ven&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 350: URL: https://us-central1-stunning-base-164402.cloudfunctions.net/facets-internationalization?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 354: URL: https://api.ipify.org/?format=json
+  -> Method: GET | Status: 200
+Line 358: URL: https://data-analytics.farmatodo.com.ve/events/create-event
+  -> Method: POST | Status: -1
+Line 362: URL: https://gw-backend-ve.farmatodo.com/_ah/api/orderEndpoint/deliveryTypeTime
+  -> Method: POST | Status: 200
+Line 379: URL: https://gw-backend-ve.farmatodo.com/_ah/api/categoryEndpoint/getCategoriesAndSubCategories?token=8a190e99b437184b4fb282c5ef31d9cc&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQ2NWVmZTNiZi0wMDFiLTQ5OGEtYmQxYS02MDhlMGNlOGM5MTUMCxIFVG9rZW4iJDk3MzNmYmI1LTc3M2YtNGJjNy04MWMzLWI4OGEyNjcxYTc2NQw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 1316: URL: https://api-transactional.farmatodo.com/crm/w/VE/v1/customers?anonymous=true&keyClient=12345&latitude=4.681924599999999&longitude=-74.0438379&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: POST | Status: 201
+Line 1320: URL: https://cdn.growthbook.io/api/features/sdk-LQLE5Pf20QKUxUYz
+  -> Method: GET | Status: 200
+Line 1324: URL: https://api-search.farmatodo.com/1/indexes/properties-vzla/WEB.HEADER.CONFIG.DEV?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser
+  -> Method: GET | Status: 200
+Line 1329: URL: https://api-search.farmatodo.com/1/indexes/properties-vzla/WEB.HEADER.CONFIG?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser
+  -> Method: GET | Status: 200
+Line 1334: URL: https://rest.iad-06.braze.com/api/v3/content_cards/sync
+  -> Method: POST | Status: 201
+Line 1338: URL: https://gw-backend-ve.farmatodo.com/_ah/api/categoryEndpoint/getCategoriesAndSubCategories?token=8a190e99b437184b4fb282c5ef31d9cc&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQ2NWVmZTNiZi0wMDFiLTQ5OGEtYmQxYS02MDhlMGNlOGM5MTUMCxIFVG9rZW4iJDk3MzNmYmI1LTc3M2YtNGJjNy04MWMzLWI4OGEyNjcxYTc2NQw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2275: URL: https://api-search.farmatodo.com/1/indexes/products-venezuela/23645003297?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser
+  -> Method: GET | Status: 500
+Line 2279: URL: https://api-search.farmatodo.com/1/indexes/items_seo_vzla/23645003297?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser
+  -> Method: GET | Status: 404
+Line 2284: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2284]
+  [MATCH 'nearby' at Line 2286]
+Line 2288: URL: https://gw-backend-ve.farmatodo.com/_ah/api/orderEndpoint/deliveryTypeTime
+  -> Method: POST | Status: 200
+Line 2305: URL: https://data-analytics.farmatodo.com.ve/events/create-event
+  -> Method: POST | Status: 201
+Line 2309: URL: https://api-search.farmatodo.com/1/indexes/products-venezuela/23645003297?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser
+  -> Method: GET | Status: 500
+Line 2313: URL: https://api-transactional.farmatodo.com/crm/r/VE/v1/customers?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 204
+Line 2317: URL: https://www.clarity.ms/tag/t0dzlxooha?ref=npm
+  -> Method: GET | Status: 200
+Line 2321: URL: https://cdn.growthbook.io/sub/sdk-LQLE5Pf20QKUxUYz
+  -> Method: GET | Status: 200
+Line 2325: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2329: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: GET | Status: 204
+Line 2333: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2337: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: GET | Status: 204
+Line 2341: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: OPTIONS | Status: 204
+Line 2345: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2349: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: GET | Status: 204
+Line 2353: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2357: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: GET | Status: 204
+Line 2361: URL: https://gw-backend-ve.farmatodo.com/_ah/api/customerEndpoint/customer/favorite?idCustomerWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhci4LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAM&source=WEB&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag&deliveryType=EXPRESS&storeId=146&city=CCS&isShoppingCart=false&customerId=undefined&source=WEB
+  -> Method: OPTIONS | Status: 204
+Line 2365: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2369: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2373: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2377: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2381: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2385: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?deliveryType=EXPRESS&token=e9fe2048b15c940bcefc3fc8fac0cb9a&tokenIdWebSafe=ahZzfm9yYWNsZS1zZXJ2aWNlcy12emxhcl0LEgRVc2VyIiQyMDI1ZTE1Ny01MjUxLTQ5N2MtYTA1OS0wZmQ2MjZlMDMzYzAMCxIFVG9rZW4iJGI4N2Q5ZmQwLTAzNTAtNGI2MC1iMDU2LWRhNGYxNzUzZjk4Zgw&key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2389: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2389]
+  [MATCH 'nearby' at Line 2391]
+Line 2393: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: OPTIONS | Status: 204
+  [MATCH 'nearby' at Line 2393]
+Line 2397: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2401: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2405: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2405]
+  [MATCH 'nearby' at Line 2407]
+Line 2409: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2413: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2417: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2421: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2425: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2429: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2433: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2437: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2441: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: OPTIONS | Status: 200
+Line 2445: URL: https://api-transactional.farmatodo.com/catalog/r/VE/v1/cities/active/geo-zone/?key=AIzaSyAidR6Tt0K60gACR78aWThMQb7L5u6Wpag
+  -> Method: GET | Status: 200
+Line 2449: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2449]
+  [MATCH 'nearby' at Line 2451]
+Line 2453: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2453]
+  [MATCH 'nearby' at Line 2455]
+Line 2457: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2457]
+  [MATCH 'nearby' at Line 2459]
+Line 2461: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2461]
+  [MATCH 'nearby' at Line 2463]
+Line 2465: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2465]
+  [MATCH 'nearby' at Line 2467]
+Line 2469: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2469]
+  [MATCH 'nearby' at Line 2471]
+Line 2473: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2473]
+  [MATCH 'nearby' at Line 2475]
+Line 2477: URL: https://api-transactional.farmatodo.com/route/r/VE/v1/stores/nearby?cityId=CCS
+  -> Method: GET | Status: 200
+  [MATCH 'nearby' at Line 2477]
+  [MATCH 'nearby' at Line 2479]
+Line 2481: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: POST | Status: 201
+Line 2485: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: POST | Status: 201
+Line 2489: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: OPTIONS | Status: 204
+Line 2493: URL: https://stats.g.doubleclick.net/g/collect?v=2&tid=G-2CXBK7Z73V&cid=1494535930.1768532158&gtm=45je61e1v889381569z8832295178za20gzb832295178zd832295178&aip=1&dma=1&dma_cps=syphamo&gcd=13l3l3l2l1l1&npa=1&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~115985661~117041588
+  -> Method: POST | Status: 204
+Line 2497: URL: https://stats.g.doubleclick.net/g/collect?v=2&tid=G-2CXBK7Z73V&cid=1494535930.1768532158&gtm=45je61e1v889381569z8832295178za20gzb832295178zd832295178&aip=1&dma=1&dma_cps=syphamo&gcd=13l3l3l2l1l1&npa=1&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~115985661~117041588
+  -> Method: POST | Status: 204
+Line 2501: URL: https://sdk-api-v1.singular.net/api/v1/event?current_device_time=1768532159&event_id=7fa7d2bc-8917-4d71-bd9d-5f11b83307a6&conversion_event=true&k=SDID&a=farmatodo_f8daa68a&p=Web&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&screen_height=720&screen_width=1280&sdk=WebSDK-v1.4.8&singular_instance_id=3bd4c373-89b9-4018-b9ff-0229d0da51e9&sdid=55fadd0f-9360-4321-bbb3-c5ec98efb388&storage_type=local&timezone=GMT-0400&touchpoint_timestamp=1768532159&u=55fadd0f-9360-4321-bbb3-c5ec98efb388&n=__PAGE_VISIT__&is_revenue_event=false&first=true&is_after_conversion_event=false&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&is_first_visit=true&is_page_refreshed=false&sdid_persist_mode=off&is_first_page_visit_in_session=true&ecid=55fadd0f-9360-4321-bbb3-c5ec98efb388&os=Windows&lag=0&h=ad6cb0ecdf4a4bc3fa32be9485d0c8812bc1da4a
+  -> Method: POST | Status: 200
+Line 2507: URL: https://sdk-api-v1.singular.net/api/banners?a=farmatodo_f8daa68a&l=es-ES&current_device_time=1768532159&timezone=GMT-0400&counter_banner_showed=1&k=SDID&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&is_first_visit=true&sdk=WebSDK-v1.4.8&source_url=https%3A%2F%2Fwww.farmatodo.com.ve%2F404&os=Windows&client_hints=%7B%22architecture%22%3A%22x86%22%2C%22brands%22%3A%5B%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22143%22%7D%2C%7B%22brand%22%3A%22Not%20A(Brand%22%2C%22version%22%3A%2224%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22Windows%22%2C%22platformVersion%22%3A%2219.0.0%22%2C%22uaFullVersion%22%3A%22143.0.7499.4%22%7D&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&lag=0&h=4fbfef4f5b05fb494f7b25e6599c848b687c307c
+  -> Method: GET | Status: 200
+Line 2512: URL: https://sdk-api-v1.singular.net/api/v1/event?current_device_time=1768532159&event_id=7fa7d2bc-8917-4d71-bd9d-5f11b83307a6&conversion_event=true&k=SDID&a=farmatodo_f8daa68a&p=Web&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&screen_height=720&screen_width=1280&sdk=WebSDK-v1.4.8&singular_instance_id=3bd4c373-89b9-4018-b9ff-0229d0da51e9&sdid=55fadd0f-9360-4321-bbb3-c5ec98efb388&storage_type=local&timezone=GMT-0400&touchpoint_timestamp=1768532159&u=55fadd0f-9360-4321-bbb3-c5ec98efb388&n=__PAGE_VISIT__&is_revenue_event=false&first=true&is_after_conversion_event=false&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&is_first_visit=true&is_page_refreshed=false&sdid_persist_mode=off&is_first_page_visit_in_session=true&ecid=55fadd0f-9360-4321-bbb3-c5ec98efb388&os=Windows&lag=0&h=ad6cb0ecdf4a4bc3fa32be9485d0c8812bc1da4a
+  -> Method: POST | Status: 200
+Line 2518: URL: https://sdk-api-v1.singular.net/api/banners?a=farmatodo_f8daa68a&l=es-ES&current_device_time=1768532159&timezone=GMT-0400&counter_banner_showed=1&k=SDID&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&is_first_visit=true&sdk=WebSDK-v1.4.8&source_url=https%3A%2F%2Fwww.farmatodo.com.ve%2F404&os=Windows&client_hints=%7B%22architecture%22%3A%22x86%22%2C%22brands%22%3A%5B%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22143%22%7D%2C%7B%22brand%22%3A%22Not%20A(Brand%22%2C%22version%22%3A%2224%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22Windows%22%2C%22platformVersion%22%3A%2219.0.0%22%2C%22uaFullVersion%22%3A%22143.0.7499.4%22%7D&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&lag=0&h=4fbfef4f5b05fb494f7b25e6599c848b687c307c
+  -> Method: GET | Status: 200
+Line 2523: URL: https://sdk-api-v1.singular.net/api/v1/event?current_device_time=1768532159&event_id=7fa7d2bc-8917-4d71-bd9d-5f11b83307a6&conversion_event=true&k=SDID&a=farmatodo_f8daa68a&p=Web&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&screen_height=720&screen_width=1280&sdk=WebSDK-v1.4.8&singular_instance_id=3bd4c373-89b9-4018-b9ff-0229d0da51e9&sdid=55fadd0f-9360-4321-bbb3-c5ec98efb388&storage_type=local&timezone=GMT-0400&touchpoint_timestamp=1768532159&u=55fadd0f-9360-4321-bbb3-c5ec98efb388&n=__PAGE_VISIT__&is_revenue_event=false&first=true&is_after_conversion_event=false&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&is_first_visit=true&is_page_refreshed=false&sdid_persist_mode=off&is_first_page_visit_in_session=true&ecid=55fadd0f-9360-4321-bbb3-c5ec98efb388&os=Windows&lag=0&h=ad6cb0ecdf4a4bc3fa32be9485d0c8812bc1da4a
+  -> Method: OPTIONS | Status: 200
+Line 2527: URL: https://sdk-api-v1.singular.net/api/banners?a=farmatodo_f8daa68a&l=es-ES&current_device_time=1768532159&timezone=GMT-0400&counter_banner_showed=1&k=SDID&i=https%3A%2F%2Fwww.farmatodo.com.ve%2F&is_first_visit=true&sdk=WebSDK-v1.4.8&source_url=https%3A%2F%2Fwww.farmatodo.com.ve%2F404&os=Windows&client_hints=%7B%22architecture%22%3A%22x86%22%2C%22brands%22%3A%5B%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22143%22%7D%2C%7B%22brand%22%3A%22Not%20A(Brand%22%2C%22version%22%3A%2224%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22Windows%22%2C%22platformVersion%22%3A%2219.0.0%22%2C%22uaFullVersion%22%3A%22143.0.7499.4%22%7D&s=fcc9b415-2ca9-46fa-88ca-de8643fc8049&lag=0&h=4fbfef4f5b05fb494f7b25e6599c848b687c307c
+  -> Method: OPTIONS | Status: 203
+Line 2531: URL: https://sdk.iad-06.braze.com/api/v3/feature_flags/sync
+  -> Method: POST | Status: 201
+Line 2535: URL: https://sdk.iad-06.braze.com/api/v3/feature_flags/sync
+  -> Method: POST | Status: 201
+Line 2539: URL: https://sdk.iad-06.braze.com/api/v3/feature_flags/sync
+  -> Method: OPTIONS | Status: 200
+Line 2543: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2547: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2551: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: GET | Status: 200
+Line 2555: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: OPTIONS | Status: 200
+Line 2559: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: GET | Status: 200
+Line 2563: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: GET | Status: 200
+Line 2567: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: GET | Status: 200
+Line 2571: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: GET | Status: 200
+Line 2575: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: GET | Status: 200
+Line 2579: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: OPTIONS | Status: 200
+Line 2583: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: GET | Status: 200
+Line 2587: URL: https://farmatodo.api.kustomerapp.com/p/v1/chat/brands/6568c27bb4345d5ebeea4675/settings/versions/latest
+  -> Method: OPTIONS | Status: 200
+Line 2591: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: OPTIONS | Status: 200
+Line 2595: URL: https://farmatodo.api.kustomerapp.com/p/v1/schedules/default?include=holidays
+  -> Method: GET | Status: 200
+Line 2599: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2603: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2607: URL: https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6
+  -> Method: POST | Status: 200
+Line 2611: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2615: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2619: URL: https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6
+  -> Method: POST | Status: 200
+Line 2623: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2627: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2631: URL: https://analytics.tiktok.com/api/v2/pixel/act
+  -> Method: POST | Status: 200
+Line 2635: URL: https://analytics.tiktok.com/api/v2/pixel/act
+  -> Method: POST | Status: 200
+Line 2639: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: GET | Status: 200
+Line 2643: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: GET | Status: 200
+Line 2647: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: OPTIONS | Status: 200
+Line 2651: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: GET | Status: 200
+Line 2655: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: GET | Status: 200
+Line 2659: URL: https://farmatodo.api.kustomerapp.com/p/v2/chat/brands/6568c27bb4345d5ebeea4675/settings?settingsVersion=489
+  -> Method: OPTIONS | Status: 200
+Line 2663: URL: https://farmatodo.api.kustomerapp.com/c/v1/tracking/tokens/current
+  -> Method: GET | Status: 201
+Line 2667: URL: https://farmatodo.api.kustomerapp.com/c/v1/tracking/tokens/current
+  -> Method: OPTIONS | Status: 204
+Line 2671: URL: https://farmatodo.api.kustomerapp.com/c/v1/tracking/tokens/current
+  -> Method: GET | Status: 201
+Line 2675: URL: https://farmatodo.api.kustomerapp.com/c/v2/chat/sessions?page=1&pageSize=100
+  -> Method: GET | Status: 200
+Line 2679: URL: https://farmatodo.api.kustomerapp.com/c/v2/chat/sessions?page=1&pageSize=100
+  -> Method: GET | Status: 200
+Line 2683: URL: https://farmatodo.api.kustomerapp.com/c/v2/chat/sessions?page=1&pageSize=100
+  -> Method: OPTIONS | Status: 204
+Line 2687: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2691: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2695: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: POST | Status: 201
+Line 2699: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: POST | Status: 201
+Line 2703: URL: https://sdk.iad-06.braze.com/api/v3/data/
+  -> Method: OPTIONS | Status: 204
+Line 2707: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2711: URL: https://s.clarity.ms/collect
+  -> Method: POST | Status: 204
+Line 2715: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2719: URL: https://analytics.tiktok.com/api/v2/pixel
+  -> Method: POST | Status: 200
+Line 2723: URL: https://www.farmatodo.com.ve/favicon.ico
+  -> Method: GET | Status: 200
+Line 2727: URL: https://www.farmatodo.com.ve/index.html
+  -> Method: GET | Status: 200
+Line 2983: URL: https://www.farmatodo.com.ve/manifest.webmanifest
+  -> Method: GET | Status: 200
+
+Total URL lines found: 128

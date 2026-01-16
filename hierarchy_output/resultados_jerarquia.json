@@ -1,0 +1,29 @@
+[
+  {
+    "producto": "Acetaminofén 650 mg Atamel Forte",
+    "url": "https://www.farmatodo.com.ve/producto/111026723-acetaminofen-atamel-forte-650-mg-x-10-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T20:41:06.148197",
+    "success": false,
+    "error": "Timeout de página"
+  },
+  {
+    "producto": "Ibuprofeno Genfar 400mg",
+    "url": "https://www.farmatodo.com.ve/producto/ibuprofeno-genfar-400-mg-x-10-tabletas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T20:42:12.216038",
+    "success": false,
+    "error": "Timeout de página"
+  },
+  {
+    "producto": "Omeprazol Calox 20mg",
+    "url": "https://www.farmatodo.com.ve/producto/omeprazol-calox-20-mg-x-14-capsulas",
+    "ciudades": [],
+    "total_stock": 0,
+    "fecha_scrape": "2026-01-15T20:43:17.703629",
+    "success": false,
+    "error": "Timeout de página"
+  }
+]

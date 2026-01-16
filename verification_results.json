@@ -1,0 +1,12 @@
+{
+  "total_registros": 65773,
+  "ciudades": {
+    "Anaco": 879,
+    "Araure": 121
+  },
+  "total_ciudades": 2,
+  "productos_con_stock": 262,
+  "productos_totales": 2507,
+  "primera_entrada": "2026-01-13T13:29:54.080052+00:00",
+  "ultima_entrada": "2026-01-15T15:54:10.934+00:00"
+}

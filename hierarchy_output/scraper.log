@@ -1,0 +1,156 @@
+2026-01-15 20:41:03,978 │ INFO    │ 
+════════════════════════════════════════════════════════════
+2026-01-15 20:41:03,979 │ INFO    │ 🚀 INICIANDO SCRAPE COMPLETO DE 3 PRODUCTOS
+2026-01-15 20:41:03,980 │ INFO    │ ════════════════════════════════════════════════════════════
+
+2026-01-15 20:41:06,116 │ INFO    │ 🌐 Navegador inicializado
+2026-01-15 20:41:06,139 │ INFO    │ 
+[1/3] ────────────────────────────────────────
+2026-01-15 20:41:06,148 │ INFO    │ 📦 Procesando: Acetaminofén 650 mg Atamel Forte...
+2026-01-15 20:41:07,068 │ INFO    │    📍 Navegando...
+2026-01-15 20:42:07,199 │ ERROR   │    ⏱️ Timeout
+2026-01-15 20:42:07,199 │ INFO    │    ⏳ Esperando 5.0s...
+2026-01-15 20:42:12,215 │ INFO    │ 
+[2/3] ────────────────────────────────────────
+2026-01-15 20:42:12,216 │ INFO    │ 📦 Procesando: Ibuprofeno Genfar 400mg...
+2026-01-15 20:42:12,682 │ INFO    │    📍 Navegando...
+2026-01-15 20:43:12,691 │ ERROR   │    ⏱️ Timeout
+2026-01-15 20:43:12,692 │ INFO    │    ⏳ Esperando 5.0s...
+2026-01-15 20:43:17,703 │ INFO    │ 
+[3/3] ────────────────────────────────────────
+2026-01-15 20:43:17,703 │ INFO    │ 📦 Procesando: Omeprazol Calox 20mg...
+2026-01-15 20:43:18,193 │ INFO    │    📍 Navegando...
+2026-01-15 20:44:18,204 │ ERROR   │    ⏱️ Timeout
+2026-01-15 20:44:19,402 │ INFO    │ 🌐 Navegador cerrado
+2026-01-15 20:44:19,402 │ INFO    │ 
+════════════════════════════════════════════════════════════
+2026-01-15 20:44:19,403 │ INFO    │ 🏁 SCRAPE COMPLETADO
+2026-01-15 20:44:19,403 │ INFO    │    ✅ Exitosos: 0/3
+2026-01-15 20:44:19,405 │ INFO    │    📊 Stock total: 0 unidades
+2026-01-15 20:44:19,405 │ INFO    │ ════════════════════════════════════════════════════════════
+
+2026-01-15 20:44:19,407 │ INFO    │ 💾 Resultados guardados en: hierarchy_output\resultados_jerarquia.json
+2026-01-15 20:45:15,232 │ INFO    │ 
+════════════════════════════════════════════════════════════
+2026-01-15 20:45:15,233 │ INFO    │ 🚀 INICIANDO SCRAPE COMPLETO DE 3 PRODUCTOS
+2026-01-15 20:45:15,233 │ INFO    │ ════════════════════════════════════════════════════════════
+
+2026-01-15 20:45:16,838 │ INFO    │ 🌐 Navegador inicializado
+2026-01-15 20:45:16,858 │ INFO    │ 
+[1/3] ────────────────────────────────────────
+2026-01-15 20:45:16,858 │ INFO    │ 📦 Procesando: Acetaminofén 650 mg Atamel Forte...
+2026-01-15 20:45:17,670 │ INFO    │    📍 Navegando...
+2026-01-15 20:45:39,019 │ INFO    │    🔍 Buscando panel de disponibilidad...
+2026-01-15 20:45:39,623 │ INFO    │    🏙️ Ciudades detectadas: 26
+2026-01-15 20:46:20,637 │ WARNING │       ⚠️ Error en Puerto Ordaz: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:46:51,448 │ WARNING │       ⚠️ Error en Anaco: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    55 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:47:21,498 │ WARNING │       ⚠️ Error en Araure: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:47:51,545 │ WARNING │       ⚠️ Error en Barinas: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:48:21,593 │ WARNING │       ⚠️ Error en Cabimas: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:48:51,649 │ WARNING │       ⚠️ Error en Calabozo: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2026-01-15 20:49:21,698 │ WARNING │       ⚠️ Error en Carora: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+

@@ -1,0 +1,27 @@
+{
+  "product_url": "https://www.farmatodo.com.ve/producto/113016367-acetaminofen-500mg-10tabletas",
+  "scraped_at": "2026-01-16T00:10:50.146333",
+  "cities": [],
+  "total_stores": 4,
+  "total_stock": 200,
+  "product_name": "Acetaminofén 500 mg Genven Caja x 10 Tabletas",
+  "stores_raw": [
+    {
+      "raw_text": "45% Cesta de Bienestar a menos de REF. 0,99  Loratadina 10 Mg Genven Caja X 10 Comprimidos  Bs.326.9",
+      "stock": 50
+    },
+    {
+      "raw_text": "45% Cesta de Bienestar a menos de REF. 0,99  Loratadina 10 Mg Genven Caja X 10 Comprimidos  Bs.326.9",
+      "stock": 50
+    },
+    {
+      "raw_text": "Loratadina 10 Mg Genven Caja X 10 Comprimidos  Bs.326.98  Bs.594.50 Unidades a Bs 32.7035 mins",
+      "stock": 50
+    },
+    {
+      "raw_text": "Bs.326.98  Bs.594.50 Unidades a Bs 32.7035 mins",
+      "stock": 50
+    }
+  ],
+  "availability_html_sample": "<div _ngcontent-ng-ftd-c77=\"\" class=\"row\"><div _ngcontent-ng-ftd-c77=\"\" class=\"col-md-6 col-12 content-map\"><div _ngcontent-ng-ftd-c77=\"\" class=\"map\"><app-map _nghost-ng-ftd-c116=\"\"><div _ngcontent-ng-ftd-c116=\"\" class=\"map-container leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom\" id=\"map-vzla\" tabindex=\"0\"><div _ngcontent-ng-ftd-c116=\"\" class=\"map-frame map-tracking map-vzla\"><div _ngcontent-ng-ftd-c116=\"\" class=\"map-vzla\" id=\"map-vzla\"></div></div><div class=\"leaflet-pane leaflet-map-pane\" style=\"transform: translate3d(0px, 32px, 0px);\"><div class=\"leaflet-pane leaflet-tile-pane\"><div class=\"leaflet-layer \" style=\"z-index: 1;\"><div class=\"leaflet-tile-container leaflet-zoom-animated\" style=\"z-index: 17; transform: translate3d(0px, 0px, 0px) scale(1);\"><img alt=\"\" role=\"presentation\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/9/160/240.png\" class=\"leaflet-tile\" style=\"width: 256px; height: 256px; transform: translate3"
+}

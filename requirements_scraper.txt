@@ -1,0 +1,9 @@
+# Python Hybrid Scraper Agent Requirements
+# Install with: pip install -r requirements_scraper.txt
+
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+supabase>=2.0.0
+aiohttp>=3.9.0

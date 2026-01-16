@@ -1,0 +1,49 @@
+{
+  "nearbyStores": [
+    {
+      "id": 146,
+      "name": "TEPUY",
+      "city": "CCS",
+      "latitude": 10.4856,
+      "longitude": -66.8634,
+      "address": "AV RIO DE JANEIRO CON CALLE MONTERREY URB LAS MERCEDES",
+      "distanceInKm": 0
+    },
+    {
+      "id": 124,
+      "name": "AUTANA",
+      "city": "CCS",
+      "latitude": 10.4811,
+      "longitude": -66.8627,
+      "address": "AV ORINOCO PARCELA No 413-A QTA MARIUCCIA LAS MERCEDES",
+      "distanceInKm": 0.51
+    },
+    {
+      "id": 147,
+      "name": "MARFIL",
+      "city": "CCS",
+      "latitude": 10.487,
+      "longitude": -66.8715,
+      "address": "AV. PPAL. DE BELLO MONTE ESQUINA CON CALLE DON BOSCO COLINAS DE BELLO MONTE",
+      "distanceInKm": 0.9
+    },
+    {
+      "id": 142,
+      "name": "LUZMAR",
+      "city": "CCS",
+      "latitude": 10.4924,
+      "longitude": -66.8572,
+      "address": "AV, FCO. DE MIRANDA LOCALES 2, 3 Y 4 CHACAO. (AL LADO DEL INAVI)",
+      "distanceInKm": 1.02
+    },
+    {
+      "id": 118,
+      "name": "CHUAO",
+      "city": "CCS",
+      "latitude": 10.4823007,
+      "longitude": -66.8459645,
+      "address": "Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda",
+      "distanceInKm": 1.94
+    }
+  ]
+}

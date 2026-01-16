@@ -1,0 +1,77 @@
+{
+  "product": {
+    "product_id": "23645003297",
+    "name": "Acetaminofén 500 mg Ag Caja x 20 Tabletas",
+    "brand": "AG",
+    "price": 8100.0,
+    "offer_price": 6480,
+    "stock": {
+      "total": 336,
+      "total_confirmed": 336,
+      "stores_with_stock": 15,
+      "stores_without_stock": 0,
+      "avg_stock": 1120,
+      "max_stock": 30,
+      "available": true
+    },
+    "category": "Salud y medicamentos",
+    "image_url": "https://product-images.farmatodo.com/E9v07LFcVkn4ZdHm9wZJzPXbvfzhrF4hyCTw3SPr9isulwtn9YIMvEO4c51IS6tzo4w195Acj7nOnYl4LfgQjRjiL5VZGGEJRz3Y5MlUZsWKQSdksw",
+    "url": "https://www.farmatodo.com.ve/producto/236450032-acetaminofen-ag-500mg",
+    "fetched_at": "2026-01-15T23:46:50.050297"
+  },
+  "cities_count": 56,
+  "stores_ccs": [
+    {
+      "id": 118,
+      "name": "CHUAO",
+      "city": "CCS",
+      "address": "Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda",
+      "latitude": 10.4823007,
+      "longitude": -66.8459645,
+      "distance_km": 1.94
+    }
+  ],
+  "search_results": [
+    {
+      "object_id": "20750015094",
+      "name": "//Losartan ",
+      "price": 82900.0,
+      "stock": 1,
+      "stores_with_stock": 0,
+      "available": true
+    },
+    {
+      "object_id": "10006941154",
+      "name": "Losartán Potásico Genfar 50 mg Caja x 30 Tabletas",
+      "price": 22450.0,
+      "stock": 628,
+      "stores_with_stock": 43,
+      "available": true
+    },
+    {
+      "object_id": "10615601131",
+      "name": "Losartan MK 50 mg Caja x 30 Tabletas",
+      "price": 18400,
+      "stock": 1286,
+      "stores_with_stock": 0,
+      "available": true
+    },
+    {
+      "object_id": "2088504691156",
+      "name": "Losartan Mk 50mg Caja X   30 Tabletas",
+      "price": 25150,
+      "stock": 180,
+      "stores_with_stock": 42,
+      "available": true
+    },
+    {
+      "object_id": "21110074985",
+      "name": "Losartán Potásico La Santé 50 mg Caja x 30 Tabletas",
+      "price": 21950.0,
+      "stock": 178,
+      "stores_with_stock": 44,
+      "available": true
+    }
+  ],
+  "scraped_at": "2026-01-15T23:46:53.275175"
+}
