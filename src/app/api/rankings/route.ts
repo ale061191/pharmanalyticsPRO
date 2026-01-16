@@ -24,7 +24,8 @@ interface ProductWithScore {
     rank: number;
     global_rank?: number;
     category_rank?: number;
-
+    presentation?: string | null;
+    original_price?: number;
 }
 
 export async function GET(request: Request) {
@@ -41,7 +42,7 @@ export async function GET(request: Request) {
         // Note: We do NOT filter by category at DB level anymore to ensure we can calculate Global Rank
         let query = supabase
             .from('products')
-            .select('id, name, lab_name, category, avg_price, image_url, url, stock_count, rating, review_count');
+            .select('id, name, lab_name, category, avg_price, original_price, presentation, image_url, url, stock_count, rating, review_count');
 
         // Limit to 1000 to cover reasonable catalog size
         const { data: products, error: prodError } = await query.limit(1000);
@@ -120,8 +121,10 @@ export async function GET(request: Request) {
                 id: product.id,
                 name: product.name,
                 lab_name: product.lab_name || null,
+                presentation: product.presentation || null,
                 category: product.category || 'Salud',
                 avg_price: product.avg_price,
+                original_price: product.original_price,
                 image_url: product.image_url,
                 url: product.url,
                 stock_count: product.stock_count || 0,

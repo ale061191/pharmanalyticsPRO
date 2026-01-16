@@ -21,6 +21,8 @@ interface RankedProduct {
   depletion_percent: number;
   rating?: number;
   review_count?: number;
+  original_price?: number;
+  presentation?: string | null;
 }
 
 // Available categories from Farmatodo
@@ -272,14 +274,17 @@ export default function Home() {
                               <Link href={`/product/${product.id}`} className="font-semibold text-foreground group-hover:text-primary transition-colors hover:underline line-clamp-2">
                                 {product.name}
                               </Link>
-                              <p className="text-xs text-muted-foreground flex items-center gap-1 mt-1">
-                                <span className="w-2 h-2 rounded-full bg-green-500"></span> Stock Disponible
+                              {product.presentation && (
+                                <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">{product.presentation}</p>
+                              )}
+                              <p className="text-[10px] font-medium text-green-600 flex items-center gap-1 mt-1 bg-green-50 w-fit px-1.5 py-0.5 rounded border border-green-100">
+                                <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span> Stock Disponible
                               </p>
                             </div>
                           </div>
                         </td>
                         <td className="px-6 py-4">
-                          <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                          <span className="text-sm font-medium text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
                             {product.lab_name || 'N/A'}
                           </span>
                         </td>
@@ -288,8 +293,17 @@ export default function Home() {
                             {product.category || 'Salud'}
                           </span>
                         </td>
-                        <td className="px-6 py-4 font-mono font-medium text-slate-600">
-                          Bs.{product.avg_price?.toFixed(2) || 'N/A'}
+                        <td className="px-6 py-4">
+                          <div className="flex flex-col">
+                            {product.original_price && product.original_price > product.avg_price && (
+                              <span className="text-xs text-slate-400 line-through">
+                                Bs.{product.original_price.toFixed(2)}
+                              </span>
+                            )}
+                            <span className="font-mono font-medium text-slate-700">
+                              Bs.{product.avg_price?.toFixed(2) || 'N/A'}
+                            </span>
+                          </div>
                         </td>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-2">
