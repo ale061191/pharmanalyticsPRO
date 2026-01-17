@@ -67,7 +67,7 @@ async function forceRepair() {
                     if (hit.url) {
                         try {
                             // url example: .../producto/12345/nombre-real-del-producto
-                            const parts = hit.url.split('/').filter(p => p.length > 0);
+                            const parts = (hit.url as string).split('/').filter((p: string) => p.length > 0);
                             let slug = parts[parts.length - 1];
 
                             // If slug is just an ID, take previous

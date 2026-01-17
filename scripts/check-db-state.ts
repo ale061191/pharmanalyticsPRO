@@ -26,7 +26,7 @@ async function checkDbState() {
         } else {
             console.log(`\nResults for "${term}":`);
             if (data.length === 0) console.log('  No products found with this EXACT name.');
-            data.forEach(p => {
+            data.forEach((p: any) => {
                 console.log(`  - ID: ${p.id}`);
                 console.log(`    Name: "${p.name}"`);
                 console.log(`    Lab: "${p.lab_name}"`);
