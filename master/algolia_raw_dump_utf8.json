@@ -1,0 +1,766 @@
+﻿{
+  "anywaySelling": false,
+  "barcode": "7591472013023",
+  "barcodeList": [
+    "113308360",
+    "7591472013023",
+    "07591472013023"
+  ],
+  "brand": "Farmatodo",
+  "categorie": "Botiqu├¡n y Primeros Auxilios",
+  "color": null,
+  "colors": null,
+  "customLabelForStockZeroByCity": [
+    {
+      "cityCode": "CCS",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VLRA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ASU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BQTO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BRC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CABU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CAL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CBMA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CBOL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CDA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CDOJ",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CHAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CMAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CMNA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "COR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CRNO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CUA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "EVGA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GNRE",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GRNA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GUAC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GUAT",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "HIG",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LEC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LTQU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LVIC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MAIQ",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MAT",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MCBO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MER",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MRCY",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PAM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PDM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "POR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTJO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTLC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SAC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SALA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SBRA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SFA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SFEL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SJDLM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SNCR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TCCS",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TIG",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TQLLO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TUR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "UPA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VAL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VDLP",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ANA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ARA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    }
+  ],
+  "deliveryTime": null,
+  "departments": [
+    "Salud y Medicamentos"
+  ],
+  "fullPrice": 270,
+  "fullPriceByCity": [
+    {
+      "cityCode": "SAC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "COR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "BAR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PDM",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PTC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "HIG",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "MER",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PAM",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "MAT",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "UPA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CUA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "LEC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "POR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PTO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CAR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "ARA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SFA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "ANA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CAL",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "VAL",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "ASU",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CDA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "TUR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "TIG",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "LVIC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "EVGA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CHAR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "GUAT",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "LTQU",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "VDLP",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CRNO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SBRA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CDOJ",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "GUAC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CMNA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "MAIQ",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "GNRE",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "VLRA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SNCR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CMAR",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PTLC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "PTJO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "GRNA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CABU",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SFEL",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "TCCS",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CBMA",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "MCBO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CBOL",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "MRCY",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "BQTO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "TQLLO",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SJDLM",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "CCS",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "BRC",
+      "fullPrice": 270
+    },
+    {
+      "cityCode": "SALA",
+      "fullPrice": 270
+    }
+  ],
+  "genericos": 0,
+  "grayDescription": "  ",
+  "highlight": "false",
+  "id": "113308360",
+  "idOffersGroup": [
+    29385
+  ],
+  "id_highlights": [
+    6985,
+    16042,
+    16611,
+    16613
+  ],
+  "id_suggested": [
+    8498
+  ],
+  "is_cupon": 0,
+  "labelPum": "Mililitros a Bs",
+  "largeDescription": "Alcohol antis├®ptico de 120 ml con spray atomizador, cuyo tama├▒o lo hace perfecto para estar en tu bolsillo, ideal para desinfectar heridas y materiales y superficies. ",
+  "lastUpdate": {
+    "jobName": "UPDATE_STOCK",
+    "timeStamp": 1768727001363
+  },
+  "listUrlImages": [
+    "https://lh3.googleusercontent.com/_-bLN7UWW8F1ODKEdH-q-EynGn5XMMIbfEfjfY9LuyN72cX-yIiD8krgSkTUQAL2rw4OGSNPwoY45YQDpJDC4Z6zmTUKl8Kj4zZ4qSNw6bRp80fLUQ",
+    "https://lh3.googleusercontent.com/Q33Np8ZV6vLmW_T_7tgXFbv00WQ1T5QnHVinwf_S_EGXJRtPftfCVthPtfIL-z16I-cJ0S5BfX0BAUwIZ6bWji-7CAmzuhNKw0VmafHPH6Soe6A"
+  ],
+  "marca": "Farmatodo",
+  "measurePum": 1,
+  "mediaDescription": "Alcohol Antis├®ptico Farmatodo Spray 120Ml",
+  "mediaImageUrl": "https://lh3.googleusercontent.com/Gukc8_E8jCYdLZbb9O_6chy6WPWsFLK4mbTFHwaDgxAoMeIjQLKINBXUhqiFps20TaMPIngKeuZNZZcGg1ZVTGWJuPsdJm-GHuJLUJvQpVudaqzVpw",
+  "offerDescription": "",
+  "offerEndDate": 1758081540000,
+  "offerPrice": 0,
+  "offerPriceByCity": [],
+  "offerStartDate": 1757908800000,
+  "offerText": "",
+  "onlyOnline": false,
+  "outofstore": false,
+  "requirePrescription": "false",
+  "rms_class": "ANTISEPTICOS",
+  "rms_deparment": "CUIDADOS PRIMARIOS",
+  "rms_group": "PRIMEROS AUXILIOS",
+  "rms_subclass": "ANTISEPTICOS",
+  "sales": 2452,
+  "spaces": 1,
+  "status": "A",
+  "stores_with_offer": [],
+  "stores_with_stock": [
+    113,
+    108,
+    107,
+    135,
+    125,
+    124,
+    161,
+    166,
+    158,
+    210,
+    277,
+    281,
+    400,
+    313,
+    318,
+    414,
+    411,
+    410,
+    421,
+    418,
+    424,
+    501,
+    510,
+    511,
+    521,
+    591,
+    663,
+    667,
+    690,
+    703,
+    110,
+    105,
+    131,
+    136,
+    134,
+    143,
+    159,
+    180,
+    198,
+    189,
+    270,
+    419,
+    275,
+    282,
+    504,
+    481,
+    594,
+    665,
+    660,
+    605,
+    699,
+    666,
+    702,
+    206,
+    168,
+    483,
+    104,
+    129,
+    204,
+    267,
+    196,
+    272,
+    278,
+    271,
+    298,
+    279,
+    401,
+    422,
+    420,
+    412,
+    595,
+    662,
+    520,
+    190,
+    118,
+    701,
+    668,
+    115,
+    482,
+    121,
+    140,
+    141,
+    155,
+    145,
+    187,
+    191,
+    194,
+    188,
+    212,
+    269,
+    195,
+    288,
+    297,
+    289,
+    303,
+    302,
+    320,
+    425,
+    480,
+    417,
+    675,
+    600,
+    551,
+    608,
+    116,
+    137,
+    142,
+    120,
+    157,
+    197,
+    199,
+    309,
+    209,
+    287,
+    427,
+    505,
+    550,
+    507,
+    603,
+    671,
+    604,
+    606,
+    700,
+    697,
+    680,
+    101,
+    310,
+    156,
+    413,
+    126,
+    112,
+    130,
+    128,
+    146,
+    152,
+    148,
+    149,
+    319,
+    170,
+    311,
+    321,
+    423,
+    323,
+    506,
+    426,
+    440,
+    681,
+    601,
+    661,
+    694,
+    689,
+    683,
+    111,
+    114,
+    698,
+    132,
+    133,
+    119,
+    144,
+    153,
+    139,
+    167,
+    171,
+    164,
+    181,
+    193,
+    207,
+    283,
+    286,
+    273,
+    322,
+    500,
+    503,
+    670,
+    593,
+    100,
+    102,
+    117,
+    147,
+    138,
+    160,
+    154,
+    150,
+    165,
+    205,
+    192,
+    211,
+    296,
+    284,
+    307,
+    304,
+    308,
+    415,
+    330,
+    416,
+    669,
+    682,
+    208,
+    182,
+    276,
+    484
+  ],
+  "subCategory": "Cuidados Primarios",
+  "taxRate": 0,
+  "taxes": 0,
+  "totalStock": 0,
+  "unitPrice": 270,
+  "url": "113308360-alcohol-antiseptico-farmatodo-spray-120ml",
+  "supplier_id": 5697391,
+  "is_psycho": 0,
+  "sku_searchable": 113308360,
+  "assortments": [
+    {
+      "assortment_id": "APAU4A",
+      "assortment_name": "PRIMEROS AUXILIOS (4A) 2,4 m"
+    },
+    {
+      "assortment_id": "APAU4X",
+      "assortment_name": "PRIMEROS AUXILIOS (4X) 2,4 M"
+    },
+    {
+      "assortment_id": "APAU5A",
+      "assortment_name": "PRIMEROS AUXILIOS (5A) 3,6 m"
+    },
+    {
+      "assortment_id": "APAU6A",
+      "assortment_name": "PRIMEROS AUXILIOS (6A) 4,8 M"
+    },
+    {
+      "assortment_id": "ACOV2A",
+      "assortment_name": "CABEZAL COVID"
+    },
+    {
+      "assortment_id": "APAU3A",
+      "assortment_name": "PRIMEROS AUXILIOS (3A) 1,2 m"
+    },
+    {
+      "assortment_id": "APAU5X",
+      "assortment_name": "PRIMEROS AUXILIOS (5X) 3,6 M"
+    }
+  ],
+  "metatituloSEO": null,
+  "metadesSEO": null,
+  "urlCanonical": null,
+  "customTag": null,
+  "desHiddenSEO": null,
+  "objectID": "113308360"
+}

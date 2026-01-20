@@ -1,0 +1,84 @@
+====== REPORTE BD LOCAL (MUESTRA 1 POR CATEGORÍA) ======
+Total Productos en BD: 7865
+Nota: El stock granular (por ciudad/tienda/unidades) se cargará en la fase masiva.
+
+1. [Dolor General]
+   Producto: Acetaminofen 650mg 10tabletas Genven
+   ID: 112460440
+   Marca: Leti
+   Departamento: Salud y Medicamentos -> Sub: Analgésico y Antipiretico
+   Precio: Bs.S 218,98 (Full: Bs.S 230,50) -> Dcto: 5%
+   Disponibilidad General: En 185 tiendas a nivel nacional.
+------------------------------------------------
+2. [Botiquín y Primeros Auxilios]
+   Producto: Alcohol Antiséptico Farmatodo Spray 120Ml
+   ID: 113308360
+   Marca: Farmatodo
+   Departamento: Salud y Medicamentos -> Sub: Cuidados Primarios
+   Precio: Bs.SNaN (Full: Bs.S 270,00) -> Dcto: 0%
+   Disponibilidad General: En 201 tiendas a nivel nacional.
+------------------------------------------------
+3. [Medicamentos]
+   Producto: Ácido Fólico 10 mg PlusAndex x 30 Comprimidos
+   ID: 111918572
+   Marca: 2008M-0008623
+   Departamento: Salud y Medicamentos -> Sub: Medicamentos
+   Precio: Bs.S 470,73 (Full: Bs.S 495,50) -> Dcto: 5%
+   Disponibilidad General: En 195 tiendas a nivel nacional.
+------------------------------------------------
+4. [Salud Respiratoria y Gripe]
+   Producto: Acetaminofén + Clorfeniramina 500mg/4mg Clorace Cofasa Caja x 10 Tabletas
+   ID: 111007226
+   Marca: Cofasa
+   Departamento: Salud y Medicamentos -> Sub: Dolor de garganta
+   Precio: Bs.S 626,80 (Full: Bs.S 783,50) -> Dcto: 20%
+   Disponibilidad General: En 203 tiendas a nivel nacional.
+------------------------------------------------
+5. [Dermatológicos]
+   Producto: Aceite Ozonizado Tópico Vitaozono x 15 ml
+   ID: 114900402
+   Marca: 2008M-0008623
+   Departamento: Salud y Medicamentos -> Sub: Cicatrices y Heridas
+   Precio: Bs.SNaN (Full: Bs.S 2.775,00) -> Dcto: 0%
+   Disponibilidad General: En 186 tiendas a nivel nacional.
+------------------------------------------------
+6. [Salud Digestiva]
+   Producto: Pancreatina Festal Calox Caja x 10 Grageas
+   ID: 111130395
+   Marca: Calox
+   Departamento: Salud y Medicamentos -> Sub: Digestivos
+   Precio: Bs.S 1.691,50 (Full: Bs.S 2.305,00) -> Dcto: 27%
+   Disponibilidad General: En 201 tiendas a nivel nacional.
+------------------------------------------------
+7. [Vitaminas y Productos Naturales]
+   Producto: Ashwagandha 450 mg Herbaplant x 60 Cápsulas
+   ID: 114886461
+   Marca: 2008M-0008623
+   Departamento: Salud y Medicamentos -> Sub: Suplemento Alimenticio
+   Precio: Bs.S 2.954,00 (Full: Bs.S 4.558,25) -> Dcto: 35%
+   Disponibilidad General: En 203 tiendas a nivel nacional.
+------------------------------------------------
+8. [Formulas Magistrales]
+   Producto: Ácido Bórico Botica Casera Sobre x 20 gr
+   ID: 111010023
+   Marca: Otras
+   Departamento: Salud y Medicamentos -> Sub: Formulas Magistrales
+   Precio: Bs.S 492,20 (Full: Bs.S 680,00) -> Dcto: 28%
+   Disponibilidad General: En 198 tiendas a nivel nacional.
+------------------------------------------------
+9. [Nutrición y Vida Saludable]
+   Producto: Edulcorante Sweetest Caja x 50 Sobres
+   ID: 111960939
+   Marca: Sweetest
+   Departamento: Salud y Medicamentos -> Sub: Productos Dieteticos
+   Precio: Bs.SNaN (Full: Bs.S 1.538,35) -> Dcto: 0%
+   Disponibilidad General: En 187 tiendas a nivel nacional.
+------------------------------------------------
+10. [Rehabilitación y Equipos Médicos]
+   Producto: Aguja Hipodermica 27G x 1/2 Grossmed
+   ID: 115186546
+   Marca: 2008M-0008623
+   Departamento: Salud y Medicamentos -> Sub: Material Descartable
+   Precio: Bs.SNaN (Full: Bs.S 65,00) -> Dcto: 0%
+   Disponibilidad General: En 164 tiendas a nivel nacional.
+------------------------------------------------

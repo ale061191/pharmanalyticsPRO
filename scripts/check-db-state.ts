@@ -17,7 +17,7 @@ async function checkDbState() {
     for (const term of terms) {
         const { data, error } = await supabase
             .from('products')
-            .select('id, name, lab_name, avg_price, url')
+            .select('id, name, lab_name, avg_price, original_price, url, image_url')
             .ilike('name', `%${term}%`)
             .limit(5);
 
@@ -30,8 +30,9 @@ async function checkDbState() {
                 console.log(`  - ID: ${p.id}`);
                 console.log(`    Name: "${p.name}"`);
                 console.log(`    Lab: "${p.lab_name}"`);
-                console.log(`    Price: ${p.avg_price}`);
+                console.log(`    Price: ${p.avg_price} (Original: ${p.original_price})`);
                 console.log(`    URL: ${p.url}`);
+                console.log(`    Image: ${p.image_url}`);
             });
         }
     }

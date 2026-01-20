@@ -1,0 +1,1080 @@
+{
+  "anywaySelling": false,
+  "barcode": "7591585279057",
+  "barcodeList": [
+    "112460440",
+    "7591585279057",
+    "07591585279057"
+  ],
+  "brand": "Leti",
+  "categorie": "Dolor General",
+  "color": null,
+  "colors": null,
+  "customLabelForStockZeroByCity": [],
+  "customTag": null,
+  "deliveryTime": null,
+  "departments": [
+    "Salud y Medicamentos"
+  ],
+  "desHiddenSEO": null,
+  "fullPrice": 230.5,
+  "fullPriceByCity": [
+    {
+      "cityCode": "COR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "BAR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SAC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PDM",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "HIG",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PTC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PAM",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "MER",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "MAT",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "UPA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "LEC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CUA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "POR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PTO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CAR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "ARA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SFA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "ANA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "VAL",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CAL",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "ASU",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "TIG",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "TUR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CDA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "LVIC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "EVGA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CHAR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "GUAT",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "LTQU",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "VDLP",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CDOJ",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CRNO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SBRA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "GUAC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CMNA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "MAIQ",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SNCR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "GNRE",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "VLRA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PTJO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CMAR",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "PTLC",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SFEL",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CABU",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "GRNA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "MCBO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "TCCS",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CBMA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "BQTO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "MRCY",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CBOL",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SJDLM",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "TQLLO",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "CCS",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "SALA",
+      "fullPrice": 230.5
+    },
+    {
+      "cityCode": "BRC",
+      "fullPrice": 230.5
+    }
+  ],
+  "genericos": 0,
+  "grayDescription": "   ",
+  "highlight": "false",
+  "id": "112460440",
+  "idOffersGroup": [
+    29757
+  ],
+  "id_highlights": [
+    15362,
+    21204,
+    32544,
+    32624,
+    33229,
+    33231,
+    33524,
+    34629,
+    34711,
+    34924,
+    35144
+  ],
+  "id_suggested": [
+    8897
+  ],
+  "is_cupon": 0,
+  "labelPum": "Tabletas a Bs",
+  "largeDescription": "Analgésico, antipirético. Tratamiento sintomático de la fiebre y del dolor leve a moderado.",
+  "lastUpdate": {
+    "jobName": "UPDATE_STOCK",
+    "timeStamp": 1768710171836
+  },
+  "listUrlImages": [],
+  "marca": "Leti",
+  "measurePum": 10,
+  "mediaDescription": "Acetaminofen 650mg 10tabletas Genven",
+  "mediaImageUrl": "https://lh3.googleusercontent.com/e3GWrynuUrv92IVLFeQvqTyYeLrXAmgTTM9FJmIxOA79H7U6aPMsV-3vik_ee7V1TjZj1UxXOLQUHbWg9t9L8IgjcLaNIyBimrBMIuVGl_OH7co",
+  "metadesSEO": "",
+  "metatituloSEO": "",
+  "offerDescription": "¡Aprovecha!",
+  "offerEndDate": 1768795140000,
+  "offerPrice": 218.975,
+  "offerPriceByCity": [
+    {
+      "cityCode": "CCS",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "VLRA",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "ASU",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "BAR",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "BQTO",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "BRC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CABU",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "CAL",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CAR",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "CBMA",
+      "offerPrice": 184.4,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CBOL",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CDA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CDOJ",
+      "offerPrice": 184.4,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CHAR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CMAR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CMNA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "COR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CRNO",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "CUA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "EVGA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "GNRE",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "GRNA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "GUAC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "GUAT",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "HIG",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "LEC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "LTQU",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "LVIC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "MAIQ",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "MAT",
+      "offerPrice": 172.875,
+      "offerText": "25%"
+    },
+    {
+      "cityCode": "MCBO",
+      "offerPrice": 184.4,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MER",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "MRCY",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PAM",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PDM",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "POR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PTC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PTJO",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PTLC",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "PTO",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "SAC",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "SALA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "SBRA",
+      "offerPrice": 184.4,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SFA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "SFEL",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "SJDLM",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "SNCR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "TCCS",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "TIG",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "TQLLO",
+      "offerPrice": 161.35,
+      "offerText": "30%"
+    },
+    {
+      "cityCode": "TUR",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "UPA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "VAL",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "VDLP",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "ANA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    },
+    {
+      "cityCode": "ARA",
+      "offerPrice": 218.975,
+      "offerText": "5%"
+    }
+  ],
+  "offerStartDate": 1768190400000,
+  "offerText": "5%",
+  "onlyOnline": false,
+  "outofstore": false,
+  "requirePrescription": "false",
+  "rms_class": "ANALGESICOS/ANTIPIRETICOS OTC",
+  "rms_deparment": "OTC SIST NERVIOSO CENTRAL",
+  "rms_group": "OTC",
+  "rms_subclass": "ANALGESICOS/ANTIPIRETICOS OTC",
+  "sales": 2961,
+  "spaces": 1,
+  "status": "A",
+  "stores_with_offer": [
+    146,
+    0,
+    100,
+    104,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    120,
+    121,
+    123,
+    124,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    147,
+    148,
+    149,
+    150,
+    152,
+    153,
+    154,
+    155,
+    157,
+    158,
+    159,
+    164,
+    165,
+    166,
+    167,
+    181,
+    188,
+    189,
+    192,
+    193,
+    194,
+    195,
+    196,
+    168,
+    101,
+    156,
+    160,
+    125,
+    182,
+    105,
+    102,
+    601,
+    600,
+    608,
+    484,
+    550,
+    506,
+    551,
+    309,
+    300,
+    302,
+    305,
+    308,
+    311,
+    313,
+    314,
+    322,
+    323,
+    310,
+    307,
+    400,
+    401,
+    412,
+    303,
+    321,
+    505,
+    304,
+    675,
+    703,
+    205,
+    206,
+    670,
+    210,
+    161,
+    204,
+    207,
+    425,
+    680,
+    440,
+    211,
+    603,
+    510,
+    694,
+    199,
+    197,
+    190,
+    298,
+    187,
+    198,
+    180,
+    414,
+    416,
+    171,
+    296,
+    208,
+    424,
+    415,
+    417,
+    418,
+    419,
+    413,
+    428,
+    604,
+    605,
+    606,
+    660,
+    661,
+    662,
+    663,
+    665,
+    666,
+    671,
+    669,
+    318,
+    319,
+    330,
+    267,
+    269,
+    270,
+    271,
+    277,
+    320,
+    276,
+    481,
+    483,
+    421,
+    480,
+    482,
+    297,
+    683,
+    681,
+    427,
+    410,
+    411,
+    701,
+    700,
+    702,
+    520,
+    170,
+    511,
+    500,
+    501,
+    503,
+    591,
+    504,
+    595,
+    593,
+    594,
+    682,
+    422,
+    423,
+    521,
+    272,
+    704,
+    288,
+    209,
+    273,
+    275,
+    278,
+    279,
+    281,
+    282,
+    284,
+    286,
+    287,
+    289,
+    283,
+    507,
+    426,
+    420,
+    689,
+    690
+  ],
+  "stores_with_stock": [
+    113,
+    107,
+    108,
+    135,
+    125,
+    124,
+    158,
+    161,
+    166,
+    277,
+    281,
+    210,
+    400,
+    313,
+    318,
+    411,
+    414,
+    410,
+    418,
+    424,
+    421,
+    511,
+    510,
+    591,
+    663,
+    690,
+    667,
+    703,
+    105,
+    110,
+    109,
+    134,
+    131,
+    180,
+    159,
+    189,
+    270,
+    275,
+    282,
+    419,
+    481,
+    605,
+    660,
+    665,
+    702,
+    666,
+    206,
+    168,
+    104,
+    483,
+    196,
+    204,
+    267,
+    272,
+    271,
+    278,
+    279,
+    298,
+    401,
+    420,
+    412,
+    422,
+    662,
+    595,
+    520,
+    190,
+    118,
+    701,
+    668,
+    482,
+    115,
+    140,
+    121,
+    141,
+    155,
+    145,
+    191,
+    188,
+    194,
+    212,
+    269,
+    195,
+    289,
+    297,
+    288,
+    320,
+    303,
+    302,
+    425,
+    480,
+    417,
+    551,
+    675,
+    600,
+    608,
+    704,
+    116,
+    120,
+    142,
+    137,
+    197,
+    157,
+    287,
+    309,
+    209,
+    427,
+    505,
+    507,
+    603,
+    550,
+    604,
+    671,
+    606,
+    697,
+    680,
+    700,
+    156,
+    101,
+    126,
+    413,
+    112,
+    128,
+    146,
+    148,
+    149,
+    152,
+    311,
+    170,
+    319,
+    423,
+    323,
+    321,
+    426,
+    506,
+    440,
+    681,
+    661,
+    601,
+    689,
+    694,
+    683,
+    114,
+    111,
+    119,
+    132,
+    133,
+    153,
+    144,
+    167,
+    164,
+    171,
+    181,
+    207,
+    193,
+    283,
+    286,
+    273,
+    500,
+    314,
+    322,
+    593,
+    503,
+    100,
+    102,
+    117,
+    147,
+    138,
+    154,
+    160,
+    150,
+    192,
+    211,
+    296,
+    284,
+    304,
+    308,
+    416,
+    415,
+    330,
+    682,
+    669,
+    276,
+    182,
+    208,
+    484
+  ],
+  "subCategory": "Analgésico y Antipiretico",
+  "taxRate": 0,
+  "taxes": 0,
+  "totalStock": 0,
+  "unitPrice": 230.5,
+  "url": "112460440-acetaminofen-650mg-10-tabletas",
+  "urlCanonical": "",
+  "supplier_id": 5694916,
+  "is_psycho": 0,
+  "sku_searchable": 112460440,
+  "assortments": [
+    {
+      "assortment_id": "CANVI1",
+      "assortment_name": "CANALES VIRTUALES 1"
+    },
+    {
+      "assortment_id": "AOTC7E",
+      "assortment_name": "OTC (7E) 6 M"
+    },
+    {
+      "assortment_id": "AOTC5E",
+      "assortment_name": "OTC (5E) 3,6 M"
+    },
+    {
+      "assortment_id": "AOTC6X",
+      "assortment_name": "OTC (6X) 4,80 M"
+    },
+    {
+      "assortment_id": "AOTC5A",
+      "assortment_name": "OTC (5A) 3,6 m"
+    },
+    {
+      "assortment_id": "AOTC6A",
+      "assortment_name": "OTC (6A) 4,80M"
+    },
+    {
+      "assortment_id": "AOTC5X",
+      "assortment_name": "OTC (5X) 3,60 M"
+    },
+    {
+      "assortment_id": "AOTC6E",
+      "assortment_name": "OTC (6E) 4,8 M"
+    },
+    {
+      "assortment_id": "AOTC5Y",
+      "assortment_name": "OTC (5Y) 3,60 M"
+    },
+    {
+      "assortment_id": "ALOR1A",
+      "assortment_name": "PARRILLERA LORATADINA (1A) 0,36"
+    }
+  ],
+  "objectID": "112460440",
+  "_highlightResult": {
+    "barcode": {
+      "value": "7591585279057",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "barcodeList": [
+      {
+        "value": "112460440",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "7591585279057",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "07591585279057",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    ],
+    "brand": {
+      "value": "Leti",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "grayDescription": {
+      "value": "   ",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "id": {
+      "value": "112460440",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "largeDescription": {
+      "value": "Analgésico, antipirético. Tratamiento sintomático de la fiebre y del dolor leve a moderado.",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "mediaDescription": {
+      "value": "<em>Acetaminofen</em> 650mg 10tabletas Genven",
+      "matchLevel": "full",
+      "fullyHighlighted": false,
+      "matchedWords": [
+        "acetaminofen"
+      ]
+    },
+    "subCategory": {
+      "value": "Analgésico y Antipiretico",
+      "matchLevel": "none",
+      "matchedWords": []
+    }
+  }
+}

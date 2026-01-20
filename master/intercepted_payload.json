@@ -1,0 +1,1 @@
+{"requests":[{"query":"Acetaminofen","indexName":"products-venezuela","params":"hitsPerPage=24&filters=outofstore%3Afalse%20&facets=marca%2Ccategorie%2CsubCategory%2CfullPrice&page=0&optionalFilters=%5B%5B%22stores_with_stock%3A146%22%5D%5D&clickAnalytics=true&userToken=anonymous-ab8af72f-ef9e-4b8b-89ae-dc735df8ff29"}]}

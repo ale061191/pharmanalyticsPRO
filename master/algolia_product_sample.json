@@ -1,0 +1,85 @@
+{
+  "mediaImageUrl": "https://lh3.googleusercontent.com/E3Eqg_E6IgxfUy0Ia1Ko0r3oWlQdMkFK73H_GM6uH9w0B2lcCTQbeAiAICKUeRyq0-reo3pj2f6ElgdgRQtAuKeihcFTyYrn8qo",
+  "description": "//Losartan ",
+  "fullPrice": 82900,
+  "mediaDescription": "//Losartan ",
+  "barcode": "7702057700812",
+  "brand": "2008M-0008623",
+  "sales": 0,
+  "detailDescription": " 100MG+Amlodipino Mk 5MG Cajax30Tabletas ",
+  "offerPrice": 0,
+  "offerDescription": null,
+  "stock": 1,
+  "id": "207500150",
+  "offerText": null,
+  "talla": null,
+  "género": null,
+  "marca": "MK",
+  "genéricos": null,
+  "aumento": null,
+  "presentación": null,
+  "etapa": null,
+  "idStoreGroup": 94,
+  "anywaySelling": false,
+  "isGeneric": false,
+  "outstanding": false,
+  "spaces": 1,
+  "status": "X",
+  "taxRate": 19,
+  "totalStock": 1,
+  "categorie": null,
+  "large_description": " ",
+  "textoSEO": "",
+  "metaTitle": "",
+  "metaDescription": "",
+  "outofstore": true,
+  "without_stock": false,
+  "listUrlImages": null,
+  "metatituloSEO": "",
+  "metadesSEO": "",
+  "urlCanonical": "",
+  "url": null,
+  "supplier": "TECNOQUIMICA MK",
+  "RMS_PROVIDER": "TECNOQUIMICA MK",
+  "customTag": null,
+  "desHiddenSEO": null,
+  "objectID": "20750015094",
+  "_highlightResult": {
+    "description": {
+      "value": "//<em>Losartan</em> ",
+      "matchLevel": "full",
+      "fullyHighlighted": true,
+      "matchedWords": [
+        "losartan"
+      ]
+    },
+    "mediaDescription": {
+      "value": "//<em>Losartan</em> ",
+      "matchLevel": "full",
+      "fullyHighlighted": true,
+      "matchedWords": [
+        "losartan"
+      ]
+    },
+    "barcode": {
+      "value": "7702057700812",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "brand": {
+      "value": "2008M-0008623",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "detailDescription": {
+      "value": " 100MG+Amlodipino Mk 5MG Cajax30Tabletas ",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "id": {
+      "value": "207500150",
+      "matchLevel": "none",
+      "matchedWords": []
+    }
+  }
+}

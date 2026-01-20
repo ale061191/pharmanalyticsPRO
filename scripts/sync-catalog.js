@@ -1,50 +1,32 @@
 
-import { createClient } from '@supabase/supabase-js';
-import * as dotenv from 'dotenv';
-import { ALGOLIA_CONFIG } from '../src/lib/algoliaClient';
+const { createClient } = require('@supabase/supabase-js');
+const dotenv = require('dotenv');
+const path = require('path');
 
-// Load env vars
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: path.resolve(__dirname, '../.env.local') });
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 if (!SUPABASE_URL || !SUPABASE_KEY) {
-    console.error('Missing Supabase credentials in .env.local');
+    console.error('Missing Supabase credentials');
     process.exit(1);
 }
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-interface AlgoliaHit {
-    objectID: string;
-    description: string;
-    name?: string;
-    brand?: string;
-    price: number;
-    fullPrice?: number;
-    offerPrice?: number;
-    unitPrice?: number;
-    url?: string;
-    category?: string;
-    hierarchicalCategories?: {
-        lvl0?: string;
-        lvl1?: string;
-    };
-    image?: string;
-    thumbnail?: string;
-}
+// Hardcoded keys from algoliaClient.ts
+const ALGOLIA_APP_ID = 'VCOJEYD2PO';
+const ALGOLIA_API_KEY = '869a91e98550dd668b8b1dc04bca9011';
+const ALGOLIA_INDEX = 'products-venezuela';
 
+async function fetchAll() {
+    console.log('--- Starting CJS Sync ---');
+    const indexUrl = `https://${ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/${ALGOLIA_INDEX}/query`;
 
-async function fetchAllAlgoliaProducts() {
-    console.log('Starting full catalog sync from Algolia (Robust V4 Style)...');
-
-    // Using the query endpoint directly to avoid client version issues
-    const indexUrl = `https://${ALGOLIA_CONFIG.appId}-dsn.algolia.net/1/indexes/${ALGOLIA_CONFIG.index}/query`;
-
-    // Prefixes: a-z, 0-9
+    // Prefixes
     const prefixes = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
-    prefixes.unshift(''); // Empty prefix for top hits
+    prefixes.unshift(''); // top hits
 
     let totalProcessed = 0;
     let totalUpdated = 0;
@@ -52,7 +34,7 @@ async function fetchAllAlgoliaProducts() {
     let errors = 0;
 
     for (const prefix of prefixes) {
-        console.log(`\n--- Processing prefix: "${prefix}" ---`);
+        process.stdout.write(`Prefix "${prefix}": `);
         let page = 0;
         let prefixHits = 0;
 
@@ -61,53 +43,45 @@ async function fetchAllAlgoliaProducts() {
                 const response = await fetch(indexUrl, {
                     method: 'POST',
                     headers: {
-                        'X-Algolia-Application-Id': ALGOLIA_CONFIG.appId,
-                        'X-Algolia-API-Key': ALGOLIA_CONFIG.apiKey,
+                        'X-Algolia-Application-Id': ALGOLIA_APP_ID,
+                        'X-Algolia-API-Key': ALGOLIA_API_KEY,
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
                         query: prefix,
                         page: page,
-                        hitsPerPage: 100 // Maximize batch size
+                        hitsPerPage: 100
                     }),
                 });
 
                 if (!response.ok) {
-                    if (response.status === 400 && page > 0) break; // End of pagination usually implies 400 or empty
-                    console.error(`Algolia search failed for prefix "${prefix}" page ${page}: ${response.status}`);
+                    if (response.status === 400 && page > 0) break;
+                    console.error(`Status: ${response.status}`);
                     break;
                 }
 
-                const data: any = await response.json();
-                const hits: AlgoliaHit[] = data.hits;
-
+                const data = await response.json();
+                const hits = data.hits;
                 if (!hits || hits.length === 0) break;
 
-                // Process hits
                 for (const hit of hits) {
                     // NAME CLEANING
                     let rawName = hit.description || hit.name || 'Unknown Product';
-                    // Remove "Psi " prefix if present (Case insensitive)
                     let cleanName = rawName.replace(/^Psi\s+/i, '').trim();
-                    // Remove "N/A" name
                     if (cleanName === 'N/A') cleanName = 'Unknown Product';
 
-                    // PRICE LOGIC
-                    // Prefer offerPrice -> price -> price_usd (converted?)
-                    // Assuming Algolia price is in Bs if > 1? OR is it USD?
-                    // User says "Bs. 0.00" currently.
-                    // If DB has 202, it looks like USD or Old Bs.
-                    // Let's trust "offerPrice" or "price".
+                    // PRICE LOGIC (Prioritize Offer > Price > Full)
                     const p1 = Number(hit.price || 0);
                     const p2 = Number(hit.offerPrice || 0);
                     const finalPrice = p2 > 0 ? p2 : p1;
+                    const originalPrice = Number(hit.fullPrice || 0);
 
-                    // LAB LOGIC
-                    const lab = hit.brand || (hit as any).manufacturer || 'N/A';
+                    // LAB LOGIC (Brand Fallback)
+                    const lab = hit.brand || hit.manufacturer || hit.laboratorio || 'N/A';
 
                     // RATING LOGIC
-                    const rating = (hit as any).rating || (hit as any).stars || 0;
-                    const reviews = (hit as any).review_count || (hit as any).reviews || 0;
+                    const rating = Number(hit.rating || hit.stars || 0);
+                    const reviews = Number(hit.review_count || hit.reviews || 0);
 
                     // IMAGE LOGIC
                     const image = hit.image || hit.thumbnail || null;
@@ -122,24 +96,21 @@ async function fetchAllAlgoliaProducts() {
                     }
                     if (!cleanUrl) cleanUrl = `/producto/${hit.objectID}`;
 
-                    // DB DATA PREP
                     const productData = {
                         name: cleanName,
                         lab_name: lab,
                         avg_price: finalPrice,
-                        original_price: Number(hit.fullPrice || 0),
+                        original_price: originalPrice,
                         rating: rating,
                         review_count: reviews,
-                        category: hit.category || ((hit.hierarchicalCategories as any)?.lvl0?.split('>').pop()?.trim()) || 'Salud',
+                        category: hit.category || 'Salud',
                         updated_at: new Date().toISOString(),
                         url: cleanUrl,
                         image_url: image
                     };
 
-                    // UPSERT by URL or Name
-                    // We try URL first
-                    let existingId: string | null = null;
-
+                    // UPSERT by URL
+                    let existingId = null;
                     const { data: existingUrl } = await supabase.from('products').select('id').eq('url', cleanUrl).maybeSingle();
                     if (existingUrl) existingId = existingUrl.id;
                     else {
@@ -158,28 +129,23 @@ async function fetchAllAlgoliaProducts() {
 
                 totalProcessed += hits.length;
                 prefixHits += hits.length;
-
                 if (page >= (data.nbPages || 0) - 1) break;
                 page++;
-
-                // Rate limit help
                 await new Promise(r => setTimeout(r, 20));
 
             } catch (e) {
-                console.error(`Error loop for ${prefix}:`, e);
+                console.error(e);
                 break;
             }
         }
-        console.log(`Finished prefix "${prefix}": ${prefixHits} hits.`);
+        console.log(`${prefixHits} hits.`);
     }
 
-    console.log(`\n=== Sync Complete ===`);
+    console.log(`\n=== DONE ===`);
     console.log(`Processed: ${totalProcessed}`);
     console.log(`Updated: ${totalUpdated}`);
     console.log(`Inserted: ${totalInserted}`);
     console.log(`Errors: ${errors}`);
 }
 
-fetchAllAlgoliaProducts();
-
-fetchAllAlgoliaProducts();
+fetchAll();
