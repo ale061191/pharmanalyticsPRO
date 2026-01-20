@@ -1,30 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(250 20% 98%);
-  --color-foreground: hsl(260 10% 10%);
+  --color-background: hsl(210 40% 98%);
+  --color-foreground: hsl(210 10% 10%);
 
-  --color-primary: hsl(265 89% 66%);
+  --color-primary: hsl(210 100% 40%);
   --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-secondary: hsl(260 20% 96%);
-  --color-secondary-foreground: hsl(265 89% 66%);
+  --color-secondary: hsl(210 40% 96%);
+  --color-secondary-foreground: hsl(210 100% 40%);
 
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(260 10% 10%);
+  --color-card-foreground: hsl(210 10% 10%);
 
-  --color-muted: hsl(260 10% 96%);
-  --color-muted-foreground: hsl(260 5% 45%);
+  --color-muted: hsl(210 10% 96%);
+  --color-muted-foreground: hsl(210 5% 45%);
 
-  --color-accent: hsl(265 89% 66%);
+  --color-accent: hsl(120 61% 50%);
   --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-border: hsl(220 13% 91%);
+  --color-border: hsl(210 20% 92%);
+
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Custom Utilities implemented as standard CSS classes that use Tailwind features */
 @utility glass-panel {
-  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl shadow-purple-900/5;
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl shadow-blue-900/5;
 }
 
 @utility glass-card {
@@ -33,6 +35,24 @@
 
 body {
   background-image:
-    radial-gradient(at 0% 0%, hsla(270, 100%, 96%, 1) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(250, 100%, 96%, 1) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(210, 100%, 96%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(120, 100%, 96%, 1) 0px, transparent 50%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
