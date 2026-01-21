@@ -3,20 +3,24 @@
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
-import { ArrowLeft, RefreshCw, MapPin, TrendingUp, DollarSign, Package, X, Store, ChevronDown, ChevronRight, Search } from 'lucide-react';
+import {
+    ArrowLeft, RefreshCw, MapPin, TrendingUp, Package, X, Store,
+    ChevronRight, Search, Globe, Layout, Zap, ArrowLeft as BackIcon,
+    FileCode, Building2
+} from 'lucide-react';
 import Link from 'next/link';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import {
+    XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area
+} from 'recharts';
+import dynamic from 'next/dynamic';
+import { createClient } from '@supabase/supabase-js';
 
-// Mock Data Generators
-const generatePriceHistory = () => {
-    return Array.from({ length: 7 }, (_, i) => ({
-        day: ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'][i],
-        price: 100 + Math.random() * 20 - 10,
-        competitor: 110 + Math.random() * 15 - 5
-    }));
-};
+const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
-// Interfaces for detailed stock data
+// Interfaces
 interface StoreData {
     name: string;
     address: string;
@@ -35,33 +39,57 @@ interface CityDetailData {
     total_stock: number;
 }
 
-// Stock by region interface (for sidebar display)
 interface CityStockData {
     city: string;
     status: 'High' | 'Medium' | 'Low';
     count: number;
 }
 
-const getStockStatus = (count: number): 'High' | 'Medium' | 'Low' => {
-    if (count >= 10) return 'High';
-    if (count >= 3) return 'Medium';
-    return 'Low';
-};
+const VENEZUELA_CITIES = [
+    'Caracas', 'Maracaibo', 'Valencia', 'Barquisimeto', 'Maracay', 'Barcelona', 'Ciudad Guayana', 'Maturín',
+    'Barinas', 'Puerto La Cruz', 'Mérida', 'San Cristóbal', 'Cumaná', 'Acarigua', 'Cabimas', 'Coro',
+    'El Tigre', 'Ciudad Bolívar', 'Los Teques', 'Guarenas', 'Guatire', 'Valera', 'Punto Fijo', 'Turmero',
+    'San Francisco', 'Santa Rita', 'Puerto Cabello', 'Valle de la Pascua', 'San Felipe', 'San Juan de los Morros',
+    'Carúpano', 'Ejido', 'Catia La Mar', 'Quíbor', 'Araure', 'Calabozo', 'Ciudad Ojeda', 'Palo Negro',
+    'Anaco', 'San Carlos', 'Guanare', 'La Victoria', 'Carora', 'San Fernando de Apure', 'Ocumare del Tuy',
+    'Cúa', 'Villa de Cura', 'Guasdualito', 'Zaraza', 'Tucupita', 'Puerto Ayacucho', 'Trujillo', 'San José de Guanipa',
+    'Upata', 'Machiques', 'La Grita'
+];
 
-const getStatusColor = (status: string) => {
-    switch (status) {
-        case 'high': case 'High': return 'bg-green-500';
-        case 'medium': case 'Medium': return 'bg-yellow-500';
-        default: return 'bg-red-500';
+const CustomTooltip = ({ active, payload, label }: any) => {
+    if (active && payload && payload.length) {
+        return (
+            <div className="bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-slate-100 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] min-w-[180px]">
+                <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-slate-100 pb-2">
+                    {label}
+                </p>
+                <div className="space-y-2">
+                    {/* Sales - Blue */}
+                    <div className="flex items-center justify-between gap-4">
+                        <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.4)]"></div>
+                            <span className="text-xs font-bold text-slate-600">Demanda</span>
+                        </div>
+                        <span className="text-sm font-black text-blue-600 font-mono">
+                            {payload.find((p: any) => p.dataKey === 'cumulative_sales')?.value}
+                        </span>
+                    </div>
+                    {/* Stock - Green */}
+                    <div className="flex items-center justify-between gap-4">
+                        <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.4)]"></div>
+                            <span className="text-xs font-bold text-slate-600">Stock</span>
+                        </div>
+                        <span className="text-sm font-black text-emerald-500 font-mono">
+                            {payload.find((p: any) => p.dataKey === 'stock')?.value}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        );
     }
+    return null;
 };
-
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 export default function ProductDetail() {
     const params = useParams();
@@ -70,18 +98,19 @@ export default function ProductDetail() {
     const [chartData, setChartData] = useState<any[]>([]);
     const [stockByRegion, setStockByRegion] = useState<CityStockData[]>([]);
     const [stockLoading, setStockLoading] = useState(true);
-    const [updating, setUpdating] = useState(false);
-    const [citySearch, setCitySearch] = useState(""); // Search state for city list
+    const [citySearch, setCitySearch] = useState("");
+    const [period, setPeriod] = useState(30);
 
-    // Modal state for sector details
-    const [showSectorModal, setShowSectorModal] = useState(false);
-    const [selectedCity, setSelectedCity] = useState<CityDetailData | null>(null);
+    // Modal states
+    const [selectedCityModal, setSelectedCityModal] = useState<string | null>(null);
+    const [selectedMunicipioModal, setSelectedMunicipioModal] = useState<string | null>(null);
     const [cityDetailData, setCityDetailData] = useState<CityDetailData[]>([]);
-    const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
+
+    // UNIFIED: Map locations derived from same data as sidebar
+    const [mapLocations, setMapLocations] = useState<any[]>([]);
 
     useEffect(() => {
-        // 1. Fetch Real Product Info from Supabase
-        async function fetchProductData(): Promise<string | null> {
+        async function fetchProductData() {
             try {
                 const { data, error } = await supabase
                     .from('products')
@@ -94,537 +123,542 @@ export default function ProductDetail() {
                         ...data,
                         price: data.avg_price,
                         image: data.image_url,
-                        stock: data.stock_count ? `Disponible: ${data.stock_count} u` : 'Consultando...',
-                        stock_count: data.stock_count,
-                        score: 9.8,
-                        url: data.url
+                        stock_count: data.stock_count || 0,
+                        active_ingredient: data.active_ingredient,
+                        category: data.category || 'Salud'
                     });
-
-                    // 2. Fetch Trends using the REAL name
-                    fetchTrends(data.name);
-                    return data.name; // Return name for stock fetch
-                } else {
-                    // Fallback using mock ID 1-5 from initial load
-                    console.log("Product not found in DB, using fallback/mock.");
-                    const mockProductBase = {
-                        id: params.id,
-                        name: 'Atamel FORTE 650mg x 10 Tab',
-                        category: 'Salud',
-                        price: 135.00,
-                        image: 'https://lh3.googleusercontent.com/h3ejm-QO40m7YNuRly_yGzzJZ5KaZJnZE-YLMFaOahV1zwWJnNaIdbUrKOivixbglQOJpfFqIRyXbBPctkc0HckpKXMd99YDkcAwjBhu9CUYjEJ0=s350-rw',
-                        stock: 'Disponible',
-                        stock_count: 50,
-                        score: 9.8,
-                        url: 'https://www.farmatodo.com.ve/producto/111026723-acetaminofen-atamel-forte-650-mg-x-10-tabletas'
-                    };
-                    setProduct(mockProductBase);
-                    fetchTrends(mockProductBase.name);
-                    return mockProductBase.name;
+                    fetchHistory(data.id, period);
+                    fetchStockByCity(data.name, data.id);
                 }
             } catch (e) {
                 console.error("Error loading product", e);
-                setLoading(false);
-                return null;
-            }
-        }
-
-        async function fetchTrends(productName: string) {
-            try {
-                // Request STOCK mode specifically
-                const res = await fetch('/api/calc-trends', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ product_name: productName, mode: 'stock' })
-                });
-                const json = await res.json();
-                if (json.chart_data) setChartData(json.chart_data);
-            } catch (e) {
-                console.error("Error fetching trends", e);
             } finally {
                 setLoading(false);
             }
         }
-
-        // Fetch stock by city using the new HYBRID API
-        async function fetchStockByCity(productName: string) {
-            setStockLoading(true);
-            try {
-                // Use the new HYBRID endpoint that combines Algolia + Cache + Queue
-                const res = await fetch(`/api/stock/hybrid?product_name=${encodeURIComponent(productName)}`);
-                const json = await res.json();
-
-                if (json.success) {
-                    // 1. Update total product stock using Algolia data (Layer 1 - Instant)
-                    if (json.aggregate && json.aggregate.total_stock !== undefined) {
-                        setProduct((prev: any) => ({
-                            ...prev,
-                            stock: `Disponible: ${json.aggregate.total_stock} u`,
-                            stock_count: json.aggregate.total_stock,
-                            stores_count: json.aggregate.stores_with_stock
-                        }));
-                    }
-
-                    // 2. Load detailed store data if available (Layer 2 - Cache)
-                    if (json.detail && json.detail.cities && json.detail.cities.length > 0) {
-                        setCityDetailData(json.detail.cities);
-                        const cityData: CityStockData[] = json.detail.cities.map((c: any) => ({
-                            city: c.city,
-                            status: getStockStatus(c.total_stock),
-                            count: c.total_stock
-                        }));
-                        setStockByRegion(cityData);
-                    } else if (json.aggregate && json.aggregate.stores_with_stock > 0) {
-                        // Fallback: If no granular cache, show a representative placeholder based on Algolia count
-                        setStockByRegion([
-                            { city: 'Nacional (Algolia)', status: 'High', count: json.aggregate.total_stock }
-                        ]);
-                    } else {
-                        // No data anywhere
-                        setStockByRegion([
-                            { city: 'Consultando...', status: 'Low', count: 0 }
-                        ]);
-                    }
-                }
-            } catch (e) {
-                console.error("Error fetching hybrid stock:", e);
-                setStockByRegion([{ city: 'Error de carga', status: 'Low', count: 0 }]);
-            } finally {
-                setStockLoading(false);
-            }
-        }
-
-        fetchProductData().then((productName) => {
-            // After product loads, also fetch stock by city
-            if (productName) {
-                fetchStockByCity(productName);
-            }
-        });
-
+        fetchProductData();
     }, [params.id]);
 
-    async function handleUpdate() {
-        if (!product?.url) {
-            alert("Este producto no tiene una URL vinculada para actualizar.");
-            return;
+    useEffect(() => {
+        if (product?.id) {
+            fetchHistory(product.id, period);
         }
-        setUpdating(true);
+    }, [period]);
+
+    async function fetchHistory(productId: string, days: number) {
         try {
-            const res = await fetch('/api/scrape-products', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ product_url: product.url })
-            });
+            const res = await fetch(`/api/products/${productId}/history?days=${days}`);
             const json = await res.json();
-            if (json.success && json.data && json.data.length > 0) {
-                const newData = json.data[0];
-                setProduct((prev: any) => ({
-                    ...prev,
-                    price: newData.avg_price || prev.price,
-                    stock: `Disponible: ${newData.stock_count} u`,
-                    stock_count: newData.stock_count
-                }));
-                alert(`Datos actualizados: Stock ${newData.stock_count} u, Precio: ${newData.avg_price}`);
+            if (json.history) {
+                setChartData(json.history.map((d: any) => ({
+                    ...d,
+                    formattedDate: new Date(d.date).toLocaleDateString('es-VE', { day: '2-digit', month: 'short', timeZone: 'UTC' })
+                })));
             }
         } catch (e) {
-            console.error("Update failed", e);
-            alert("Error al actualizar datos.");
-        } finally {
-            setUpdating(false);
+            console.error("Error fetching history", e);
         }
     }
 
-    // Handle city click to show sector details modal
-    async function handleCityClick(city: CityStockData) {
-        // Show modal immediately with loading state
-        setSelectedCity({
-            city: city.city,
-            total_stock: city.count,
-            sectors: [] // Will be populated
-        });
-        setShowSectorModal(true);
-        setExpandedSectors({});
+    // UNIFIED DATA FETCH: Creates both Sidebar city data AND Map locations from same source
+    async function fetchStockByCity(productName: string, productId: string) {
+        setStockLoading(true);
+        try {
+            // Fetch ALL stores with coordinates and municipality
+            const { data: allStores, error: storesError } = await supabase
+                .from('sucursales')
+                .select('id, name, city, municipality, address, lat, lng');
 
-        // Check if we already have cached detail data for this city
-        let cityDetail = cityDetailData.find(c => c.city === city.city);
-
-        if (!cityDetail && product?.name) {
-            // Try to fetch real data from the API
-            try {
-                // First try GET to see if we have stored data
-                const getRes = await fetch(`/api/scrape-stock-detail?product_name=${encodeURIComponent(product.name)}`);
-                const getData = await getRes.json();
-
-                if (getData.success && getData.cities?.length > 0) {
-                    // We have stored data
-                    cityDetail = getData.cities.find((c: CityDetailData) => c.city === city.city);
-
-                    if (!cityDetail) {
-                        // No data for this specific city, try to scrape
-                        console.log('No data for city, triggering scrape...');
-                        if (product.url) {
-                            const scrapeRes = await fetch('/api/scrape-stock-detail', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({
-                                    product_url: product.url,
-                                    product_name: product.name
-                                })
-                            });
-                            const scrapeData = await scrapeRes.json();
-
-                            if (scrapeData.cities?.length > 0) {
-                                cityDetail = scrapeData.cities.find((c: CityDetailData) => c.city === city.city);
-                                // Cache all scraped data
-                                setCityDetailData(prev => [...prev, ...scrapeData.cities]);
-                            }
-                        }
-                    } else {
-                        // Cache the fetched data
-                        setCityDetailData(prev => [...prev, ...getData.cities]);
-                    }
-                } else if (product.url) {
-                    // No stored data, trigger scrape
-                    console.log('No stored data, triggering scrape...');
-                    const scrapeRes = await fetch('/api/scrape-stock-detail', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            product_url: product.url,
-                            product_name: product.name
-                        })
-                    });
-                    const scrapeData = await scrapeRes.json();
-
-                    if (scrapeData.cities?.length > 0) {
-                        cityDetail = scrapeData.cities.find((c: CityDetailData) => c.city === city.city);
-                        setCityDetailData(prev => [...prev, ...scrapeData.cities]);
-                    }
-                }
-            } catch (error) {
-                console.error('Error fetching city details:', error);
+            if (storesError || !allStores) {
+                throw new Error('Failed to fetch stores');
             }
-        }
 
-        // If still no data, show placeholder
-        if (!cityDetail) {
-            cityDetail = {
-                city: city.city,
-                total_stock: city.count,
-                sectors: [{
-                    sector: 'Datos no disponibles',
-                    stores: [{
-                        name: 'Ejecuta el scraper para obtener datos reales',
-                        address: 'Haz clic en "Actualizar" en la página del producto',
-                        stock_count: 0,
-                        availability_status: 'none' as const
-                    }]
-                }]
+            // Fetch inventory for this product
+            const { data: inventory, error: inventoryError } = await supabase
+                .from('store_inventory')
+                .select('quantity, sucursal_id')
+                .eq('product_id', productId);
+
+            if (inventoryError) {
+                throw new Error('Failed to fetch inventory');
+            }
+
+            // Create inventory lookup map
+            const inventoryMap = new Map();
+            inventory?.forEach((item: any) => {
+                inventoryMap.set(item.sucursal_id, item.quantity);
+            });
+
+            // CITY NAME NORMALIZATION function
+            const normalizeCity = (city: string): string => {
+                if (city === 'Puerto Ordaz') return 'Ciudad Guayana';
+                if (city === 'Maturin') return 'Maturín';
+                if (city === 'Ciudad Bolivar') return 'Ciudad Bolívar';
+                if (city === 'Merida') return 'Mérida';
+                if (city === 'Cumana') return 'Cumaná';
+                if (city === 'San Cristobal') return 'San Cristóbal';
+                if (city === 'Carupano') return 'Carúpano';
+                return city;
             };
+
+            // Build UNIFIED data structures
+            const cities: Record<string, CityDetailData> = {};
+            const locations: any[] = [];
+
+            for (const store of allStores) {
+                const stock = inventoryMap.get(store.id) || 0;
+                const rawCity = store.city || 'Desconocido';
+                const cityName = normalizeCity(rawCity);
+
+                // Add to MAP locations (flat array with coordinates)
+                if (store.lat && store.lng) {
+                    locations.push({
+                        id: store.id,
+                        name: store.name,
+                        lat: store.lat,
+                        lng: store.lng,
+                        city: cityName,
+                        municipality: store.municipality,
+                        address: store.address || '',
+                        stock: stock
+                    });
+                }
+
+                // Add to SIDEBAR cities (grouped by city > municipality > store)
+                if (!cities[cityName]) {
+                    cities[cityName] = { city: cityName, sectors: [], total_stock: 0 };
+                }
+
+                // Use actual municipality name, capitalize first letter
+                const municipioName = store.municipality
+                    ? store.municipality.charAt(0).toUpperCase() + store.municipality.slice(1).toLowerCase()
+                    : 'General';
+
+                let sector = cities[cityName].sectors.find(s => s.sector === municipioName);
+                if (!sector) {
+                    sector = { sector: municipioName, stores: [] };
+                    cities[cityName].sectors.push(sector);
+                }
+
+                sector.stores.push({
+                    name: store.name,
+                    address: store.address || '',
+                    stock_count: stock,
+                    availability_status: stock > 10 ? 'high' : (stock > 0 ? 'medium' : 'low')
+                });
+
+                cities[cityName].total_stock += stock;
+            }
+
+            // Set unified data
+            setMapLocations(locations);
+            setCityDetailData(Object.values(cities));
+
+            const regionData = Object.values(cities).map((c) => ({
+                city: c.city,
+                status: c.total_stock > 10 ? 'High' : (c.total_stock > 0 ? 'Medium' : 'Low') as 'High' | 'Medium' | 'Low',
+                count: c.total_stock
+            }));
+            setStockByRegion(regionData);
+
+        } catch (e) {
+            console.error("Error fetching stock data", e);
+            setCityDetailData([]);
+            setStockByRegion([]);
+            setMapLocations([]);
+        } finally {
+            setStockLoading(false);
         }
-
-        setSelectedCity(cityDetail);
     }
 
-    // Toggle sector expansion
-    function toggleSector(sectorName: string) {
-        setExpandedSectors(prev => ({
-            ...prev,
-            [sectorName]: !prev[sectorName]
-        }));
-    }
+    const StockMap = dynamic(() => import('@/components/StockMap'), {
+        ssr: false,
+        loading: () => <div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-[40px] flex items-center justify-center font-black text-slate-400">CARGANDO MAPA DE DISPONIBILIDAD...</div>
+    });
 
-    if (loading) {
+    if (loading || !product) {
         return (
-            <div className="min-h-screen bg-background flex flex-col">
-                <Navbar />
-                <div className="flex-1 flex items-center justify-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-                </div>
+            <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
             </div>
         );
     }
 
+    const currentCityData = cityDetailData.find(c => c.city === selectedCityModal);
+
     return (
-        <div className="min-h-screen bg-background font-sans selection:bg-purple-100">
+        <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-purple-100">
             <Navbar />
 
-            <main className="max-w-7xl mx-auto px-6 py-8">
-                {/* Breadcrumb / Back */}
-                <div className="mb-6">
-                    <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <ArrowLeft size={16} className="mr-2" />
-                        Volver al Dashboard
-                    </Link>
-                </div>
+            <main className="max-w-[1440px] mx-auto px-6 py-10">
+                {/* Product Header Card */}
+                <div className="flex flex-col lg:flex-row gap-6 mb-8 items-stretch">
+                    {/* Image Section */}
+                    <div className="w-full lg:w-[280px] glass-panel p-8 rounded-2xl flex items-center justify-center group transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+                        {product.image ? (
+                            <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                        ) : (
+                            <Package size={80} className="text-slate-100" />
+                        )}
+                    </div>
 
-                {/* Header Content */}
-                <div className="glass-panel p-8 rounded-3xl border border-white/50 mb-8 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-purple-200/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                    {/* Basic Info Section */}
+                    {/* Basic Info Section */}
+                    <div className="flex-1 glass-panel p-6 rounded-2xl flex flex-col justify-between relative overflow-hidden group/panel">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 transition-opacity duration-700 group-hover/panel:opacity-75"></div>
 
-                    <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                        {/* Product Image */}
-                        <div className="w-full md:w-64 h-64 bg-white rounded-2xl border border-slate-100 p-4 flex items-center justify-center shadow-sm">
-                            {product.image ? (
-                                <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain" />
-                            ) : (
-                                <Package size={64} className="text-slate-300" />
-                            )}
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="px-3 py-1.5 rounded-xl text-[10px] font-black bg-blue-50 text-blue-600 uppercase tracking-widest border border-blue-100/50">
+                                    {product.category || 'MEDICAMENTOS'}
+                                </span>
+                                <span className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-50/80 rounded-xl text-[10px] font-black text-slate-400 uppercase tracking-widest border border-slate-100/50">
+                                    <Zap size={10} className="text-amber-500" /> LIVE DATA
+                                </span>
+                            </div>
+
+                            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 text-balance">
+                                {product.name}
+                            </h1>
+
+                            <div className="flex items-center gap-4 text-sm font-bold text-slate-400 mb-8">
+                                <div className="flex items-center gap-2 text-blue-600 bg-blue-50/50 px-3 py-1 rounded-lg border border-blue-100/50">
+                                    <Building2 size={14} strokeWidth={2.5} />
+                                    <span className="uppercase tracking-wide text-xs">{product.brand || 'LABORATORIO NO IDENTIFICADO'}</span>
+                                </div>
+                                <span className="w-1 h-1 rounded-full bg-slate-300"></span>
+                                <span className="tracking-widest text-xs">ID: {product.id}</span>
+                            </div>
                         </div>
 
-                        {/* Info */}
-                        <div className="flex-1">
-                            <div className="flex items-start justify-between">
-                                <div>
-                                    <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-primary mb-2">
-                                        {product.category}
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 relative z-10">
+                            {/* Card 1: Active Ingredient */}
+                            <div className="glass-card p-4 rounded-xl border border-slate-100/60 bg-white/40 hover:bg-white/60 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-900/5 hover:border-blue-100">
+                                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-blue-500 transition-colors">Principio Activo</p>
+                                <p className="text-sm font-bold text-slate-700 md:truncate leading-snug" title={product.active_ingredient}>
+                                    {product.active_ingredient || 'N/A'}
+                                </p>
+                            </div>
+
+                            {/* Card 2: Presentation */}
+                            <div className="glass-card p-4 rounded-xl border border-slate-100/60 bg-white/40 hover:bg-white/60 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-900/5 hover:border-blue-100">
+                                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-blue-500 transition-colors">Presentación</p>
+                                <div className="flex flex-col items-start gap-1">
+                                    <span className="text-sm font-bold text-slate-700 leading-none">{product.presentation || 'N/A'}</span>
+                                    {product.concentration && (
+                                        <span className="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-bold">{product.concentration}</span>
+                                    )}
+                                </div>
+                            </div>
+
+                            {/* Card 3: ATC Code */}
+                            <div className="glass-card p-4 rounded-xl border border-slate-100/60 bg-white/40 hover:bg-white/60 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-900/5 hover:border-blue-100">
+                                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-blue-500 transition-colors">Código ATC</p>
+                                <div className="flex items-center gap-2">
+                                    <FileCode size={16} className="text-slate-300 group-hover:text-blue-500 transition-colors" strokeWidth={2} />
+                                    <p className="text-sm font-bold text-slate-700 font-mono tracking-tight">{product.atc_code || 'N/A'}</p>
+                                </div>
+                            </div>
+
+                            {/* Card 4: Price */}
+                            <div className="glass-card p-4 rounded-xl border border-slate-100/60 bg-white/40 hover:bg-white/60 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-900/5 hover:border-blue-100">
+                                <div className="flex justify-between items-start mb-1">
+                                    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-emerald-600 transition-colors">Precio Ref.</p>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-lg font-black text-slate-900 tracking-tight leading-none">
+                                        Bs.{product.original_price?.toFixed(2) || '0.00'}
                                     </span>
-                                    <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">{product.name}</h1>
-                                    <div className="flex items-center gap-4 text-muted-foreground mb-6">
-                                        <span className="flex items-center gap-1">
-                                            <Package size={16} /> Tabletas
-                                        </span>
-                                        <span className="flex items-center gap-1">
-                                            <MapPin size={16} /> Farmatodo VE
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="text-right">
-                                    <button
-                                        onClick={handleUpdate}
-                                        disabled={updating}
-                                        className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 shadow-sm rounded-lg hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700 disabled:opacity-50">
-                                        <RefreshCw size={16} className={updating ? "animate-spin" : ""} />
-                                        {updating ? "Actualizando..." : "Actualizar Datos"}
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                                <div className="bg-white/60 p-4 rounded-xl border border-slate-100">
-                                    <p className="text-sm text-muted-foreground mb-1">Precio Promedio</p>
-                                    <div className="flex items-baseline gap-2">
-                                        <span className="text-2xl font-bold text-foreground">Bs.{product.price.toFixed(2)}</span>
-                                        <span className="text-xs text-green-600 font-medium flex items-center">
-                                            <TrendingUp size={12} className="mr-1" /> -1.2%
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="bg-white/60 p-4 rounded-xl border border-slate-100">
-                                    <p className="text-sm text-muted-foreground mb-1">Stock Status</p>
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                                        <span className="text-lg font-bold text-foreground">Alta Disponibilidad</span>
-                                    </div>
-                                </div>
-                                <div className="bg-white/60 p-4 rounded-xl border border-slate-100">
-                                    <p className="text-sm text-muted-foreground mb-1">Health Score</p>
-                                    <div className="flex items-baseline gap-2">
-                                        <span className="text-2xl font-bold text-purple-600">{product.score}</span>
-                                        <span className="text-xs text-muted-foreground">/ 10</span>
-                                    </div>
+                                    <span className="text-[9px] text-slate-400 font-semibold mt-1">PVP Sugerido</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Charts & Analysis Layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Dashboard Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
-                    {/* Main Chart */}
-                    <div className="lg:col-span-2 glass-panel p-6 rounded-3xl border border-white/50">
-                        <div className="flex items-center justify-between mb-6">
-                            <h3 className="font-bold text-lg text-foreground">Historial de Stock (7 Días)</h3>
-                            <select className="bg-white border border-slate-200 text-sm rounded-md px-2 py-1 outline-none focus:ring-2 focus:ring-purple-200">
-                                <option>Última Semana</option>
-                                <option>Último Mes</option>
-                            </select>
-                        </div>
-                        <div className="h-80 w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <AreaChart data={chartData}>
-                                    <defs>
-                                        <linearGradient id="colorStock" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
-                                            <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                                        </linearGradient>
-                                    </defs>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                    <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12 }} dy={10} />
-                                    <YAxis axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12 }} />
-                                    <Tooltip
-                                        contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                        cursor={{ stroke: '#10b981', strokeWidth: 1, strokeDasharray: '4 4' }}
-                                        formatter={(value: any) => [`${value} u`, 'Stock']}
-                                    />
-                                    <Area type="monotone" dataKey="stock" stroke="#10b981" strokeWidth={3} fillOpacity={1} fill="url(#colorStock)" />
-                                </AreaChart>
-                            </ResponsiveContainer>
-                        </div>
+                    {/* Visual Analytics Column (Left/Center) */}
+                    <div className="lg:col-span-9 space-y-12">
+
+                        {/* 1. Performance Chart */}
+                        <section className="glass-panel p-6 rounded-2xl relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 relative z-10">
+                                <div>
+                                    <h2 className="text-xl font-bold text-slate-900 mb-1">Evolución de Mercado</h2>
+                                    <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-widest flex items-center gap-1">
+                                        <TrendingUp size={10} className="text-emerald-500" /> Ventas vs Inventario Global
+                                    </p>
+                                </div>
+                                <div className="flex bg-slate-100/50 p-1.5 rounded-xl border border-white/40 backdrop-blur-sm">
+                                    {[1, 7, 30, 90].map(d => (
+                                        <button
+                                            key={d}
+                                            onClick={() => setPeriod(d)}
+                                            className={`px-4 py-2 rounded-lg text-[9px] font-bold transition-all duration-300 tracking-wider ${period === d ? 'bg-white text-blue-600 shadow-md ring-1 ring-blue-100' : 'text-slate-400 hover:text-slate-600'}`}>
+                                            {d === 1 ? 'HOY' : `${d} DÍAS`}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="h-[350px] w-full">
+                                <ResponsiveContainer width="100%" height="100%">
+                                    <AreaChart data={chartData}>
+                                        <defs>
+                                            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="5%" stopColor="#2563eb" stopOpacity={0.4} />
+                                                <stop offset="95%" stopColor="#2563eb" stopOpacity={0.0} />
+                                            </linearGradient>
+                                        </defs>
+                                        <CartesianGrid strokeDasharray="8 8" vertical={false} stroke="#f1f5f9" />
+                                        <XAxis
+                                            dataKey="formattedDate"
+                                            axisLine={false}
+                                            tickLine={false}
+                                            tick={{ fill: '#94a3b8', fontSize: 10, fontWeight: 900 }}
+                                            dy={20}
+                                        />
+                                        <YAxis
+                                            axisLine={false}
+                                            tickLine={false}
+                                            tick={{ fill: '#94a3b8', fontSize: 10, fontWeight: 900 }}
+                                        />
+                                        <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#2563eb', strokeWidth: 2, strokeDasharray: '4 4' }} />
+                                        <Area
+                                            type="monotone"
+                                            dataKey="cumulative_sales"
+                                            name="Demanda Acumulada"
+                                            stroke="#2563eb"
+                                            strokeWidth={2}
+                                            fill="url(#chartGradient)"
+                                            animationDuration={1500}
+                                        />
+                                        <Area
+                                            type="stepAfter"
+                                            dataKey="stock"
+                                            name="Nivel de Stock"
+                                            stroke="#10b981"
+                                            strokeWidth={2}
+                                            fill="transparent"
+                                            strokeDasharray="4 4"
+                                        />
+                                    </AreaChart>
+                                </ResponsiveContainer>
+                            </div>
+                        </section>
+
+                        {/* 2. Map Section - STACKED BELOW */}
+                        <section className="glass-panel p-2 rounded-2xl overflow-hidden">
+                            <div className="p-6 pb-3">
+                                <h2 className="text-xl font-bold text-slate-900 mb-0.5">Localización Capilar</h2>
+                                <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-widest">Mapping de Distribución de Inventario en Tiempo Real</p>
+                            </div>
+                            <div className="h-[450px] w-full rounded-2xl overflow-hidden m-2 border border-slate-100">
+                                <StockMap productId={product.id} locations={mapLocations} />
+                            </div>
+                        </section>
                     </div>
 
-                    {/* Sidebar / Map Data */}
-                    <div className="space-y-6">
-                        <div className="glass-panel p-6 rounded-3xl border border-white/50">
-                            <h3 className="font-bold text-lg text-foreground mb-4">Disponibilidad Regional</h3>
+                    {/* Regional Control Column (Right Sidebar) */}
+                    <div className="lg:col-span-3 space-y-10">
+                        <section className="glass-panel p-6 rounded-2xl flex flex-col h-full max-h-[850px]">
+                            <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                                <Globe size={20} className="text-blue-600" />
+                                <span>Cobertura</span>
+                            </h3>
 
-                            {/* Search Input */}
-                            <div className="mb-4 relative">
-                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={14} />
+                            <div className="relative mb-4">
+                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-300" size={14} />
                                 <input
                                     type="text"
-                                    placeholder="Buscar ciudad..."
+                                    placeholder="Filtrar ciudad..."
                                     value={citySearch}
-                                    onChange={(e) => setCitySearch(e.target.value)}
-                                    className="w-full pl-9 pr-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-all"
+                                    onChange={e => setCitySearch(e.target.value)}
+                                    className="w-full pl-9 pr-4 py-2.5 bg-white/50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-purple-500/10 focus:bg-white outline-none transition-all placeholder:text-slate-300"
                                 />
                             </div>
 
-                            <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
-                                {stockLoading ? (
-                                    [...Array(4)].map((_, i) => (
-                                        <div key={i} className="animate-pulse flex items-center justify-between p-3 bg-slate-100 rounded-xl">
-                                            <div className="flex items-center gap-3">
-                                                <div className="w-2 h-8 bg-slate-200 rounded-full"></div>
-                                                <div className="h-4 w-20 bg-slate-200 rounded"></div>
-                                            </div>
-                                            <div className="h-4 w-12 bg-slate-200 rounded"></div>
-                                        </div>
-                                    ))
-                                ) : stockByRegion.length === 0 ? (
-                                    <div className="text-center py-6 text-muted-foreground">
-                                        <p className="text-sm">No hay datos de stock disponibles</p>
-                                        <p className="text-xs mt-1">Ejecuta el scraping para este producto</p>
-                                    </div>
-                                ) : (
-                                    stockByRegion
-                                        .filter(region => region.city.toLowerCase().includes(citySearch.toLowerCase()))
-                                        .map((region) => (
-                                            <div
-                                                key={region.city}
-                                                onClick={() => handleCityClick(region)}
-                                                className="flex items-center justify-between p-3 bg-white/50 rounded-xl hover:bg-purple-50 hover:border-purple-200 transition-colors cursor-pointer border border-transparent group"
-                                            >
+                            <div className="flex-1 space-y-2 overflow-y-auto pr-2 custom-scrollbar max-h-[750px]">
+                                {stockByRegion
+                                    .filter(c => c.city.toLowerCase().includes(citySearch.toLowerCase()))
+                                    .sort((a, b) => b.count - a.count) // Sort by stock count descending
+                                    .map(cityData => {
+                                        const units = cityData.count;
+
+                                        return (
+                                            <button
+                                                key={cityData.city}
+                                                onClick={() => setSelectedCityModal(cityData.city)}
+                                                className="w-full flex items-center justify-between p-3 bg-slate-50 border border-transparent rounded-xl hover:border-blue-200 hover:bg-white transition-all duration-200 group">
                                                 <div className="flex items-center gap-3">
-                                                    <div className={`w-2 h-8 rounded-full ${region.status === 'High' ? 'bg-green-500' :
-                                                        region.status === 'Medium' ? 'bg-yellow-500' : 'bg-red-500'
-                                                        }`}></div>
-                                                    <div>
-                                                        <span className="font-medium text-slate-700 group-hover:text-primary">{region.city}</span>
-                                                        <p className="text-[10px] text-muted-foreground">Click para ver sectores</p>
-                                                    </div>
+                                                    <div className={`w-1.5 h-5 rounded-full transition-transform group-hover:scale-110 ${units > 50 ? 'bg-emerald-400' : (units > 0 ? 'bg-amber-400' : 'bg-red-500')}`}></div>
+                                                    <span className="text-[11px] font-semibold text-slate-700 group-hover:text-blue-600 transition-colors">{cityData.city}</span>
                                                 </div>
                                                 <div className="flex items-center gap-2">
-                                                    <div className="text-right">
-                                                        <span className="block font-bold text-foreground">{region.count} u</span>
-                                                        <span className="text-[10px] uppercase tracking-wide text-muted-foreground">{region.status}</span>
-                                                    </div>
-                                                    <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-primary" />
+                                                    <span className={`text-[10px] font-bold ${units > 0 ? 'text-slate-600' : 'text-red-500'}`}>{units}u</span>
+                                                    <ChevronRight size={12} className="text-slate-200 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all" />
                                                 </div>
-                                            </div>
-                                        ))
-                                )}
+                                            </button>
+                                        );
+                                    })
+                                }
                             </div>
-                        </div>
+                        </section>
 
-                        <div className="glass-panel p-6 rounded-3xl border border-purple-100 bg-purple-50/50">
-                            <h3 className="font-bold text-purple-900 mb-2">💡 AI Insights</h3>
-                            <p className="text-sm text-purple-700 leading-relaxed">
-                                Se detectó un patrón de precios a la baja en competidores. Se recomienda mantener monitoreo activo en <strong>Valencia</strong> debido a oscilaciones de stock.
+                        {/* Scraper Call to Action */}
+                        <div className="bg-gradient-to-br from-slate-800 to-blue-900 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+
+                            <div className="flex items-center gap-3 mb-4 relative z-10">
+                                <div className="p-2 bg-white/10 rounded-lg border border-white/10">
+                                    <RefreshCw size={16} className="text-blue-300" />
+                                </div>
+                                <h4 className="font-bold text-sm">Sincronización On-Demand</h4>
+                            </div>
+                            <p className="text-[10px] font-medium text-slate-300 leading-relaxed mb-4">
+                                ¿Necesitas datos más recientes? Inicia un escaneo inteligente ahora.
                             </p>
+                            <button
+                                className="w-full py-3 bg-white text-blue-900 rounded-xl font-bold text-[10px] uppercase tracking-wider hover:bg-blue-50 transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md">
+                                <Zap size={14} className="text-amber-500 fill-amber-500" /> FORCED SCRAPING
+                            </button>
                         </div>
                     </div>
                 </div>
-
             </main>
 
-            {/* Sector Details Modal */}
-            {showSectorModal && selectedCity && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-                    <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg max-h-[80vh] overflow-hidden animate-in fade-in zoom-in duration-200">
+            {/* Hierarchical Drill-down Modal (56 Cities -> Municipios -> Stores) */}
+            {selectedCityModal && (
+                <div className="fixed inset-0 z-[200] flex items-center justify-center p-6">
+                    <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-[20px] transition-opacity duration-500" onClick={() => {
+                        setSelectedCityModal(null);
+                        setSelectedMunicipioModal(null);
+                    }}></div>
+
+                    <div className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300 border border-slate-100">
                         {/* Modal Header */}
-                        <div className="p-6 border-b border-slate-100 bg-gradient-to-r from-purple-500 to-indigo-500">
-                            <div className="flex items-center justify-between">
-                                <div>
-                                    <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                                        <MapPin className="w-5 h-5" />
-                                        {selectedCity.city}
-                                    </h2>
-                                    <p className="text-purple-100 text-sm mt-1">
-                                        {selectedCity.total_stock} unidades en total • {selectedCity.sectors.length} sectores
-                                    </p>
+                        <div className="p-8 pb-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
+                            <div className="space-y-1">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <Globe size={14} className="text-blue-600" />
+                                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">ANALYSIS: {selectedCityModal?.toUpperCase()}</span>
                                 </div>
-                                <button
-                                    onClick={() => setShowSectorModal(false)}
-                                    className="p-2 hover:bg-white/20 rounded-full transition-colors"
-                                >
-                                    <X className="w-5 h-5 text-white" />
-                                </button>
+                                <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
+                                    {selectedMunicipioModal || selectedCityModal}
+                                </h2>
+                                <p className="text-xs font-bold text-blue-600 uppercase tracking-wide">
+                                    {selectedMunicipioModal ? `SUCURSALES DISPONIBLES` : `DESGLOSE POR MUNICIPIO / SECTOR`}
+                                </p>
                             </div>
+                            <button onClick={() => {
+                                if (selectedMunicipioModal) setSelectedMunicipioModal(null);
+                                else setSelectedCityModal(null);
+                            }} className="group p-3 bg-white border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-blue-200 transition-all shadow-sm">
+                                {selectedMunicipioModal ? <BackIcon size={20} className="text-slate-400 group-hover:text-blue-600 transition-colors" /> : <X size={20} className="text-slate-400 group-hover:text-red-500 transition-colors" />}
+                            </button>
                         </div>
 
-                        {/* Sectors List */}
-                        <div className="p-4 overflow-y-auto max-h-[50vh]">
-                            <div className="space-y-3">
-                                {selectedCity.sectors.map((sector) => (
-                                    <div key={sector.sector} className="border border-slate-200 rounded-2xl overflow-hidden">
-                                        {/* Sector Header (clickable) */}
-                                        <button
-                                            onClick={() => toggleSector(sector.sector)}
-                                            className="w-full flex items-center justify-between p-4 bg-slate-50 hover:bg-slate-100 transition-colors"
-                                        >
-                                            <div className="flex items-center gap-3">
-                                                {expandedSectors[sector.sector] ? (
-                                                    <ChevronDown className="w-4 h-4 text-primary" />
-                                                ) : (
-                                                    <ChevronRight className="w-4 h-4 text-slate-400" />
-                                                )}
-                                                <span className="font-semibold text-foreground">{sector.sector}</span>
-                                            </div>
-                                            <div className="flex items-center gap-2">
-                                                <span className="text-sm font-medium text-muted-foreground">
-                                                    {sector.stores.reduce((sum, s) => sum + s.stock_count, 0)} u
-                                                </span>
-                                                <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
-                                                    {sector.stores.length} tiendas
-                                                </span>
-                                            </div>
-                                        </button>
+                        {/* Modal Scrollable Body */}
+                        <div className="p-12 pt-8 max-h-[65vh] overflow-y-auto custom-scrollbar">
+                            {!currentCityData ? (
+                                <div className="text-center py-24 flex flex-col items-center">
+                                    <div className="relative">
+                                        <div className="w-16 h-16 rounded-full border-4 border-purple-50 border-t-purple-600 animate-spin"></div>
+                                        <Zap size={20} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-purple-600 animate-pulse" />
+                                    </div>
+                                    <p className="text-[11px] font-black text-slate-400 uppercase mt-8 tracking-[0.3em]">Mapping Geo-Database...</p>
+                                </div>
+                            ) : !selectedMunicipioModal ? (
+                                // Level 1: Municipios
+                                <div className="grid grid-cols-1 gap-5">
+                                    {currentCityData.sectors
+                                        .sort((a, b) => b.stores.reduce((sum, s) => sum + s.stock_count, 0) - a.stores.reduce((sum, s) => sum + s.stock_count, 0))
+                                        .map(sector => {
+                                            const totalStock = sector.stores.reduce((sum, s) => sum + s.stock_count, 0);
+                                            const stockColor = totalStock > 50 ? 'text-emerald-500' : (totalStock > 0 ? 'text-amber-500' : 'text-red-500');
+                                            const bgColor = totalStock > 50 ? 'bg-emerald-50' : (totalStock > 0 ? 'bg-amber-50' : 'bg-red-50');
 
-                                        {/* Stores List (expanded) */}
-                                        {expandedSectors[sector.sector] && (
-                                            <div className="divide-y divide-slate-100">
-                                                {sector.stores.map((store, idx) => (
-                                                    <div key={idx} className="p-4 bg-white hover:bg-purple-50/30 transition-colors">
-                                                        <div className="flex items-start justify-between">
-                                                            <div className="flex items-start gap-3">
-                                                                <Store className="w-4 h-4 text-slate-400 mt-0.5" />
-                                                                <div>
-                                                                    <p className="font-medium text-foreground text-sm">{store.name}</p>
-                                                                    {store.address && (
-                                                                        <p className="text-xs text-muted-foreground mt-0.5">{store.address}</p>
-                                                                    )}
-                                                                </div>
-                                                            </div>
-                                                            <div className="flex items-center gap-2">
-                                                                <span className="font-bold text-foreground">{store.stock_count} u</span>
-                                                                <div className={`w-2 h-2 rounded-full ${getStatusColor(store.availability_status)}`}></div>
-                                                            </div>
+                                            return (
+                                                <button
+                                                    key={sector.sector}
+                                                    onClick={() => setSelectedMunicipioModal(sector.sector)}
+                                                    className="group flex items-center justify-between p-5 bg-white border border-slate-100 rounded-2xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-900/5 transition-all text-left"
+                                                >
+                                                    <div className="flex items-center gap-4">
+                                                        <div className={`w-12 h-12 ${bgColor} rounded-xl flex items-center justify-center font-bold text-lg ${stockColor}`}>
+                                                            {sector.stores.length}
+                                                        </div>
+                                                        <div>
+                                                            <span className="block text-base font-bold text-slate-900 tracking-tight">{sector.sector}</span>
+                                                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{sector.stores.length} Sucursales</span>
                                                         </div>
                                                     </div>
-                                                ))}
+                                                    <div className="flex items-center gap-4">
+                                                        <div className="text-right">
+                                                            <div className="flex items-baseline gap-1 justify-end">
+                                                                <span className={`text-xl font-bold tracking-tight ${stockColor}`}>
+                                                                    {totalStock}
+                                                                </span>
+                                                                <span className="text-[10px] font-bold text-slate-400">UND</span>
+                                                            </div>
+                                                            <span className={`text-[9px] font-bold uppercase tracking-wide ${stockColor}`}>
+                                                                {totalStock > 50 ? 'Stock Alto' : (totalStock > 0 ? 'Stock Bajo' : 'Sin Stock')}
+                                                            </span>
+                                                        </div>
+                                                        <ChevronRight className="text-slate-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" size={18} />
+                                                    </div>
+                                                </button>
+                                            );
+                                        })}
+                                </div>
+                            ) : (
+                                // Level 2: Stores (Branches)
+                                <div className="space-y-5 animate-in slide-in-from-right-8 duration-500">
+                                    {currentCityData.sectors.find(s => s.sector === selectedMunicipioModal)?.stores.map((store, i) => (
+                                        <div key={i} className="p-5 bg-white border border-slate-100 rounded-2xl flex items-center justify-between group hover:border-blue-200 hover:shadow-md transition-all">
+                                            <div className="flex items-start gap-4 flex-1">
+                                                <div className="p-3 bg-slate-50 rounded-xl text-blue-600 mt-0.5 group-hover:bg-blue-50 transition-colors">
+                                                    <Store size={18} />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h5 className="font-bold text-base text-slate-900 tracking-tight uppercase">{store.name}</h5>
+                                                    <p className="text-[11px] font-medium text-slate-500 leading-snug line-clamp-2 max-w-[90%] uppercase">
+                                                        {store.address || 'Ubicación Premium'}
+                                                    </p>
+                                                </div>
                                             </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
+                                            <div className="text-right pl-4">
+                                                <div className="flex items-center justify-end gap-2 mb-1">
+                                                    <span className={`text-2xl font-bold tracking-tight ${store.stock_count > 0 ? 'text-slate-900' : 'text-slate-300'}`}>
+                                                        {store.stock_count}
+                                                    </span>
+                                                    <span className="text-[10px] font-bold text-slate-400 self-end mb-1">UND</span>
+                                                </div>
+                                                <div className="flex items-center justify-end gap-2 px-2 py-1 bg-slate-50 rounded-lg border border-slate-100">
+                                                    <div className={`w-1.5 h-1.5 rounded-full ${store.stock_count > 10 ? 'bg-emerald-500' : (store.stock_count > 0 ? 'bg-amber-500' : 'bg-red-500')}`}></div>
+                                                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest leading-none">
+                                                        {store.stock_count > 0 ? 'DISPONIBLE' : 'AGOTADO'}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                         </div>
 
-                        {/* Modal Footer */}
-                        <div className="p-4 border-t border-slate-100 bg-slate-50">
-                            <p className="text-xs text-center text-muted-foreground">
-                                Datos de disponibilidad de Farmatodo • Actualizado recientemente
-                            </p>
+                        {/* Modal Footer info */}
+                        <div className="bg-slate-50/50 p-4 px-8 border-t border-slate-100 flex items-center justify-between">
+                            <div className="flex items-center gap-4 text-slate-400 font-bold text-[9px] tracking-wider uppercase">
+                                <span className="flex items-center gap-1.5"> <RefreshCw size={10} /> UPDATED: TODAY</span>
+                            </div>
+                            <div className="text-[10px] font-bold text-blue-600 uppercase tracking-wide">
+                                pharmAnalytics PRO
+                            </div>
                         </div>
                     </div>
                 </div>
