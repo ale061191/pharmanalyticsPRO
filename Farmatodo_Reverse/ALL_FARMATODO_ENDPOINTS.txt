@@ -1,0 +1,39 @@
+
+# DETECTED ENDPOINTS & SECRETS - FARMATODO APK
+
+## BASE DOMAINS
+https://farmatodo.com.ve
+https://www.farmatodo.com.ve
+https://farmatodo.com.co
+https://www.farmatodo.com.co
+https://farmatodo.com.ar
+https://www.farmatodo.com.ar
+
+## API & SERVICES
+https://oracle-services-vzla.firebaseio.com  (Firebase Realtime Database)
+oracle-services-vzla.appspot.com             (Google Cloud Storage)
+https://sdk.iad-06.braze.com                 (Braze Marketing SDK)
+https://click.farmatodo.com                    (Deep Links / Tracking)
+https://clicks.farmatodo.com                   (Deep Links / Tracking)
+https://farmatodo.onelink.me                   (AppsFlyer / Deep Links)
+https://farmatodo.sng.link                     (Singular Tracking)
+
+## DEEP LINK SCHEMES
+farmatodoapp://
+ftd://
+fbconnect://cct.com.farmatodo.app.ve
+
+## SECRETS / KEYS
+Google API Key: AIzaSyCFM2TmPSjT8ZmyNQN2ctMXtQc6RuBmVMk
+Braze API Key (VE Prod): b34f0b7d-0b13-4ee6-8eba-7c1db2ae0a0b
+Braze API Key (CO Prod): 3f0a55b2-2323-4136-9c7d-636f06437f69
+Braze API Key (AR Prod): f9d46ae0-09e0-4a76-84e5-f35b7b995ab3
+Kustomer API Key (VE Prod): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9... (See endpoints.json for full)
+Kustomer Brand ID (VE): 6568c27bb4345d5ebeea4675
+Facebook App ID: 719005228980749
+Facebook Client Token: 1bed45e7bdf725b25f5f36436ac3d2f7
+Firebase Crashlytics Mapping ID: 2422fa025c87413eb9a92c786dbd8a99
+
+## LIKELY API STRUCTURE (Inferred from Deep Links & Common Patterns)
+https://farmatodo.com.ve/1LxQ  (Shortlinks)
+https://farmatodo.com.ve/OkQ0

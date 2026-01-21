@@ -1,0 +1,446 @@
+{
+  "PISA OTC": {
+    "total_productos": 11,
+    "productos": [
+      "Electrolit Suero Hidratante Maracuyá Frasco x 625 ml",
+      "Electrolit Suero Hidratante Fresa Kiwi Frasco x 625 ml",
+      "Electrolit Suero Hidratante Mora Azul Frasco x 625 ml",
+      "Electrolit Suero Hidratante Uva Frasco x 625 ml",
+      "Electrolit Suero Hidratante Fresa Frasco x 625 Ml",
+      "Electrolit Suero Rehidratante Naranja-Mandarina Frasco x 625 Ml",
+      "Electrolit Suero Hidratante Jamaica Frasco x 625 ml",
+      "Electrolit Suero   Rehidratante Sabor Ponche De Frutas Frasco x 625 ml",
+      "Electrolit Suero Rehidratante Coco Frasco x 625 ml",
+      "Electrolit Suero Rehidratante Lima Limón Frasco x 625 ml"
+    ]
+  },
+  "HALEON OTC": {
+    "total_productos": 18,
+    "productos": [
+      "Dolex Gripa Acetaminofen + Clorfeniramina + Fenilefrina 500mg/2mg/5mg x 12 Tabletas",
+      "Dolex Avanzado, Acetaminofén x 10 Tabletas",
+      "Dolex Forte Acetaminofén + Cafeina 500/65mg Haloen Caja x 10 Tabletas",
+      "Dolex 500 mg Fracción x 10 Tabletas",
+      "Advil Max Ibuprofeno x 10 Cápsulas",
+      "Dolex Niños 2+ Acetaminofén 160 mg Frasco x 90 ml",
+      "Dolex Bebés Acetaminofén 160mg/5ml Sabor Frambuesa Jarabe Frasco x 60 ml",
+      "Mareol Dimenhidrinato 50 mg Haleon Caja x 12 Tabletas",
+      "Dolex Forte Acetaminofén 500mg + Cafeína 65mg Oferta x 20 Tabletas",
+      "Dolex Forte Acetaminofén + Cafeína 500mg/65mg Pague 15 Lleve 20"
+    ]
+  },
+  "ABBOTT NUTRICIO": {
+    "total_productos": 5,
+    "productos": [
+      "Suero Rehidratante Pedialyte Max 60 Uva Frasco X 500 ml",
+      "Pedialyte Max Con Zinc Fresa Suero Deshidratación Abbott Frasco x 500 ml",
+      "Suero Rehidratante Pedialyte Max 60 Manzana Frasco x 500 ml",
+      "Suero Rehidratante Pedialyte Max 60 Coco Frasco x 500 ml",
+      "Pedialyte Active Coco Frasco x 500 ml"
+    ]
+  },
+  "NATURAL FRESHLY": {
+    "total_productos": 2,
+    "productos": [
+      "Mieltertos Masticable Natural Freshly Paquete x 4 Pastillas",
+      "Mieltertos Zero Pastillas Natural Freslhy Sobre x 4 und"
+    ]
+  },
+  "CONTINEN TRAVEL": {
+    "total_productos": 1,
+    "productos": [
+      "Sobre Láminas Álbum Panini Copa América 2024 x 5 und"
+    ]
+  },
+  "LAFRANCOL C.H.C": {
+    "total_productos": 2,
+    "productos": [
+      "Sevedol Extra Fuerte Acetaminofén + Ibuprofeno + Cafeína Caja x 8 Tabletas",
+      "Smecta Diosmectita 3.76 gr Fracción x 1 Sobre"
+    ]
+  },
+  "OPELLA": {
+    "total_productos": 6,
+    "productos": [
+      "Probiótico Enterogermina Suspensión Oral Sanofi x 10 Frascos",
+      "Buscapina Fem Hioscina + Ibuprofeno 20mg/400mg Caja x 6 Comprimidos",
+      "Allegra Fexofenadina Clorhidrato 120 mg Sanofi Caja x 10 Tabletas",
+      "Probiótico Enterogermina Plus 4000 Esporas de Bacillus Clausi Caja x 5 Viales",
+      "Buscapina Compositum NF N-Butilbromuro de Hioscina + Acetaminofen 10mg/325mg Caja x 10 Comprimidos",
+      "Allegra Pediátrico Fexofenadina 30mg/5ml Sanofi Frasco x 150 ml"
+    ]
+  },
+  "PROCTER OTC": {
+    "total_productos": 5,
+    "productos": [
+      "Drops Vick Cereza Caja x 5 Pastillas",
+      "Vick Drops Limón Fracción x 5 Pastillas",
+      "Vick Mentol Fracción Sobre x 5 Pastillas",
+      "Vick Drops naranja Fracción x 5 Pastillas",
+      "Vick Vaporub Ungüento Frasco x 50 gr"
+    ]
+  },
+  "RB HEALTH": {
+    "total_productos": 3,
+    "productos": [
+      "Strepsils Intensive Sabor A Naranja Caja x 16 Tabletas",
+      "Strepsils Intensive Miel y Limón Flurbiprofeno 8,75 mg RB Health Caja x 16 Tabletas",
+      "Gaviscon Doble Acción Bicarbonato de Sodio para Reflujo e Indigestión Sachet x 12 und"
+    ]
+  },
+  "HEEL COLOMBIA": {
+    "total_productos": 1,
+    "productos": [
+      "Engystol Caja x 50 Comprimidos"
+    ]
+  },
+  "GENOMMA OTC": {
+    "total_productos": 2,
+    "productos": [
+      "X-Ray Dol Acetaminofén + Naproxeno + Cafeina 250mg/220mg/65mg Genomma x 12 Tabletas",
+      "Next GL Gripa Ibuprofeno + Fenilefrina + Cetirizina 200/10/5mg Genomma Caja x 8 Cápsulas"
+    ]
+  },
+  "NOVAMED S.A.": {
+    "total_productos": 2,
+    "productos": [
+      "Congestex Gripa 12h Ibuprofeno + Fenilefrina + Cetrizina 5mg/200mg/20mg Novamed Caja x 10 Cápsulas",
+      "Dolorsin Fem Ibuprofeno + N-Butilbromuro de Hioscina 400mg/20mg Fracción x 4 Cápsulas"
+    ]
+  },
+  "COSMETICO LEHIT": {
+    "total_productos": 5,
+    "productos": [
+      "Ampolla Lehit Hidrofluido con Ácido Hialurónico x 13 ml",
+      "Ampolla En Sachet Lehit Coctel 8 En 1 x 1 und",
+      "Ampolla Lehit Keracrece 10 Cabello Maltratado x 1 und",
+      "Ampolla En Sachet Aceite De Argán Lehit x 1 und ",
+      "Tratamiento Capilar Repolarizador En Frio 18 En 1 Sobre x 30 gr"
+    ]
+  },
+  "NESTLE COLOMBIA": {
+    "total_productos": 1,
+    "productos": [
+      "Snack Para Niños Klim De Corazones Sobre x 15 gr"
+    ]
+  },
+  "SIEGFRIED S.A": {
+    "total_productos": 2,
+    "productos": [
+      "Noxpirin Plus Acetaminofén + Cafeína + Cetirizina + Fenilefrina Siegfried Caja x 6 Cápsulas",
+      "Noxpirin F Adultos Noche Acetaminofen + Fenilefrina 0.5g/0.01g Siegfried Caja x 6 sobres"
+    ]
+  },
+  "LAFRAN AMER GEN": {
+    "total_productos": 3,
+    "productos": [
+      "Acetaminofén 500 mg Ag Caja x 20 Tabletas",
+      "Acetaminofén 500 mg AG Fracción Blister x 10 Tabletas",
+      "Ibuprofeno AG 800 mg Blíster x 10 Tabletas"
+    ]
+  },
+  "MEDWELL": {
+    "total_productos": 1,
+    "productos": [
+      "Mebucaína Forte Cetilpiridinio + Lidocaina Clorhidrato 2mg/1mg Gsk Caja x 10 Tabletas"
+    ]
+  },
+  "EUROFARMA OTC": {
+    "total_productos": 4,
+    "productos": [
+      "Pax Noche Limón Acetaminofén + Fenilerfina + Clorfeniramina Sanofi Caja x 6 Sobres",
+      "Pax Noche Limón Fracc Sobre x 6 gr",
+      "Pax Día Acetaminofén + Fenilerfina 500mg/10mg Sanofi Caja x 6 Sobres",
+      "Pax Día Naranja Fracción Sobre x 6 gr"
+    ]
+  },
+  "P&G Health": {
+    "total_productos": 6,
+    "productos": [
+      "Vick Vaporub Ungüento x 12 gr",
+      "Cebión Vitamina C 100 mg P&G  Multisabor x 45 Minis Tabletas",
+      "Pastillas Vick Drops Sabor Jengibre Refresca P&G Sobres x 20 und",
+      "Neurobión Vitamina B1 + Vitamina B6 100mg/100mg P&G Caja x 30 Tabletas",
+      "Cebión 500 mg Vitamina C Naranja x 12 Tabletas",
+      "Pastillas Vick Drops Sabor Miel Refresca P&G Sobres x 20 und"
+    ]
+  },
+  "TECNOQUIMIC OTC": {
+    "total_productos": 15,
+    "productos": [
+      "Noraver Gripa Noche Panela Limón Ibuprofeno + Fenilefrina + Cetirizina 200/10/3,33mg Caja x 6 Sobres",
+      "Bonfiest Lua Plus Ácido Acetilsalicílico + Cafeína 650mg/65mg TQ Caja x 8 Sobres",
+      "Sal de Frutas Lua Plus Bicarbonato de Sodio + Simeticona 0.1gr/2.83gr TQ Caja x 8 Sobres",
+      "Hidraplus Zinc Cloruro de Sodio + Dextrosa Tecnoquímicas Sabor Uva Frasco x 400 ml",
+      "Noraver Gripa y Tos Fast Total Ibuprofeno + Dextrometorfano 400mg/15mg TQ Caja x 6 Cápsulas",
+      "Noraver Garganta Menta Benzocain + Cetilpiridinio 10mg/1.4mg Tecnoquímicas Caja x 12 Tabletas",
+      "Gastrofast Advance Sodio Alginato + Sodio Bicarbonato 250mg/133.5mg TQ Caja x 12 Sachets",
+      "Hidraplus Zinc Cloruro de Sodio + Dextrosa Tecnoquímicas Sabor Cereza Frasco x 400 ml",
+      "Sal De Frutas Lua Plus Caja x 6 Sobres",
+      "Hidraplus Suero Oral Zinc Sabor Manzana Frasco x 400 ml"
+    ]
+  },
+  "TECNOQUIMICA MK": {
+    "total_productos": 9,
+    "productos": [
+      "Azitromicina MK 500 mg Caja x 3 Tabletas",
+      "Loratadina MK 10 mg Caja x 10 Tabletas",
+      "Cetirizina MK 10 mg Caja x 10 Tabletas",
+      "Amoxicilina MK 500 mg Fracción Blíster x 10 Cápsulas",
+      "Desloratadina MK 5mg Tableta Caja x10Tableta                          ",
+      "Loperamida MK 2 mg Caja x 6 Tabletas",
+      "Losartan MK 50 mg Caja x 30 Tabletas",
+      "Cefalexina MK 500 mg Caja x 10 Cápsulas",
+      "Quetiapina 25mg Mk Caja   x 30 Tab"
+    ]
+  },
+  "LAFRANC FARM 1": {
+    "total_productos": 4,
+    "productos": [
+      "Postday Levonorgestrel 1.5 mg Lafrancol Caja x 1 Tableta",
+      "Postday 0.75 mg Caj x 2 Tabletas",
+      "Bellaface Dienogest + Etinilestradiol 2mg/0.03mg Abbott Caja x 21 Tabletas",
+      "Bellaface Dienogest + Etinilestradiol 2mg/20mcg Abbott Caja x 28 Tabletas"
+    ]
+  },
+  "BAVARIA KOPPS": {
+    "total_productos": 2,
+    "productos": [
+      "Cerveza Coronita Nacional 210 ml x 6 und",
+      "Cerveza Club Colombia Lata Dorada 330 ml x 6 und"
+    ]
+  },
+  "QUIBI SA": {
+    "total_productos": 1,
+    "productos": [
+      "Suero Fisiológico Cloruro de Sodio Quibi Bolsa x 500 ml"
+    ]
+  },
+  "SIEGFRIED OTC": {
+    "total_productos": 1,
+    "productos": [
+      "Noxpirin Plus x 12 Cápsulas"
+    ]
+  },
+  "IND NAC GASEOSA": {
+    "total_productos": 1,
+    "productos": [
+      "Gaseosa Coca Cola K-Wave  Fruity Fantasy Lata x 269 ml "
+    ]
+  },
+  "ZAMBON COLOMBIA": {
+    "total_productos": 3,
+    "productos": [
+      "Fluimucil N Acetilcisteína 600 mg Zambon Caja x 10 Sobres",
+      "Fluimucil N Acetilcisteina 200 mg Zambon Caja x 10 Sobres",
+      "Monuril 3G. Sobre Caja x1Sob. Zambon Fosfomicina Trometamol           "
+    ]
+  },
+  "TECNOQ OTC 2": {
+    "total_productos": 7,
+    "productos": [
+      "Ibuflash Migran Ibuprofeno +  Acetaminofén + Cafeína 400mg/250mg/65mg MK Caja x 8 Cápsulas",
+      "Acetaminofén 500 mg MK Caja x 16 Tabletas",
+      "Acetaminofén 500 mg MK Fracción Blíster x 10 Tabletas",
+      "Acetaminofén MK 160 mg Jarabe Frasco x 90 ml",
+      "Vitamina C 500 mg Fración x 10 Tabletas",
+      "Vita C Vitamina C 500 mg Naranja Bolsa MK x 36 Tabletas",
+      "Vita C MK 500mg Naranja Sin Zinc Sobre x 12 tabletas Vitamina C"
+    ]
+  },
+  "GENFAR S.A.": {
+    "total_productos": 8,
+    "productos": [
+      "Naproxeno 500 mg Genfar Caja x 10 Tabletas",
+      "Losartán Potásico Genfar 50 mg Caja x 30 Tabletas",
+      "Ibuprofeno Genfar 800 mg Fracción x 10 Tabletas",
+      "Acetaminofén 500 mg Genfar Fracción x 10 Tabletas",
+      "GripNoche Acetaminofén + Fenilefrina + Clorfeniramina 500mg/10mg/2mg Genfar Fracción Sobre x 6 g",
+      "Omeprazol Genfar 20 mg Caja x 10 Cápsulas",
+      "Naproxeno Genfar 250 mg Caja x 10 Comprimidos",
+      "Desloratadina Genfar 5 mg Caja x 10 Tabletas"
+    ]
+  },
+  "MASTER FOOD COL": {
+    "total_productos": 1,
+    "productos": [
+      "Chocolate M&M Peanut Sobre x 48.2 gr"
+    ]
+  },
+  "ALCON COLOMBIA": {
+    "total_productos": 1,
+    "productos": [
+      "Systane Ultra Gotas Frasco x 10 ml"
+    ]
+  },
+  "QUALA S.A.": {
+    "total_productos": 2,
+    "productos": [
+      "Tratamiento Capilar Nutribela Reparacion Intensiva 15 Sobre x 30 ml",
+      "Tratamiento Capilar Nutribela Enzimoterapia Sobre x 30 ml"
+    ]
+  },
+  "PROCAPS FARMA": {
+    "total_productos": 1,
+    "productos": [
+      "Gestavit DHA Multivitamínico Procaps Caja x 30 Cápsulas"
+    ]
+  },
+  "BAYER HEALTHCAR": {
+    "total_productos": 5,
+    "productos": [
+      "Redoxon Total Vitamina D + C + Zinc Bayer Frasco x 30 Tabletas",
+      "Alkaseltzer Original Ácido Acetilsalicílico + Ácido Cítrico 324mg/1000mg Bayer Caja x 14 Tabletas",
+      "Apronax Liquid Naproxeno 275 mg Bayer Caja x 8 Cápsulas",
+      "Alka-Seltzer Extreme Ácido Acetilsalicílico 3.3 g Bayer Caja x 8 Tabletas",
+      "Aspirina Ácido Acetilsalicilico 100 mg Bayer Caja x 28 Tabletas"
+    ]
+  },
+  "SOPHIA": {
+    "total_productos": 2,
+    "productos": [
+      "Nazil Advanced   Clorhidrato De Nafazolina/0,02 Sophia Frasco x 15ml",
+      "Nazil Ofteno Nafazolina 0.1% Sophia Frasco x 15 ml"
+    ]
+  },
+  "GASEOSAS LUX": {
+    "total_productos": 2,
+    "productos": [
+      "Jugo Hit Mango x 200 ml ",
+      "Bebida Hatsu Té Surtido Tetrapack 200 ml x 6 und"
+    ]
+  },
+  "RUBY ROSE": {
+    "total_productos": 1,
+    "productos": [
+      "Gel Para Cejas Melu Brow Con Cepillo x 8.3 ml "
+    ]
+  },
+  "PISA FARMA": {
+    "total_productos": 1,
+    "productos": [
+      "Suero Fisiológico Cloruro De Sodio 0.9% Pisa Frasco x 500 ml"
+    ]
+  },
+  "COLOMBINA S.A.": {
+    "total_productos": 1,
+    "productos": [
+      "Chocolatina Nucita Tableta x 20 gr"
+    ]
+  },
+  "BECTON DICKINSO": {
+    "total_productos": 1,
+    "productos": [
+      "Jeringa BD Con Caucho 3 ml x 1 und"
+    ]
+  },
+  "LABINCO S.A.S": {
+    "total_productos": 3,
+    "productos": [
+      "Solhidrex Sales de Rehidratación Oral Cereza Sanfer Sobre x 20.7 gr",
+      "Solhidrex Sales de Rehidratación Oral Uva Sanfer Sobre x 20.7 gr",
+      "Solhidrex Sales De   Rehidratación Sabor Fresa Sobre x 20,7 gr"
+    ]
+  },
+  "PREBEL ESSENCE": {
+    "total_productos": 1,
+    "productos": [
+      "Pestañina Essence I Love Extreme Crazy x 12 ml x 1 und"
+    ]
+  },
+  "SANJORGE BIC": {
+    "total_productos": 3,
+    "productos": [
+      "Crema Antipañalitis Almipro Ungüento x 60 gr",
+      "Crema Antipañalitis Almipro Ungüento Frasco x 500 gr",
+      "Crema Antipañalitis Almipro Ungüento Frasco x 125 gr"
+    ]
+  },
+  "3M COLOMBIA": {
+    "total_productos": 1,
+    "productos": [
+      "Gasa Estéril 3M Nexcare Caja x 12 Sobres"
+    ]
+  },
+  "HEALTHY AMERICA COLOMBIA SAS": {
+    "total_productos": 2,
+    "productos": [
+      "Healthy America Super Magnesio 400 mg Frasco x 100 Cápsulas",
+      "Creatina Monohidrato   3000 mg Tarro x 150 gr"
+    ]
+  },
+  "BIMBO GENERAL": {
+    "total_productos": 1,
+    "productos": [
+      "Ponqué Bimbo Kekito Gotas De Chocolate x 50 gr"
+    ]
+  },
+  "MEGALABS": {
+    "total_productos": 2,
+    "productos": [
+      "Abrilar EA 575 Hedera Helix Jarabe Frasco x 100 ml",
+      "Abrilar EA 575 Jarabe Frasco x 200 ml"
+    ]
+  },
+  "NUTRESA FARMA": {
+    "total_productos": 1,
+    "productos": [
+      "Bénet Colágeno Hidrolizado Frasco x 60 Cápsulas"
+    ]
+  },
+  "GLAXO FARMA": {
+    "total_productos": 1,
+    "productos": [
+      "Ventilan Osp Salbutamol 100 mcg GSK Inhalador x 200 Dosis"
+    ]
+  },
+  "VITALIS S.A.C.I": {
+    "total_productos": 1,
+    "productos": [
+      "Diclofenaco Sódico 75 mg/2ml Vitalis Caja x 1 Ampolla"
+    ]
+  },
+  "PFIZER S.A.": {
+    "total_productos": 1,
+    "productos": [
+      "Lomotil Difenoxilato + Atropina 2.5mg/0.025mg Fracción x 4 Tabletas"
+    ]
+  },
+  "INVERSIONES PAMBU": {
+    "total_productos": 1,
+    "productos": [
+      "Parches Pambu Hidrocoloides Para El Cuidado De Los Granitos x 1 und"
+    ]
+  },
+  "EUROFARMA": {
+    "total_productos": 1,
+    "productos": [
+      "Neosaldina 300 mg Fracción x 4 Grageas"
+    ]
+  },
+  "Eli Lilly": {
+    "total_productos": 1,
+    "productos": [
+      "Mounjaro Tirzepatida 5,0mg/0,5ml Eli Lilly Caja x 1 Vial"
+    ]
+  },
+  "NUTRA & FOODS": {
+    "total_productos": 1,
+    "productos": [
+      "Gomas Farmatodo Colageno Hidrolizado + Biotina + Vitamina E 133 mg/100µg/6,6mg Frasco x 60 und"
+    ]
+  },
+  "EUROETIKA": {
+    "total_productos": 1,
+    "productos": [
+      "Parche Fit Euroetika Monodosis x 1 und"
+    ]
+  },
+  "FAES FARMA": {
+    "total_productos": 2,
+    "productos": [
+      "Activa 21 Levonorgestrel + Etinilestradiol 0.15/0.03mg BCN Medical Caja x 21 Grageas",
+      "Sacrusyt Salbutamol 100 mcg Inhalador Faes Farma x 200 dosis"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111009229-carboximetilcisteina-gulaper-jarabe-adulto-250-mg5ml-120-ml",
+        "name": "",
+        "price": ".0.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:37.795916"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111004145-depilacion-cera-mila-olla-100gr",
+        "name": "",
+        "price": ".0.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:37.753915"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111004994-alcanfor-dencorub-40g-gel-ponce-y-benzo",
+        "name": "",
+        "price": ".0.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:37.793392"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111020692-amoxicilina-amoxiduo-750-mg5ml-suspension-pediatrica-x-70-ml",
+        "name": "Amoxicilina 750 mg/5ml Amoxiduo Megalabs Suspensión Oral Pediátrica x 70 ml",
+        "price": ".5.032.85",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:54.332204"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111024191-solucion-numero-38-manitol-18-behrens-x-500-ml",
+        "name": "Solución Número 38 Manitol al 18% Behrens x 500 ml",
+        "price": ".4.757.55",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:54.628170"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111019062-solucion-limpiadora-para-lentes-multiplus-ultra-240-ml",
+        "name": "Solución Limpiadora Para Lentes Multiplus Ultra 240 Ml",
+        "price": ".7.945.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:44:53.768778"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111033835-complejo-b-miovit-kit-3-ml-x-3-ampollas",
+        "name": "Complejo B Miovit Cofasa Caja x 3 Ampollas 3 ml",
+        "price": ".1.887.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:45:09.395343"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111093446-labial-valmy-perfect-color-brandy-matte-17",
+        "name": "Labial Valmy Perfect Color Brandy Matte 17",
+        "price": ".0.01",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:45:10.347625"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111032079-diclofenac-potasico-clofen-50-mg-x-10-comprimidos",
+        "name": "Diclofenac Potásico Clofen 50 Mg X 10 Comprimidos",
+        "price": ".41.82",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:45:08.319040"
+    },
+    {
+        "url": "https://www.farmatodo.com.ve/producto/111100610-pan-new-york-integral-7-cereales-750gr",
+        "name": "Pan New York Integral 7 Cereales 750Gr",
+        "price": ".262.00",
+        "invima": null,
+        "status": "Available",
+        "scraped_at": "2026-01-19T23:45:23.735121"
+    }
+]

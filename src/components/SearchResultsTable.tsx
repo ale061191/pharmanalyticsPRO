@@ -3,6 +3,7 @@
 
 import { LineChart, Line, ResponsiveContainer, YAxis, Tooltip } from 'recharts';
 import { ExternalLink, Info, Package } from 'lucide-react';
+import Link from 'next/link';
 
 interface ProductResult {
     id: string;
@@ -127,10 +128,13 @@ export default function SearchResultsTable({ results, isVisible }: SearchResults
                                         </div>
                                     </td>
                                     <td className="px-8 py-4 text-right">
-                                        <button className="bg-blue-600/10 hover:bg-blue-600 text-blue-600 hover:text-white px-4 py-2 rounded-xl text-[11px] font-bold transition-all border border-blue-600/20 active:scale-95 flex items-center gap-2 ml-auto">
+                                        <Link
+                                            href={`/product/${product.id}`}
+                                            className="bg-blue-600/10 hover:bg-blue-600 text-blue-600 hover:text-white px-4 py-2 rounded-xl text-[11px] font-bold transition-all border border-blue-600/20 active:scale-95 flex items-center gap-2 ml-auto w-fit"
+                                        >
                                             Detalles
                                             <ExternalLink size={12} />
-                                        </button>
+                                        </Link>
                                     </td>
                                 </tr>
                             ))

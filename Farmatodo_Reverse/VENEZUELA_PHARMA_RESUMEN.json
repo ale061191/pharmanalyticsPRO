@@ -1,0 +1,37 @@
+{
+  "mision": "Extracción Productos Farmacéuticos Venezuela",
+  "fecha_inicio": "2026-01-20T02:37:27.776892",
+  "fecha_fin": "2026-01-20T02:37:31.048088",
+  "duracion_segundos": 3.271196,
+  "indice_algolia": "products",
+  "total_productos_algolia": 1000,
+  "productos_farmaceuticos": 173,
+  "laboratorios_unicos": 57,
+  "principios_activos_unicos": 37,
+  "productos_con_principio_activo": 76,
+  "porcentaje_con_principio_activo": 43.9,
+  "top_10_laboratorios": {
+    "HALEON OTC": 18,
+    "TECNOQUIMIC OTC": 15,
+    "PISA OTC": 11,
+    "TECNOQUIMICA MK": 9,
+    "GENFAR S.A.": 8,
+    "TECNOQ OTC 2": 7,
+    "OPELLA": 6,
+    "P&G Health": 6,
+    "ABBOTT NUTRICIO": 5,
+    "PROCTER OTC": 5
+  },
+  "top_10_principios_activos": {
+    "Acetaminofén": 20,
+    "Ibuprofeno": 10,
+    "Acetaminofen": 5,
+    "Vitamina C": 4,
+    "Ácido Acetilsalicílico": 3,
+    "Fexofenadina": 2,
+    "Naproxeno": 2,
+    "Potente": 1,
+    "Flurbiprofe": 1,
+    "Dolex": 1
+  }
+}

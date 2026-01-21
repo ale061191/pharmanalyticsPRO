@@ -1,0 +1,82 @@
+{
+  "hits": [
+    {
+      "message": "En este momento la caja no está preparada para procesar la orden, uno de nuestros colaboradores deberá activarla para realizar el Autopago.",
+      "errorMessage": "En este momento la caja no está preparada para procesar la orden, uno de nuestros colaboradores deberá activarla para realizar el Autopago.",
+      "errorType": "ERROR",
+      "enabledMessage": "La caja esta preparada para su uso.",
+      "enabledType": "AVAILABLE",
+      "time": 60,
+      "objectID": "XSTORE_API_CALL.CONFIG",
+      "_highlightResult": {
+        "message": {
+          "value": "En este momento la caja no está preparada para procesar la orden, uno de nuestros colaboradores deberá activarla para realizar el Autopago.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "errorMessage": {
+          "value": "En este momento la caja no está preparada para procesar la orden, uno de nuestros colaboradores deberá activarla para realizar el Autopago.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "errorType": {
+          "value": "ERROR",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "enabledMessage": {
+          "value": "La caja esta preparada para su uso.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "enabledType": {
+          "value": "AVAILABLE",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "time": {
+          "value": "60",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "enable": false,
+      "info": "Enable Or Disable Config security for WEB, services require tokens of auth user.",
+      "objectID": "WEB.SECURITY.CONFIG",
+      "_highlightResult": {
+        "info": {
+          "value": "Enable Or Disable Config security for WEB, services require tokens of auth user.",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    }
+  ],
+  "nbHits": 222,
+  "page": 0,
+  "nbPages": 111,
+  "hitsPerPage": 2,
+  "exhaustiveNbHits": true,
+  "exhaustiveTypo": true,
+  "exhaustive": {
+    "nbHits": true,
+    "typo": true
+  },
+  "query": "",
+  "params": "hitsPerPage=2",
+  "renderingContent": {},
+  "extensions": {
+    "queryCategorization": {}
+  },
+  "processingTimeMS": 1,
+  "processingTimingsMS": {
+    "_request": {
+      "roundTrip": 109
+    },
+    "extensions": 1,
+    "total": 1
+  },
+  "serverTimeMS": 1
+}

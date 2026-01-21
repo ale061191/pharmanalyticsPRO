@@ -1,0 +1,50 @@
+[
+    {
+        "endpoint": "https://oracle-services-vzla.firebaseio.com",
+        "method": "GET/POST",
+        "type": "FIREBASE",
+        "params": "N/A",
+        "headers": [],
+        "source_file": "res/values/strings.xml",
+        "description": "Firebase Realtime Database URL. Potentially open or secured."
+    },
+    {
+        "endpoint": "https://sdk.iad-06.braze.com",
+        "method": "POST",
+        "type": "PAGOS/MARKETING",
+        "params": "N/A",
+        "headers": [
+            "Authorization: Bearer b34f0b7d-0b13-4ee6-8eba-7c1db2ae0a0b"
+        ],
+        "source_file": "res/values/strings.xml",
+        "description": "Braze Marketing SDK Endpoint"
+    },
+    {
+        "endpoint": "https://farmatodo.com.ve",
+        "method": "GET",
+        "type": "CATÁLOGO",
+        "params": "?",
+        "headers": [],
+        "source_file": "AndroidManifest.xml",
+        "description": "Main domain, likely hosts the API at /api or /v1"
+    },
+    {
+        "endpoint": "kustomer_api",
+        "method": "N/A",
+        "type": "SOPORTE",
+        "params": "N/A",
+        "headers": [
+            "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODk1MTZmMGJlNGM5Yzg0YTk1NDNmNSIsInVzZXIiOiI2Nzg5NTE2ZTZiZjliNTI3N2M5YTk5YWEiLCJvcmciOiI2NTIzZmZlNjU5MWU4NjM0MGI2N2RkYjEiLCJvcmdOYW1lIjoiZmFybWF0b2RvIiwidXNlclR5cGUiOiJtYWNoaW5lIiwicG9kIjoicHJvZDEiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjY3ODk1MTZlNmJmOWI1Mjc3YzlhOTlhYSJ9.zI-moX0RzeVQaCq9iwYiN7yuQs58RKnWy-JS_sQhG4Q"
+        ],
+        "source_file": "res/values/strings.xml",
+        "description": "Kustomer Chat JWT Token found in strings.xml"
+    },
+    {
+        "endpoint": "https://click.farmatodo.com",
+        "method": "GET",
+        "type": "TRACKING",
+        "params": "pathPrefix: /1LxQ, /OkQ0",
+        "source_file": "AndroidManifest.xml",
+        "description": "Deep link tracking domain"
+    }
+]

@@ -18,62 +18,40 @@ const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPA
 async function debugMapApi() {
     console.log('🐞 Debugging Map API Logic...');
 
-    const cityFilter = 'Caracas';
-    const municipalityFilter = 'Libertador';
-    const productSearch = 'ibuprofeno';
-    const labFilter = 'genven';
+    // 1. Get a product with stock
+    const { data: products } = await supabase
+        .from('products')
+        .select('id, name')
+        .ilike('name', '%ibuprofeno%')
+        .limit(1);
 
-    console.log(`Filters: City=${cityFilter}, Muni=${municipalityFilter}, Product=${productSearch}, Lab=${labFilter}`);
+    if (!products || products.length === 0) {
+        console.log('No products found');
+        return;
+    }
 
-    // 1. Query Branches
-    let branchQuery = supabase
+    const product = products[0];
+    console.log(`Testing with Product: ${product.name} (${product.id})`);
+
+    // 2. Count branches
+    const { count: branchCount } = await supabase
         .from('sucursales')
-        .select('name, municipality, lat, lng');
+        .select('*', { count: 'exact', head: true });
 
-    if (cityFilter) branchQuery = branchQuery.eq('city', cityFilter);
-    if (municipalityFilter) branchQuery = branchQuery.eq('municipality', municipalityFilter);
+    console.log(`Total Branches in DB: ${branchCount}`);
 
-    const { data: branches, error: errBranch } = await branchQuery;
+    // 3. Check inventory for this product
+    const { data: inventory } = await supabase
+        .from('store_inventory')
+        .select('quantity, store_id')
+        .eq('product_id', product.id)
+        .gt('quantity', 0)
+        .limit(5);
 
-    if (errBranch) {
-        console.error('Branch Query Error:', errBranch);
-        return;
+    console.log(`Found ${inventory?.length} stores with stock for this product.`);
+    if (inventory?.length > 0) {
+        console.log('Sample Store ID with stock:', inventory[0].store_id);
     }
-
-    console.log(`\nfound ${branches.length} branches in ${municipalityFilter}.`);
-    // console.log(branches.map(b => b.name));
-
-    // 2. Query Stock
-    let stockQuery = supabase
-        .from('stock_detail')
-        .select('store_name, stock_count, availability_status, product_name, lab_name')
-        .ilike('product_name', `%${productSearch}%`)
-        .ilike('lab_name', `%${labFilter}%`);
-
-    const { data: stockData, error: errStock } = await stockQuery;
-
-    if (errStock) {
-        console.error('Stock Query Error:', errStock);
-        return;
-    }
-
-    console.log(`Found ${stockData.length} stock entries matching filters.`);
-
-    // 3. Match
-    const enriched = branches.map(branch => {
-        const stock = stockData.find(s => s.store_name === branch.name); // Simple find for debug
-        return {
-            name: branch.name,
-            stock: stock ? stock.stock_count : 0,
-            status: stock ? stock.availability_status : 'critical (no match)'
-        };
-    });
-
-    // Show breakdown
-    console.log('\n--- Enriched Results ---');
-    enriched.forEach(e => {
-        console.log(`[${e.name}] Stock: ${e.stock} (${e.status})`);
-    });
 }
 
 debugMapApi();

@@ -197,17 +197,17 @@ async function syncAllProducts() {
         const isAvailable = stockArray.length > 0;
 
         processedProducts.push({
+            id: hit.objectID || hit.id,
             name: name,
             brand: extractLab(hit),
             avg_price: finalPrice,
             original_price: finalPrice < price ? price : null,
             category: extractCategory(hit),
             image_url: hit.mediaImageUrl || null,
-            // For now, mapping simplified availability. 
-            // Ideally schema has 'available' boolean. 
-            // If not in schema, Supabase ignores extra fields usually.
-            // But we ensure required fields are present.
-            url: hit.url || `/producto/${hit.objectID}`,
+            // NEW FIELDS from ALGOLIA_DATA_GUIDE.md
+            sales: hit.sales || 0, // 📈 Sales velocity for rankings
+            barcode: hit.barcode || null, // Product EAN/UPC
+            active_ingredient: hit.principioActivo || hit.activeIngredient || null,
             updated_at: new Date().toISOString()
         });
     }

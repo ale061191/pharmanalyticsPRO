@@ -1,0 +1,1828 @@
+{
+  "success": true,
+  "product_name": "IBUPROFENO 400 MG 10 TABLETAS - GENVEN",
+  "aggregate": {
+    "total_stock": 0,
+    "stores_with_stock": 0,
+    "avg_per_store": 0,
+    "source": "algolia"
+  },
+  "detail": {
+    "stores": [],
+    "cities": [
+      {
+        "city": "Caracas",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ARCO",
+                "address": "AV PPAL DEL PARAISO CON CALLE MADARIAGA. LOCAL 12 EDIF CENTRO PLAZA PAEZ",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "EL AVILA",
+                "address": "AV. ANDRES BELLO C.C SAMBIL LA CANDELARIA NIVEL ANDRES BELLO LOCAL AB-18",
+                "stock_count": 18,
+                "availability_status": "high"
+              },
+              {
+                "name": "LA CANDELARIA",
+                "address": "AV. ANDRES BELLO C.C SAMBIL LA CANDELARIA NIVEL SUPERIOR, LOCAL S-03",
+                "stock_count": 20,
+                "availability_status": "high"
+              },
+              {
+                "name": "CARICUAO",
+                "address": "BLOQUE 11 SECTOR UD-7 EDIF 3 LOCAL 54 RUIZ PINEDA CARICUAO",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "BOULEVAR DE CATIA",
+                "address": "3ra Avenida con Boulevard de Catia. Diagonal al mercado municipal",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "IRENE",
+                "address": "BOULEVARD DEL CAFETAL CC PLAZA LAS AMERICAS LOCALES 13 Y 14",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MADRE CABRINI",
+                "address": "AV PPAL DE ANTIMANO No 19 LOCAL C. PB ",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "NUEVA CARACAS",
+                "address": "CALLE COLOMBIA No 15 AL LADO DE LA CLINICA PANAMERICANA CATIA",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "PUNCERES",
+                "address": "AV URDANETA. EDF PARSA. ESQ DE FUERZAS ARMADAS LOCAL 3. PLAZA ESPAÑA",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "SETENTA",
+                "address": "CC MACARACUAY PLAZA AV MARA LOCAL 9 URB COLINAS DE LA CALIFORNIA",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "TEREPAIMA",
+                "address": "ZONA INDUSTRIAL LA TRINIDAD CALLE DEL ARENAL ",
+                "stock_count": 25,
+                "availability_status": "high"
+              },
+              {
+                "name": "TOBOGAN",
+                "address": "4 AV ENTRE 3 Y 4 TRANSVERSAL QTA CARMINA ALTAMIRA",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "SUSANA",
+                "address": "CC CONCRESA LOCAL 206 PLANTA PRINCIPAL PRADOS DEL ESTE",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MIRENA",
+                "address": "URB LA URBINA CALLE 5 CON CALLE 7 ",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "CORINA",
+                "address": "AV PPAL LA URBINA RES EL JARDIN LOCALES 1 Y 2 URB LA URBINA",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "MONJES",
+                "address": "AV ARTURO MICHELENA ESQ C/CALLE JESUS SEMPRUN QTA RAKEL. STA MONICA",
+                "stock_count": 19,
+                "availability_status": "high"
+              },
+              {
+                "name": "CHUAO",
+                "address": "Avenida principal de Chuao, Avenida Araure, Municipio Baruta, Estado Miranda",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MELANIE",
+                "address": "2DA AVE. CON 2DA TRANSVERSAL EDIF. CRYSTAL PALACE LOCAL 3 Y 4. LOS PALOS GRANDES",
+                "stock_count": 24,
+                "availability_status": "high"
+              },
+              {
+                "name": "ROMANA",
+                "address": "CC MANZANARES PLAZA NIVEL 3 LOCAL C-3-18 URB MANZANARES",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MANANTIAL",
+                "address": "AV INTERCOMUNAL BARUTA- EL HATILLO. CENTRO COMERCIAL TRINALTA.",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "AUTANA",
+                "address": "AV ORINOCO PARCELA No 413-A QTA MARIUCCIA LAS MERCEDES",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "TEO",
+                "address": "CCC TAMANACO SECTOR J LOCAL 47 NIVEL C1 URB CHUAO",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "LA CASTELLANA VE",
+                "address": "AV. BLANDIN CON AVENIDA MOHEDANO, MUNICIPIO CHACAO",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "ACONCAGUA",
+                "address": "AV JOSE MARIA VARGAS CC SANTE FE NIVEL 2 LOCAL C201 URB SANTE FE NORTE",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "OLIVO",
+                "address": "CC METROCENTER AV BARALT CON UNIVERSIDAD PB LOCAL PB-11 Y 12",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "BARROCA",
+                "address": "CC LA VILLA LOCAL 101 P.B. URB MONTALBAN ",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "VENECIA",
+                "address": "AV URDANETA ESQ DE LAS ANIMAS CALLE NORTE 9 C/ CALLE ESTE 1 EDF CENTRO 63 LOCAL 1",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "PIRINEOS",
+                "address": "AV UNIVERSIDAD ENTRE COLISEO Y CORAZON DE JESUS. No 49 PARROQUIA CATEDRAL",
+                "stock_count": 32,
+                "availability_status": "high"
+              },
+              {
+                "name": "ZONA FRANCA",
+                "address": "AVSAN MARTIN C/CALLEJON ANAUCO EDF PARAISO LOCAL 3,4,5 URB 9 DE DICIEMBRE. SAN MARTIN",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "CUARTEL",
+                "address": "AV BARALT ESQ CUARTEL VIEJO EDIF ASTOR ",
+                "stock_count": 3,
+                "availability_status": "medium"
+              },
+              {
+                "name": "RIOFARO",
+                "address": "AV ANDRES BELLO HOSPITAL ORTOPEDICO INFANTIL ",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "ANTINEA",
+                "address": "AV LECUNA NIVEL LECUNA EDF MOHEDANO LOCAL CL1-CL3-CL5 ZONA 1 PARQUE CENTRAL",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "ROBLE",
+                "address": "CENTRO SIMON BOLIVAR AREA COMERCIAL TORRE SUR ESQUINA LA PALMA",
+                "stock_count": 17,
+                "availability_status": "high"
+              },
+              {
+                "name": "CLAVELINAS",
+                "address": "LOCAL 1 EDF CENTRO RESIDENCIAL LA CANDELARIA ENTRE MIGUELACHO Y CRUZ DE CANDELARIA",
+                "stock_count": 26,
+                "availability_status": "high"
+              },
+              {
+                "name": "CONGRESO",
+                "address": "C/ OESTE 2, ENTRE PADRE SIERRA Y MUNOZ. EDF OFICENTRO PADRE SIERRA. PB PARROQUIA CATEDRAL",
+                "stock_count": 13,
+                "availability_status": "high"
+              },
+              {
+                "name": "AMBAR",
+                "address": "CENTRO SAN IGNACIO TORRE OESTE NIVEL CHAGUARAMOS LOCAL CH-51 LA CASTELLANA",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "INDIGO",
+                "address": "AV LIBERTADOR CC SAMBIL NIVEL FERIA LOCALES F C-17 Y C 19 CHACAO",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "LUZMAR",
+                "address": "AV, FCO. DE MIRANDA LOCALES 2, 3 Y 4 CHACAO. (AL LADO DEL INAVI)",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "TOPACIO",
+                "address": "URB SAN BERNARDINO AV GALIPAN ENTRE AV PANTEON Y AV GAMBOA",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "ZAFIRO",
+                "address": "AV CARACAS URB COLINAS DEL TAMANACO DETRAS DE MC DONALDS-VIZCAYA",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "RUBI",
+                "address": "AV LIBERTADOR CC SAMBIL NIVEL AUTOPISTA LOCALES AR48 Y AR50. CHACAO",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "TEPUY",
+                "address": "AV RIO DE JANEIRO CON CALLE MONTERREY URB LAS MERCEDES",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "MARFIL",
+                "address": "AV. PPAL. DE BELLO MONTE ESQUINA CON CALLE DON BOSCO COLINAS DE BELLO MONTE",
+                "stock_count": 5,
+                "availability_status": "medium"
+              },
+              {
+                "name": "NACAR",
+                "address": "AV LOS MANGOS CON CHAGUARAMOS URB LA FLORIDA ",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "METROCENTER",
+                "address": "CC METROCENTER AV BARALT CON UNIVERSIDAD MEZZANINA LOCAL MT28",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MONTA?AL",
+                "address": "EDF MONTE ARARAT LOCALES K,L,J FRENTE A LA AV FCO DE MIRANDA PETARE",
+                "stock_count": 20,
+                "availability_status": "high"
+              },
+              {
+                "name": "JOYA",
+                "address": "CARRETERA MACARACUAY  CAFETAL AV LUIS CAMOENS BLVRD. JOLLA CC EXPRESSO PB",
+                "stock_count": 5,
+                "availability_status": "medium"
+              },
+              {
+                "name": "BELLA VISTA",
+                "address": "AV USLAR CON CALLE 1 URB VISTA ALEGRE PARROQUIA LA VEGA",
+                "stock_count": 13,
+                "availability_status": "high"
+              },
+              {
+                "name": "MUCURA",
+                "address": "AV. PPAL. DE LOS CHORROS CON 5 TRANSVERSAL PARCELA A. URB. LOS CHORROS",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "GRACIELA",
+                "address": "AV CENTRAL DE LA LAGUNITA CON CALLE GUASIMO URB LA LAGUNITA",
+                "stock_count": 26,
+                "availability_status": "high"
+              },
+              {
+                "name": "CARLOTA",
+                "address": "AV. FRANCISCO DE MIRANDA CON AV. PRINCIPAL LA CARLOTA",
+                "stock_count": 28,
+                "availability_status": "high"
+              },
+              {
+                "name": "ALBITA",
+                "address": "1RA CON 2DA TRANSVERSAL URB. STA EDUVIGIS MUNICIPIO SUCRE",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MATERNIDAD",
+                "address": "Avenida San Martin frente a la Maternidad Concepcion Palacios ",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "PLAZA CARICUAO",
+                "address": "Avenida Ppal de Ruiz Pineda, CC Plaza Caricuao, Locales del 7 al 12 Nivel Mezz",
+                "stock_count": 17,
+                "availability_status": "high"
+              },
+              {
+                "name": "EXPRESO",
+                "address": "Av ppal los guayabitos CC Expreso baruta",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "JUAN BAUTISTA",
+                "address": "KMT 2 Ctra. Petare Sta Lucia Interseccion Ctra Palo Verde El Limoncito Filas de Mariche",
+                "stock_count": 23,
+                "availability_status": "high"
+              },
+              {
+                "name": "ELEANOR",
+                "address": "Av Páez con Av Urbaneja, parte de la Hacienda La Vega Urb La Paz. El Paraíso",
+                "stock_count": 30,
+                "availability_status": "high"
+              },
+              {
+                "name": "DANILA",
+                "address": "Av. Intercomunal Del Valle, Calle Zea Coche Mun Libertador Caracas, Distrito Capital",
+                "stock_count": 23,
+                "availability_status": "high"
+              },
+              {
+                "name": "JARDINES DEL VALLE",
+                "address": "AV. INTERCOMUNAL DEL VALLE CON CALLE 2, SECTOR SAN RAFAEL URDANETA, URBANIZACIÓN LOS JARDINES DEL VALLE",
+                "stock_count": 19,
+                "availability_status": "high"
+              },
+              {
+                "name": "MONICA",
+                "address": "CARRETERA EL HATILLO,SECTOR EL PAUJI,CC PARQUE CERRO VERDE NIVEL FERIA,LOCAL 106 - A",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "PEDRO LUIS",
+                "address": "SUBIDA DE LOS NARANJOS, CARACAS 1083, DISTRITO CAPITAL",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "VENTUARI",
+                "address": "CALLE CARONI C/PASEO LOS ILUSTRES. URB VALLE ABAJO PARROQUIA STA ROSALIA",
+                "stock_count": 37,
+                "availability_status": "high"
+              },
+              {
+                "name": "OPALO",
+                "address": "AV CASANOVA C/ CALLE EL RECREO EDF RUPI LOCALES 8 AL 13 SABANA GRANDE",
+                "stock_count": 2,
+                "availability_status": "medium"
+              },
+              {
+                "name": "LIDER",
+                "address": "Avenida Francisco de Miranda, Caracas",
+                "stock_count": 20,
+                "availability_status": "high"
+              },
+              {
+                "name": "SAN PASTOR",
+                "address": "AV FRANCISCO DE MIRANDA CC UNICENTRO EL MARQUEZ LOCAL 148 PB",
+                "stock_count": 21,
+                "availability_status": "high"
+              },
+              {
+                "name": "CUARZO",
+                "address": "Av Romulo Gallegos CC Millenium. Nivel Comercio 4 (Feria) Los Dos Caminos",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "NATALIA",
+                "address": "SAB GRANDE AV ABRAHAM LINCOLN EDF SAN ANTONIO LOCAL 3 AL LADO DE LA TORRE PROVINCIAL",
+                "stock_count": 13,
+                "availability_status": "high"
+              },
+              {
+                "name": "GRISELDA",
+                "address": "SABANA GRANDE. CALLE REAL EDIF. ESCÁLAMO AL LADO DE BALÚ",
+                "stock_count": 23,
+                "availability_status": "high"
+              },
+              {
+                "name": "OCUMITO",
+                "address": "ZONA RENTAL DE LA UNIMET CALLE A URB TERRAZAS DEL AVILA",
+                "stock_count": 15,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 985
+      },
+      {
+        "city": "Catia La Mar",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "RAFAEL TEODORO",
+                "address": "AVENIDA ARMADA  SECTOR LA LUCHA",
+                "stock_count": 40,
+                "availability_status": "high"
+              },
+              {
+                "name": "MARINERA",
+                "address": "AV EL EJERCITO. EDF STA GLORIA LOCAL 1. URB BALNEARIO CATIA LA MAR",
+                "stock_count": 22,
+                "availability_status": "high"
+              },
+              {
+                "name": "PLAYA GRANDE",
+                "address": "AV PRINCIPAL DE PLAYA GRANDE ENTRE CALLE 6 Y 7, CATIA LA MAR",
+                "stock_count": 15,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 77
+      },
+      {
+        "city": "San Antonio de los Altos",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ALTOZANO",
+                "address": "LAS MINAS/SAN ANTONIO DE LOS ALTOS ",
+                "stock_count": 25,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 25
+      },
+      {
+        "city": "Los Teques",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "SCARLET",
+                "address": "Ctra PN,cruce con calle Trvl o Tamanaco,Sec La Mata Mcpio Guaicaipuro",
+                "stock_count": 30,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 30
+      },
+      {
+        "city": "Higuerote",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "JENNIFER",
+                "address": "ENTRADA AL POBLADO HIGUEROTE JURISDICCION MUNICIPIO BRION ESTADO MIRANDA",
+                "stock_count": 19,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 19
+      },
+      {
+        "city": "Guatire",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "NELLYS",
+                "address": "Carretera Nacional, Sector Las Flores, Parcelamiento Industrial El Manteco",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "TURQUESA",
+                "address": "CC GUATIRE PLAZA PB LOCALES 23,24,25 MUNICIPIO ZAMORA",
+                "stock_count": 30,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 45
+      },
+      {
+        "city": "Guarenas",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "CAMINITO",
+                "address": "AV. ESTE CON INTERCOMUNAL GUARENAS GUATIRE, PARCELA C-02, URBANIZACIÓN LA VAQUERA, MUNICIPIO AMBROSIO PLAZA, GUARENAS",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "VERTIENTE",
+                "address": "CALLE COMERCIO C/AV FRANCISCO GARCIA. EDF RIBEIRA BRAVA LOCAL 1 SECTOR LA LLANADA",
+                "stock_count": 26,
+                "availability_status": "high"
+              },
+              {
+                "name": "GRANATE",
+                "address": "AV INTERCOMUNAL GUARENAS- GUATIRE PARCELA A7 MUNICIPIO PLAZA. GUARENAS",
+                "stock_count": 10,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 52
+      },
+      {
+        "city": "Caraballeda",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MARIA ANTONIETA",
+                "address": "BOULEVARD NAIGUATA No 11 BLOQUE 39 URB CARIBE. CARABALLEDA",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "REGULO",
+                "address": "AV. LA PLAYA, PARROQUIA CARABALLEDA, MUNICIPIO VARGAS",
+                "stock_count": 28,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 44
+      },
+      {
+        "city": "Maiquetia",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MAIQUETIA",
+                "address": "C.C. PLAZA TRICOLOR, LOCAL1 PB-1 Y PB-2, MAIQUETIA, ESTADO LA GUAIRA",
+                "stock_count": 42,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 42
+      },
+      {
+        "city": "Valencia",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "BAMBU",
+                "address": "AV Intercomunal Don Julio Cent San Diego Valencia  Edo.Carabobo",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "CAFETAL",
+                "address": "AV. UNIVERSIDAD SECTOR LA CAMPINA AL LADO DE CC CENTRAL MADEIRENSE",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "GERMAN",
+                "address": "\nAv. Las Ferias Cruce Con Avenida Constitucion Diagonal A La Maternidad Del Sur",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "ISABELLA",
+                "address": "AV MONSENOR ADAMS C/CALLE 140 URB EL VINEDO MUNICIPIO SAN JOSE",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "PERLA",
+                "address": "AV INTERCOMUNAL DE SAN DIEGO SECTOR LOS JARALES (ARTERIA 1) MUNICIPIO SAN DIEGO",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "ALPES",
+                "address": "CALLE No 139-A. No 105-78 URB EL VINEDO ",
+                "stock_count": 9,
+                "availability_status": "medium"
+              },
+              {
+                "name": "DANIELA",
+                "address": "CC SAMBIL VALENCIA NIVEL FERIA LOCALES F11 Y F13 URB CIUDAD JARDIN MAÑONGO",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "LA ISABELICA",
+                "address": "AVENIDA HENRY FORD, ZONA INDUSTRIAL MUNICIPAL, PARROQUIA RAFAEL URDANETA. VALENCIA, ESTADO CARABOBO",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "TRINCHERAS",
+                "address": "AV UNIVERSIDAD C/PASEO VZLA CC LA GRANJA No 174-30 ",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "DIAMANTE",
+                "address": "AV CABRIALES C/CALLE 130 PARCELA 1 LA TRIGALENA REPARCELAMIENTO 002",
+                "stock_count": 13,
+                "availability_status": "high"
+              },
+              {
+                "name": "GUATAPARO",
+                "address": "AV CUATRICENTENARIO SECTOR VM6 URB LOS MANGOS PARROQUIA SAN JOSE",
+                "stock_count": 18,
+                "availability_status": "high"
+              },
+              {
+                "name": "CIELO",
+                "address": "Av Salvador Feo La Cruz Urb Manongo Mun. Naguanagua",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 132
+      },
+      {
+        "city": "Charallave",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "OFELIA",
+                "address": "AV BOLIVAR SECTOR PUEBLO ABAJO No 323 ",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "ESTACION SUR CHARALLAVE",
+                "address": "AV. 1 CRISTÓBAL ROJAS, ENTRE LAS CALLES 06 Y 07, CHARALLAVE",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 26
+      },
+      {
+        "city": "Cua",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ESMERALDA",
+                "address": "CALLE JOSE MARIA CARRENO ANTIGUA CRUZ VERDE ",
+                "stock_count": 4,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 4
+      },
+      {
+        "city": "Maracay",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ZULY",
+                "address": "Sc Barrio Sucre II Av Delicias sin num Parroquia Las Delicias Mcp Girardot",
+                "stock_count": 24,
+                "availability_status": "high"
+              },
+              {
+                "name": "CRISTAL",
+                "address": "Urb San Carlos entre Av Los Samanes y Av. Fuerzas Aereas",
+                "stock_count": 29,
+                "availability_status": "high"
+              },
+              {
+                "name": "CEDRO",
+                "address": "CALLE 2 C/4TA AV. MANZANA J LOCAL 1 LA SOLEDAD",
+                "stock_count": 34,
+                "availability_status": "high"
+              },
+              {
+                "name": "UMBRAL",
+                "address": "AV PPAL LAS DELICIAS CALLE VICENTE LECUNA C/CALLE JUAN V. GONZALEZ ZONA COMERC 1",
+                "stock_count": 17,
+                "availability_status": "high"
+              },
+              {
+                "name": "ARAGUANEY",
+                "address": "Cc Unicentro Maracay, Nivel Pb, Locales Pb-33, Pb-34, Pb-35, Pb-36 Y Pb-37",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "GREGORIO",
+                "address": "Av Bermudez, Jurisdicción del Municipio Maracay, Distrito Girardot",
+                "stock_count": 33,
+                "availability_status": "high"
+              },
+              {
+                "name": "DAYSI",
+                "address": "Calle Mariño con Calle Páez Sector Centro Sur Oeste III Municipio Girardot",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 166
+      },
+      {
+        "city": "Turmero",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "AMATISTA",
+                "address": "CARRETERA INTERCOMUNAL MARACAY-TURMERO ASENTAMIENTO LA PROVIDENCIA",
+                "stock_count": 28,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 28
+      },
+      {
+        "city": "La Victoria",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "DELTA",
+                "address": "AV FRANCISCO LORETO ENTRE AV SOCO Y ANDRES BELLO ",
+                "stock_count": 20,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 20
+      },
+      {
+        "city": "Puerto Cabello",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ESTRELLA MARINA",
+                "address": "URB. CUMBOTO NORTE PARCELA 144-155 AL LADO DE MC DONALDS ",
+                "stock_count": 14,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 14
+      },
+      {
+        "city": "Guacara",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "YADIRA",
+                "address": "PARQUE INDUSTRIAL LA FLORESTA,SOBRE LA CARRETERA NACIONAL,QUE CONDUC A GUACARA-VALENCIA",
+                "stock_count": 13,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 13
+      },
+      {
+        "city": "Barquisimeto",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "CIENCIA",
+                "address": "C.C LAS TRINITARIAS AV LOS LEONES CON AV.LOS LIBERTADORES URB. CLUB HIPICO",
+                "stock_count": 20,
+                "availability_status": "high"
+              },
+              {
+                "name": "OBELISCO",
+                "address": "PUEBLO NUEVO, AVENIDA FLORENCIO JIMÉNEZ ESQUINA CON AVENIDA LA SALLE, BARQUISIMETO, ESTADO LARA.",
+                "stock_count": 29,
+                "availability_status": "high"
+              },
+              {
+                "name": "BOSQUE",
+                "address": "AV. LARA, NO 9-55 URB. NUEVA SEGOVIA BARQUISIMETO",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "ONIX",
+                "address": "AV. PEDRO LEON TORRES CON CALLE 54 ",
+                "stock_count": 39,
+                "availability_status": "high"
+              },
+              {
+                "name": "AV. MORAN",
+                "address": "AVENIDA MORAN CON CRUCE AV VENEZUELA",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "ACERINA",
+                "address": "AV. 20 CON CALLE 8 MUNICIPIO CATEDRAL ",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "PARQUE",
+                "address": "Av Libertador con Vereda 1 Sector Bararida Parroquia Catedral",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "JIRAHARA",
+                "address": "Av Argimiro Bracamonte CC Sambil. Local L117 ",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "ELSIS",
+                "address": "Avd Madrid ent Avd Caracas y  Trvs 1.Urb Santa Elena,Prq Santa Rosa Barquisimeto,Lara",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "MARYCARMEN",
+                "address": "CARRERA 19 CALLE 32 ",
+                "stock_count": 22,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 179
+      },
+      {
+        "city": "Cabudare",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "FLORESTA",
+                "address": "AV. INTERCOMUNAL CABUDARE C/CALLE SANTA BARBARA ",
+                "stock_count": 23,
+                "availability_status": "high"
+              },
+              {
+                "name": "ENSO",
+                "address": "URBANIZACIÓN TARABANA PLAZA Parroquia Cabudare Municipio Palavecino",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 35
+      },
+      {
+        "city": "Carora",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ZUBILLAGA HERMANOS",
+                "address": "AVENIDA FRANCISCO DE MIRANDA ESQUINA CALLE CURARIGUA CARORA ESTADO LARA",
+                "stock_count": 22,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 22
+      },
+      {
+        "city": "Merida",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "GABRIEL",
+                "address": "Av Andres B./Urb Los Corales Res Terrazas de la Sierra Mun. Libertador Edo Mérida",
+                "stock_count": 6,
+                "availability_status": "medium"
+              },
+              {
+                "name": "SALAS",
+                "address": "Calle 26 Viaducto Campo Elias Av 7/8, CC El Ramiral Nivel PB  PB01-PB05 Mun Aut. Libertador",
+                "stock_count": 20,
+                "availability_status": "high"
+              },
+              {
+                "name": "ROXANA",
+                "address": "Nueva Calle El Cobre, Sector El Cobre Parroquia Matriz Mun. Campo Elías,Edo Mérida",
+                "stock_count": 14,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 40
+      },
+      {
+        "city": "Barcelona",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "SERRANIA",
+                "address": "AV FUERZAS ARMADAS Y CALLE RICAURTE CC NEVERI PLAZA PB LOCALES 105-106",
+                "stock_count": 21,
+                "availability_status": "high"
+              },
+              {
+                "name": "MARIAS",
+                "address": "Urb. Bosque Res El Ingenio carrera 36, Av. Dr. Ildemaro L prolongación Av 5 de Julio",
+                "stock_count": 6,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 27
+      },
+      {
+        "city": "Puerto La Cruz",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ODISEA",
+                "address": "CALLE LA LIBERTAD. LOCAL49-A  ",
+                "stock_count": 18,
+                "availability_status": "high"
+              },
+              {
+                "name": "LILIANA",
+                "address": "PASEO COLON No 17  ",
+                "stock_count": 22,
+                "availability_status": "high"
+              },
+              {
+                "name": "CEREZOS",
+                "address": "PUERTO LA CRUZ  ",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 52
+      },
+      {
+        "city": "Maturin",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ZONA INDUSTRIAL",
+                "address": "PP4Q+M2P, Maturín 6201, Maturín, Monagas, ZONA INDUSTRIAL DE MATURIN, AL LADO DEL ESTADIO MONUMENTAL",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "ANITA",
+                "address": "QTA No 11 CARRERA 9-A AV LUIS DEL VALLE GARCIA CON CALLE 1",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "ROSARIO",
+                "address": "CARRERA 8. ANTIGUA AV BOLIVAR No 70 ",
+                "stock_count": 29,
+                "availability_status": "high"
+              },
+              {
+                "name": "PEDREGAL",
+                "address": "EDIF OLGA BEATRIZ, 6201, AV. RAUL LEONI, MATURÍN 6201, MONAGAS",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "PALMA REAL",
+                "address": "AV. ALIRIO UGARTE PELAYO CON AV. PPAL TIPURO ZONA NORTE ",
+                "stock_count": 13,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 78
+      },
+      {
+        "city": "Lecherias",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "PLAYA LIDO",
+                "address": "AV DIEGO BAUTISTA URBANEJA CON CARRERA 6 ",
+                "stock_count": 18,
+                "availability_status": "high"
+              },
+              {
+                "name": "DAVID",
+                "address": "CALLE MARINO CON AV LIC. URBANEJA EL PENONAL.",
+                "stock_count": 19,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 37
+      },
+      {
+        "city": "Anaco",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "KAVAC",
+                "address": "AV MIRANDA No 2-64 PLANTA BAJA  ",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "CORAL",
+                "address": "AV JOSE ANTONIO ANZOATEGUI AL LADO DE MCDONALDS Y FRENTE AL UNICASA",
+                "stock_count": 14,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 29
+      },
+      {
+        "city": "Punta De Mata",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "PORVENIR",
+                "address": "AV BOLIVAR CASA No 105  ",
+                "stock_count": 28,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 28
+      },
+      {
+        "city": "El Tigre",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "CHAPARRAL",
+                "address": "AV WINSTON CHURCHILL CON CALLE 16 SUR URB FRANCISCO DE MIRANDA",
+                "stock_count": 35,
+                "availability_status": "high"
+              },
+              {
+                "name": "AGUAMARINA",
+                "address": "AV. INTER EL TIGRE, LOTE 2 EL TIGRITO DEL MUN SAN JOSE DE GUANIPA, EDO. ANZOATEGUI",
+                "stock_count": 22,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 57
+      },
+      {
+        "city": "Cumana",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "TUNANTAL",
+                "address": "AV GRAN MARISCAL PARROQUIA VALENTIN VALIENTE QTA NOEMA N°100",
+                "stock_count": 46,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 46
+      },
+      {
+        "city": "Carupano",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MIRAMONTES",
+                "address": "AV UNIVERSITARIA CRUCE CON CALLE MIRAMONTES MANZANA A PARCELA A1 (FRENTE AL ESTADIO)",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 12
+      },
+      {
+        "city": "Porlamar",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "RESTINGA",
+                "address": "AV ALDONZA MANRIQUE CON AV BOLIVAR. No I-6 URB PLAYA EL ANGEL",
+                "stock_count": 19,
+                "availability_status": "high"
+              },
+              {
+                "name": "LA VELA",
+                "address": "CALLE LOS UVEROS CON AV. GUAYACÁN, CENTRO COMERCIAL LA VELA II ETAPA NIVEL MAR, LOCAL M2-47 M2-48 Y M2-49, SECTOR COSTA AZUL, PORLAMAR,ESTADO NUEVA ESPARTA. VENEZUELA",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 37
+      },
+      {
+        "city": "Pampatar",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MILAGROS",
+                "address": "C.C SAMBIL, LOCAL L3. AV. JOVITO VILLALVA, SECTOR SAN LORENZO. PAMPATAR. ISLA DE MARGARITA, EDO NUEVA ESPARTA",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "PAMPATAR",
+                "address": "CALLE JOAQUIN MANEIRO CON CALLE SAN MARTIN. PAMPATAR MUNICIPIO MANEIRO",
+                "stock_count": 5,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 19
+      },
+      {
+        "city": "La Asuncion",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "LA ASUNCION",
+                "address": "AV 31 DE JULIO SECTOR COCHEIMA",
+                "stock_count": 22,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 22
+      },
+      {
+        "city": "San Felipe",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "JUNIN",
+                "address": "AV. LIBERTADOR (5TA AVENIDA) CON CALLE 18. SAN FELIPE - YARACUY",
+                "stock_count": 13,
+                "availability_status": "high"
+              },
+              {
+                "name": "PATRIA",
+                "address": "AV. LA PATRIA CON AV. 8  ",
+                "stock_count": 26,
+                "availability_status": "high"
+              },
+              {
+                "name": "SAMAN",
+                "address": "AV. ARTURO USLAR PIETRI, ENTRE PRIMERA Y SEGUNDA ENTRADA AL BARRIO LAS MADRES MUN. INDEPEN",
+                "stock_count": 18,
+                "availability_status": "high"
+              },
+              {
+                "name": "MERCEDES",
+                "address": "AV. LIBERTADOR CON CALLE 13 EDIF. STRAZZERI, P.B. ",
+                "stock_count": 13,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 70
+      },
+      {
+        "city": "San Juan De Los Morros",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MIGUEL",
+                "address": "Av Los llanos salida  2caminos Municipio Juan G Roscio San Juan de los morros",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 18
+      },
+      {
+        "city": "Calabozo",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ADELMIRA",
+                "address": "Pcla final de la Av23 de enero fte redoma  Fund de Calabozo Municipio Francisco Miranda",
+                "stock_count": 10,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 10
+      },
+      {
+        "city": "Barinas",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MALVINA",
+                "address": "Area urbana Calle Camejo N5-28  Av Medina Jiménez/Libertad ftte a la Plaza El Estudiante",
+                "stock_count": 10,
+                "availability_status": "medium"
+              },
+              {
+                "name": "ALFA",
+                "address": "AV. LOS ANDES CON AV. ALAIN URB. ALTO BARINAS MUNICIPIO BARINAS",
+                "stock_count": 4,
+                "availability_status": "medium"
+              },
+              {
+                "name": "OMEGA",
+                "address": "AV. CUATRICENTENARIA DIAGONAL A CADA ",
+                "stock_count": 7,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 21
+      },
+      {
+        "city": "Valle De La Pascua",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "LA PASCUA",
+                "address": "AV. LAS INDUSTRIAS CON AV. LIBERTADOR. VALLE DE LA PASCUA, EDO. GUARICO",
+                "stock_count": 8,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 8
+      },
+      {
+        "city": "Guanare",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "GISELA",
+                "address": "Av 23 de Enero con calle 11  ",
+                "stock_count": 17,
+                "availability_status": "high"
+              },
+              {
+                "name": "UNDA",
+                "address": "AV. UNDA ENTRE CARRERA 12 Y 13 SECTOR LA ARENOSA ",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 29
+      },
+      {
+        "city": "San Fernando De Apure",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "LUIS",
+                "address": "Av Los Centauros Intercomunal Sn Fernando/Biruaca ctra Llano Sn Fernando de Apure Edo Apure",
+                "stock_count": 5,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 5
+      },
+      {
+        "city": "San Carlos",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "SERVANDO",
+                "address": "Av Caracas/Av José Laurencio c/urdaneta G-G2  Urb Romulo G San Carlos Estado Cojedes",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 18
+      },
+      {
+        "city": "Tinaquillo",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MEYBY",
+                "address": "AvMiranda/Calle Fndo Figueredo Municipio Autónomo Tinaquillo Fte al  C.C. San Antonio",
+                "stock_count": 9,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 9
+      },
+      {
+        "city": "San Cristobal",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ARELIS",
+                "address": "Av. 19 de abril cruce/Viaducto. La Concordia San Cristobal",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "SORAYA",
+                "address": "Av Libertador sect sab larga  CC Sambil nivel feria,  local FN-7 Parroquia Sn Juan",
+                "stock_count": 5,
+                "availability_status": "medium"
+              },
+              {
+                "name": "MARTA",
+                "address": "Carrera 21 entre calle 12 y 14 Sn Cristobal Mun.Pedro Marin M Dist. Sn Cristobal Edo Tachira",
+                "stock_count": 7,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 20
+      },
+      {
+        "city": "Valera",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "TRUJILLO",
+                "address": "AV. 9 CON CALLE 8  ",
+                "stock_count": 16,
+                "availability_status": "high"
+              },
+              {
+                "name": "LA PLATA",
+                "address": "Avenida 6 y Bolivar con Calle Buenos Aires Urbanizacion la Plata, Valera, Trujillo",
+                "stock_count": 14,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 30
+      },
+      {
+        "city": "El Vigia",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "HERNAN DE JESUS",
+                "address": "Carretera Panamericana, Parcelamiento Ind. El Vigía, Parcela A2 Mun Alberto Adriani",
+                "stock_count": 12,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 12
+      },
+      {
+        "city": "Maracaibo",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "FRANCISCO",
+                "address": "Ave. 76 entre las calles 79 (antes Av. La Limpia) y 79B, Sector La Macandona, No 79-54",
+                "stock_count": 31,
+                "availability_status": "high"
+              },
+              {
+                "name": "NERIDA",
+                "address": "Av. Circunvalación 2 con Av. 60 (Av. Ppal) de la zona industrial de Maracaibo",
+                "stock_count": 19,
+                "availability_status": "high"
+              },
+              {
+                "name": "ESQUINA",
+                "address": "AV BELLA VISTA C/CALLE 72 (FRENTE A WENDYS) ",
+                "stock_count": 5,
+                "availability_status": "medium"
+              },
+              {
+                "name": "FUERZAS ARMADAS",
+                "address": "AV FUERZAS ARMADAS CON CALLE 45 (FRENTE A FERRETOTAL) URB EL ROSAL SUR",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "TORRE EUROPA",
+                "address": "AV BELLA VISTA C/CALLE 61 (FRENTE A ENNE) ",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "LAGOMAR",
+                "address": "CC SAMBIL MCBO NIVEL FERIA CARRETERA MARACAIBO EL MOJAN LOCALES F59 Y F60",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "INDIO MARA",
+                "address": "AV 20 CON CALLE 66 SECTOR PARAISO ",
+                "stock_count": 12,
+                "availability_status": "high"
+              },
+              {
+                "name": "COSTA SUR",
+                "address": "Calle 171 con Av 48 Via a La Canada de Urdaneta Mun. San Francisco",
+                "stock_count": 8,
+                "availability_status": "medium"
+              },
+              {
+                "name": "LA VEREDA",
+                "address": "DR. PORTILLO, MARACAIBO 4001, ZULIA ",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "LAS DELICIAS",
+                "address": "AV 15 DELICIAS ESQUINA CALLE 85 (FALCON) MARACAIBO VENEZUELA 4005",
+                "stock_count": 25,
+                "availability_status": "high"
+              },
+              {
+                "name": "CECILIO ACOSTA",
+                "address": "AV Las Delicias con calle 67 Cecilio Acosta. Parroquia Olegario Villalobos. Municipio Maracaibo. Estado Zulia",
+                "stock_count": 22,
+                "availability_status": "high"
+              },
+              {
+                "name": "CUMBRES",
+                "address": "Circunvalación 2, Av 59 Cumbres. Urb. Vista Bella. Parroquia Cacique Mara. Municipio Maracaibo.",
+                "stock_count": 10,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 181
+      },
+      {
+        "city": "Santa Barbara",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ESCALANTE",
+                "address": "KM 2 CRTA STA BARBARA-VIGIA PQ STA BARBARA MNCP COLON",
+                "stock_count": 7,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 7
+      },
+      {
+        "city": "Ciudad Ojeda",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ORO NEGRO",
+                "address": "CALLE CARDON MUNICIPIO LAGUNILLAS ",
+                "stock_count": 26,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 26
+      },
+      {
+        "city": "Cabimas",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "COSTALAGO",
+                "address": "CALLE 4 SECTOR LAS CUARENTA MUNICIPIO CABIMAS ",
+                "stock_count": 28,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 28
+      },
+      {
+        "city": "Coro",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ARENALES",
+                "address": "AV INDEPENDENCIA CON AV PINTO",
+                "stock_count": 15,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 15
+      },
+      {
+        "city": "Punto Fijo",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "CARIRUBANA",
+                "address": "AV 6. URB ZARABON COMUNIDAD CARDON MUNICIPIO CARIRUBANA",
+                "stock_count": 17,
+                "availability_status": "high"
+              },
+              {
+                "name": "LAS SALINAS",
+                "address": "Av intercomunal Ali Primera CC Sambil, Nivel PB,  local L-99 Sector Hato Nuevo",
+                "stock_count": 18,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 35
+      },
+      {
+        "city": "Tucacas",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "MANGLAR",
+                "address": "SECTOR FEDERICO ECKOUTH TUCACAS MUNICIPIO SILVA",
+                "stock_count": 9,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 9
+      },
+      {
+        "city": "Araure",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "AGATA",
+                "address": "AV. 13 DE JUNIO CON  AV. ROMULO GALLEGOS ARAURE",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "ARAURE",
+                "address": "AV. PUNTO VENCEDORES CON INTERSECCION CON PUNTO TAPA DE PIEDRA NUESTRA SRA. DEL PILAR",
+                "stock_count": 16,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 31
+      },
+      {
+        "city": "Puerto Ordaz",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ORO",
+                "address": "AV ATLANTICO, SECTOR LOS OLIVOS, PARCELA 231-55-06, PUERTO ORDAZ, MUNICIPIO AUTONOMO CARONI, ESTADO BOLIVAR.",
+                "stock_count": 14,
+                "availability_status": "high"
+              },
+              {
+                "name": "ACERO",
+                "address": "CENTRO COMERCIAL ORINOKIA, PB H-136/137, AV LAS AMERICAS, SECTOR ALTA VISTA, PUERTO ORDAZ, MUNICIPIO AUTONOMO CARONI, ESTADO BOLIVAR.",
+                "stock_count": 11,
+                "availability_status": "high"
+              },
+              {
+                "name": "ALUMINIO",
+                "address": "CENTRO COMERCIAL ORINOKIA, LOCALES PB C-035-036-037-038-039, AV LAS AMERICAS, SECTOR ALTA VISTA, PUERTO ORDAZ, MUNICIPIO AUTONOMO CARONI, ESTADO BOLIVAR.",
+                "stock_count": 15,
+                "availability_status": "high"
+              },
+              {
+                "name": "VILLA GRANADA",
+                "address": "AV VENEZUELA C/AV ESTADOS UNIDOS. URB VILLA GRANADA",
+                "stock_count": 24,
+                "availability_status": "high"
+              },
+              {
+                "name": "PASEO CARONI",
+                "address": "AV PASEO CARONI C/CALLE ARO PARCELA 264-02-02 URB ALTA VISTA",
+                "stock_count": 7,
+                "availability_status": "medium"
+              },
+              {
+                "name": "PIEDRA LUNA",
+                "address": "AV ATLANTICO C/AV NORTE-SUR 4 SECTOR LAS GARZAS ",
+                "stock_count": 37,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 108
+      },
+      {
+        "city": "Ciudad Bolivar",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "JADE",
+                "address": "AV 17 DE DICIEMBRE ESQ AV LA URBINA ",
+                "stock_count": 11,
+                "availability_status": "high"
+              }
+            ]
+          }
+        ],
+        "total_stock": 11
+      },
+      {
+        "city": "Upata",
+        "sectors": [
+          {
+            "sector": "General",
+            "stores": [
+              {
+                "name": "ELIZABETH",
+                "address": "Av. Raul Leoni Ciudad de Upata Municipio Piar",
+                "stock_count": 7,
+                "availability_status": "medium"
+              }
+            ]
+          }
+        ],
+        "total_stock": 7
+      }
+    ],
+    "source": "cache",
+    "cache_age_hours": 0
+  },
+  "timestamp": "2026-01-20T23:47:34.479Z"
+}

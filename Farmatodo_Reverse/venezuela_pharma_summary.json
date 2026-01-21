@@ -1,0 +1,21 @@
+{
+  "fecha_extraccion": "2026-01-20T02:35:38.284904",
+  "indice_usado": "products",
+  "total_productos_descargados": 1000,
+  "productos_farmaceuticos": 428,
+  "laboratorios_unicos": 100,
+  "productos_con_atc": 0,
+  "productos_con_principio_activo": 388,
+  "top_10_labs": {
+    "GASEOSAS LUX": 57,
+    "IND NAC GASEOSA": 28,
+    "HALEON OTC": 24,
+    "COLGATE PALMOLI": 17,
+    "BRAND SOLUTIONS": 16,
+    "TECNOQUIMIC OTC": 15,
+    "QUALA S.A.": 12,
+    "PISA OTC": 11,
+    "LOREAL MASIVOS": 10,
+    "UNILEVER ANDINA": 10
+  }
+}

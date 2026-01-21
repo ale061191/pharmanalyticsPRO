@@ -64,6 +64,13 @@ export async function GET(request: Request) {
 
     const identifier = productId || productName || '';
 
+    console.log("----------------------------------------------------------------");
+    console.log(`[Hybrid API] Request Recieved`);
+    console.log(`[Hybrid API] product_id param: '${productId}'`);
+    console.log(`[Hybrid API] product_name param: '${productName}'`);
+    console.log(`[Hybrid API] Using target ID: '${productId || 'will-lookup-by-name'}'`);
+    console.log("----------------------------------------------------------------");
+
     try {
         // ============================================
         // LAYER 1: ALGOLIA (Always instant)
@@ -90,68 +97,118 @@ export async function GET(request: Request) {
         };
 
         // ============================================
-        // LAYER 2: CACHE (Check Supabase)
+        // LAYER 2: STORE INVENTORY (Real-time Granular)
         // ============================================
-        console.log(`[Hybrid] Layer 2: Checking cache for ${identifier}`);
+        console.log(`[Hybrid] Layer 2: Checking store_inventory for ${identifier}`);
 
-        const cacheThreshold = new Date();
-        cacheThreshold.setHours(cacheThreshold.getHours() - CACHE_HOURS);
+        let targetProductId = productId;
 
-        // Try to find cached data
-        let query = supabase
-            .from('stock_detail')
-            .select('*')
-            .gte('scraped_at', cacheThreshold.toISOString())
-            .order('scraped_at', { ascending: false })
-            .limit(200);
+        // If we only have name, we need to resolve it to an ID first
+        if (!targetProductId && productName) {
+            const { data: productData, error: productError } = await supabase
+                .from('products')
+                .select('id')
+                .ilike('name', `%${productName.trim()}%`) // Exact match or close enough
+                .limit(1)
+                .single();
 
-        // Match by product name (flexible)
-        if (productName) {
-            query = query.ilike('product_name', `%${productName.split(' ').slice(0, 3).join(' ')}%`);
+            if (productData) {
+                targetProductId = productData.id;
+            } else {
+                console.log(`[Hybrid] Product ID not found for name: ${productName}`);
+            }
         }
 
-        const { data: cacheData, error: cacheError } = await query;
+        if (targetProductId) {
+            // STEP 1: Fetch ALL stores (to ensure we don't miss 0-stock ones)
+            const { data: allStores, error: storesError } = await supabase
+                .from('sucursales')
+                .select('id, name, city, address, lat, lng');
 
-        if (!cacheError && cacheData && cacheData.length > 0) {
-            // Cache hit! Process and return
-            console.log(`[Hybrid] Cache HIT: ${cacheData.length} entries`);
+            if (storesError || !allStores) {
+                throw new Error(`Failed to fetch stores: ${storesError?.message}`);
+            }
 
-            const stores: StoreDetail[] = [];
-            const cities: Record<string, number> = {};
+            // STEP 2: Fetch Inventory for this product
+            const { data: inventoryData, error: inventoryError } = await supabase
+                .from('store_inventory')
+                .select('quantity, sucursal_id')
+                .eq('product_id', targetProductId);
 
-            for (const row of cacheData) {
-                stores.push({
-                    store_name: row.store_name,
-                    sector: row.sector || 'General',
-                    city: row.city,
-                    stock_count: row.stock_count,
-                    availability_status: row.availability_status || 'unknown',
+            if (!inventoryError && allStores.length > 0) {
+                // Create a Map for O(1) inventory lookup
+                const inventoryMap = new Map();
+                inventoryData?.forEach((item: any) => {
+                    inventoryMap.set(item.sucursal_id, item.quantity);
                 });
 
-                if (!cities[row.city]) {
-                    cities[row.city] = 0;
+                console.log(`[Hybrid] Merging ${allStores.length} stores with ${inventoryData?.length || 0} inventory records`);
+
+                // Group by city > sector > store
+                const citiesMap: Record<string, {
+                    city: string;
+                    sectors: {
+                        sector: string;
+                        stores: {
+                            name: string;
+                            address: string;
+                            stock_count: number;
+                            availability_status: string;
+                        }[];
+                    }[];
+                    total_stock: number;
+                }> = {};
+
+                for (const store of allStores) {
+                    const stock = inventoryMap.get(store.id) || 0;
+                    const cityName = store.city || 'Desconocido';
+                    const sectorName = 'General';
+
+                    if (!citiesMap[cityName]) {
+                        citiesMap[cityName] = { city: cityName, sectors: [], total_stock: 0 };
+                    }
+
+                    let sector = citiesMap[cityName].sectors.find(s => s.sector === sectorName);
+                    if (!sector) {
+                        sector = { sector: sectorName, stores: [] };
+                        citiesMap[cityName].sectors.push(sector);
+                    }
+
+                    sector.stores.push({
+                        name: store.name,
+                        address: store.address || '',
+                        stock_count: stock,
+                        availability_status: stock > 10 ? 'high' : (stock > 0 ? 'medium' : 'low')
+                    });
+
+                    citiesMap[cityName].total_stock += stock;
                 }
-                cities[row.city] += row.stock_count;
+
+                // If no product name yet, try to set it
+                if (!response.product_name && productName) {
+                    response.product_name = productName;
+                }
+
+                response.detail = {
+                    stores: [],
+                    cities: Object.values(citiesMap) as any,
+                    source: 'cache',
+                    cache_age_hours: 0,
+                };
+
+                return NextResponse.json(response);
+            } else {
+                console.log(`[Hybrid] Error fetching inventory. Error: ${inventoryError?.message}`);
+                // DEBUG RESPONSE
+                return NextResponse.json({
+                    ...response,
+                    debug_info: {
+                        stage: 'inventory_fetch',
+                        target_product_id: targetProductId,
+                        db_error: inventoryError,
+                    }
+                });
             }
-
-            // Calculate cache age
-            const oldestEntry = cacheData[cacheData.length - 1];
-            const cacheAgeMs = Date.now() - new Date(oldestEntry.scraped_at).getTime();
-            const cacheAgeHours = Math.round(cacheAgeMs / (1000 * 60 * 60) * 10) / 10;
-
-            response.detail = {
-                stores,
-                cities,
-                source: 'cache',
-                cache_age_hours: cacheAgeHours,
-            };
-
-            // Update product name from cache if better
-            if (!response.product_name && cacheData[0].product_name) {
-                response.product_name = cacheData[0].product_name;
-            }
-
-            return NextResponse.json(response);
         }
 
         // ============================================

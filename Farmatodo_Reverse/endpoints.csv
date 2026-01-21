@@ -1,0 +1,7 @@
+TYPE,ENDPOINT,METHOD,PARAMS,SOURCE
+FIREBASE,https://oracle-services-vzla.firebaseio.com,GET/POST,N/A,res/values/strings.xml
+MARKETING,https://sdk.iad-06.braze.com,POST,N/A,res/values/strings.xml
+CATÁLOGO,https://farmatodo.com.ve,GET,?,AndroidManifest.xml
+SOPORTE,Kustomer API,N/A,JWT Token,res/values/strings.xml
+TRACKING,https://click.farmatodo.com,GET,/1LxQ,AndroidManifest.xml
+GOOGLE_API,Google Maps/Cloud,N/A,Key: AIzaSyCFM2TmPSjT8ZmyNQN2ctMXtQc6RuBmVMk,res/values/strings.xml
