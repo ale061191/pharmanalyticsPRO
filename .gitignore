@@ -70,3 +70,4 @@ scripts/*.js
 fetch_page.js
 sync.logo_browser_scraper.py
 tools/frida/frida-server-17.6.0-android-x86_64
+.vercel
