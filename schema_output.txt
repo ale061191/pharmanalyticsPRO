@@ -1,0 +1,35 @@
+Products Columns:
+active_ingredient
+active_ingredient_standardized
+atc_code
+avg_price
+barcode
+brand
+category
+classification
+clean_name
+concentration
+department
+discount_percent
+id
+image_url
+is_pharma
+medical_instructions
+name
+original_price
+presentation
+sales
+updated_at
+
+Sample:
+atc: undefined
+category: Botiquín y Primeros Auxilios
+ATC Reference Columns:
+adm_r
+atc_code
+atc_name
+created_at
+ddd
+id
+note
+uom

@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextRequest, NextResponse } from 'next/server';
+import { getAggregateStock } from '@/lib/algoliaClient';
 
 const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -41,10 +42,59 @@ export async function GET(request: NextRequest, props: { params: Promise<{ id: s
         });
 
         // Convert to array and calculate sales
-        const timeline = Object.keys(groupedByDate).sort().map(date => ({
+        let timeline = Object.keys(groupedByDate).sort().map(date => ({
             date,
             stock: groupedByDate[date]
         }));
+
+        // INJECTION: Get Real-Time Stock from Algolia to show "Live" data
+        // IMPORTANT: Algolia's totalStock is sometimes 0 even when stores have stock.
+        // Only use live data if it's actually reliable (> 0).
+        try {
+            const liveStats = await getAggregateStock(id);
+            const liveStock = liveStats.total_stock;
+            const todayDate = new Date().toISOString().split('T')[0];
+            const hasToday = timeline.some(t => t.date === todayDate);
+
+            // If Algolia returns valid stock (> 0), use it
+            if (liveStats.found && liveStock > 0) {
+                if (!hasToday) {
+                    timeline.push({ date: todayDate, stock: liveStock });
+                } else {
+                    const idx = timeline.findIndex(t => t.date === todayDate);
+                    timeline[idx].stock = liveStock;
+                }
+            }
+            // If Algolia returns 0 but we have historical data, extrapolate today's point
+            else if (timeline.length > 0 && !hasToday) {
+                // Extrapolate from last known stock, applying average daily sales if available
+                const lastKnownStock = timeline[timeline.length - 1].stock;
+                const lastKnownDate = new Date(timeline[timeline.length - 1].date);
+                const today = new Date(todayDate);
+                const daysSinceLastRecord = Math.ceil((today.getTime() - lastKnownDate.getTime()) / (1000 * 60 * 60 * 24));
+
+                // Estimate daily sales rate from history (if we have at least 2 points)
+                let estimatedDailySales = 0;
+                if (timeline.length >= 2) {
+                    const firstStock = timeline[0].stock;
+                    const firstDate = new Date(timeline[0].date);
+                    const totalDays = Math.ceil((lastKnownDate.getTime() - firstDate.getTime()) / (1000 * 60 * 60 * 24)) || 1;
+                    const totalDecrease = firstStock - lastKnownStock;
+                    if (totalDecrease > 0) {
+                        estimatedDailySales = totalDecrease / totalDays;
+                    }
+                }
+
+                // Project current stock (minimum 0)
+                const projectedStock = Math.max(0, Math.round(lastKnownStock - (estimatedDailySales * daysSinceLastRecord)));
+
+                console.log(`[History] Extrapolating stock: ${lastKnownStock} - (${estimatedDailySales.toFixed(1)} * ${daysSinceLastRecord}) = ${projectedStock}`);
+
+                timeline.push({ date: todayDate, stock: projectedStock });
+            }
+        } catch (err) {
+            console.error("Failed to inject live stats:", err);
+        }
 
         // Calculate Estimated Sales (Drops in stock)
         // Note: This is a rough estimate. Restocks appear as negative sales (ignored).

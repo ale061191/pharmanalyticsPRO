@@ -1,0 +1,166 @@
+🔍 Investigating Data Quality...
+
+--- Searching for "Concor" ---
+✅ Found 22 matches for Concor/Bisoprolol:
+{
+  "id": "111114658",
+  "name": "Corentel",
+  "clean_name": "Corentel",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "114949433",
+  "name": "Bisoprolol 5 mg Biprolil Vargas",
+  "clean_name": "Biprolil",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "112908371",
+  "name": "Corbis Bisoprolol",
+  "clean_name": "Corbis",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "114379469",
+  "name": "Bisoprolol 2.5mg 20comprimidos Genven",
+  "clean_name": "Bisoprolol",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111408924",
+  "name": "Bisoprolol 1,25 mg Corentel Megalabs",
+  "clean_name": "Corentel",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "114949441",
+  "name": "Fumarato De Bisoprolol 2,5 mg Biprolil Vargas",
+  "clean_name": "Biprolil",
+  "active_ingredient": "Bisoprolol Fumarato",
+  "is_pharma": true
+}
+{
+  "id": "111318891",
+  "name": "Bisoprolol Fumarato 5 mg Calox",
+  "clean_name": "Bisoprolol Fumarato",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "112113472",
+  "name": "Bisoprolol Biprolil 2,5Mg X 15",
+  "clean_name": "Biprolil",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111096114",
+  "name": "Bisoprolol + Hidroclorotiazida Xylon 5/6,25Mg",
+  "clean_name": "Xylon",
+  "active_ingredient": "Bisoprolol + Hidroclorotiazida",
+  "is_pharma": true
+}
+{
+  "id": "111930010",
+  "name": "Bisoprolol 2,5 mg Antaar MCK Pharmaceutical",
+  "clean_name": "Antaar",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111970208",
+  "name": "Bisoprolol-Hidroclorotiazida 2.5Mg/6.25Mg Antaar Hct Mck",
+  "clean_name": "Antaar Hct",
+  "active_ingredient": "Bisoprolol + Hidroclorotiazida",
+  "is_pharma": true
+}
+{
+  "id": "111932638",
+  "name": "Bisoprolol 5 mg Antaar MCK Pharmaceutical",
+  "clean_name": "Bisoprolol 5 mg Antaar MCK Pharmaceutical",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111514895",
+  "name": "Bisoprolol Fumarato 2,5 mg Genven x 30",
+  "clean_name": "Bisoprolol Fumarato",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111317046",
+  "name": "Bisoprolol Fumarato 2,5 mg Calox",
+  "clean_name": "Bisoprolol Fumarato",
+  "active_ingredient": "Bisoprolol Fumarato",
+  "is_pharma": true
+}
+{
+  "id": "111968238",
+  "name": "Bisoprolol + Hidroclorotiazida",
+  "clean_name": "Bisoprolol Hidroclorotiazida Calox",
+  "active_ingredient": "Bisoprolol + Hidroclorotiazida",
+  "is_pharma": true
+}
+{
+  "id": "114668412",
+  "name": "Bisoprolol Fumarato 1,25 mg Biotalol Leti",
+  "clean_name": "Biotalol",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "115903496",
+  "name": "Bisoprolol Fumarato 5 mg Genven",
+  "clean_name": "Bisoprolol Fumarato",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111273477",
+  "name": "Bisoprolol 2,5 mg Corentel Megalabs",
+  "clean_name": "Corentel",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "112908363",
+  "name": "Bisoprolol 5 mg Corbis Siegfried",
+  "clean_name": "Corbis",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111490892",
+  "name": "Bisoprolol 2.5 mg Biotalol Leti",
+  "clean_name": "Biotalol",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111490898",
+  "name": "Bisoprolol 5 mg Biotalol Leti",
+  "clean_name": "Biotalol",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+{
+  "id": "111490899",
+  "name": "Bisoprolol 10 mg Biotalol Leti",
+  "clean_name": "Biotalol",
+  "active_ingredient": "Bisoprolol",
+  "is_pharma": true
+}
+
+--- Searching for "Chocolate" / "Yoga" ---
+⚠️ Found 5 junk items (Sample):
+{"id":"115820527","name":"Pistacho Crema Untable Chocolates Caraque Frasco x 200 g","clean_name":"Pistacho Crema Untable","is_pharma":true}
+{"id":"113686441","name":"Manta de Yoga K6 5mm Con Bolso Colores Surtidos","clean_name":"Manta de Yoga","is_pharma":true}
+{"id":"114989419","name":"Leche de Soya Lactovisoy Chocolate","clean_name":"Lactovisoy Chocolate","is_pharma":true}
+{"id":"111970836","name":"Chocolate Chocofit Sin Gluten","clean_name":"Chocolate Chocofit","is_pharma":true}
+{"id":"115514562","name":"Galletas Con Chispas De Chocolate Sin Gluten Sweetest Cookies x 150 gr","clean_name":"Sweetest Cookies","is_pharma":true}

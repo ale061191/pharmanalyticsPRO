@@ -90,45 +90,58 @@ function log(message, level = 'INFO') {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 async function captureAllProducts() {
-    log('🔍 Fetching products from Algolia (stealth mode)...');
+    log('🔍 Fetching products from Algolia (stealth mode - cursor based)...');
 
     const products = [];
-    let page = 0;
-    let hasMore = true;
+    let cursor = undefined;
+    let keepGoing = true;
+    let pageCount = 0;
 
-    while (hasMore && products.length < CONFIG.maxProducts) {
+    while (keepGoing && products.length < CONFIG.maxProducts) {
         try {
-            const result = await algoliaIndex.search('', {
+            // Use browse() instead of search() to bypass 1000-hit limit
+            const result = await algoliaIndex.browse('', {
                 hitsPerPage: CONFIG.batchSize,
-                page,
+                cursor: cursor,
                 attributesToRetrieve: ['objectID', 'id', 'sales', 'totalStock', 'stores_with_stock']
             });
 
             if (!result.hits || result.hits.length === 0) {
-                hasMore = false;
+                keepGoing = false;
             } else {
                 for (const hit of result.hits) {
                     const stockArray = hit.stores_with_stock || [];
                     products.push({
                         product_id: hit.objectID || hit.id,
                         sales_count: hit.sales || 0,
-                        stock_count: hit.totalStock || stockArray.length || 0
+                        stock_count: hit.totalStock || 0, // Total Units
+                        store_count: stockArray.length || 0 // Total Branches (Sucursales)
                     });
                 }
 
-                page++;
-                hasMore = page < result.nbPages;
+                pageCount++;
+                cursor = result.cursor; // Update cursor for next batch
 
-                // Stealth: randomized delay
+                // If no cursor matches, we are done
+                if (!cursor) {
+                    keepGoing = false;
+                }
+
+                // Stealth: randomized delay between batches
+                // Log every 5 pages to keep output clean but visible
+                if (pageCount % 5 === 0) {
+                    log(`   ...captured ${products.length} products so far`);
+                }
+
                 await randomDelay();
             }
         } catch (error) {
-            log(`❌ Algolia error page ${page}: ${error.message}`, 'ERROR');
-            hasMore = false;
+            log(`❌ Algolia browsing error at page ${pageCount}: ${error.message}`, 'ERROR');
+            keepGoing = false;
         }
     }
 
-    log(`✅ Captured ${products.length} products`);
+    log(`✅ Captured ${products.length} products total`);
     return products;
 }
 
@@ -150,6 +163,7 @@ async function saveSnapshots(products) {
             product_id: p.product_id,
             sales_count: p.sales_count,
             stock_count: p.stock_count,
+            store_count: p.store_count, // New field
             snapshot_date: today,
             captured_at: new Date().toISOString()
         }));

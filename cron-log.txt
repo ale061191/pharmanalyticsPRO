@@ -1,0 +1,29 @@
+2026-01-23T21:08:53.362Z - Starting Cron Execution
+2026-01-23T21:08:53.978Z - [Hourly Snapshot] Found 1000 products to update.
+2026-01-23T21:08:53.979Z - Batch 0: Processing 1000 IDs. First: 1000002
+2026-01-23T21:08:54.849Z - Batch 0: Algolia returned 1000 hits
+2026-01-23T21:08:54.851Z - Batch 0: Valid hits (non-null) = 0
+2026-01-23T21:08:54.853Z - Batch 0: No snapshots to insert (0 valid hits?)
+2026-01-23T21:08:54.858Z - ✅ [Hourly Snapshot] Done. Checked: 1000, Saved: 0, Failed: 0
+2026-01-23T21:12:32.323Z - Starting Cron Execution
+2026-01-23T21:12:32.863Z - [Hourly Snapshot] Found 1000 products to update.
+2026-01-23T21:12:32.864Z - Batch 0: Processing 1000 IDs. First: 1000002
+2026-01-23T21:12:33.187Z - Batch 0: Algolia returned 1000 hits
+2026-01-23T21:12:33.190Z - Batch 0: Valid hits (non-null) = 0
+2026-01-23T21:12:33.191Z - Batch 0: No snapshots to insert (0 valid hits?)
+2026-01-23T21:12:33.199Z - ✅ [Hourly Snapshot] Done. Checked: 1000, Saved: 0, Failed: 0
+2026-01-23T21:14:26.026Z - Starting Cron Execution
+2026-01-23T21:14:28.725Z - [Hourly Snapshot] Found 5040 products to update.
+2026-01-23T21:14:28.726Z - Batch 0: Processing 1000 IDs. First: 111001434
+2026-01-23T21:14:30.542Z - Batch 0: Upserted 1000 records.
+2026-01-23T21:14:30.547Z - Batch 1000: Processing 1000 IDs. First: 111586893
+2026-01-23T21:14:31.036Z - Batch 1000: Upserted 1000 records.
+2026-01-23T21:14:31.039Z - Batch 2000: Processing 1000 IDs. First: 111969088
+2026-01-23T21:14:31.497Z - Batch 2000: Upserted 1000 records.
+2026-01-23T21:14:31.502Z - Batch 3000: Processing 1000 IDs. First: 112662367
+2026-01-23T21:14:31.964Z - Batch 3000: Upserted 1000 records.
+2026-01-23T21:14:31.970Z - Batch 4000: Processing 1000 IDs. First: 114644437
+2026-01-23T21:14:32.502Z - Batch 4000: Upserted 1000 records.
+2026-01-23T21:14:32.507Z - Batch 5000: Processing 40 IDs. First: 116271574
+2026-01-23T21:14:32.929Z - Batch 5000: Upserted 40 records.
+2026-01-23T21:14:32.955Z - ✅ [Hourly Snapshot] Done. Checked: 5040, Saved: 5040, Failed: 0

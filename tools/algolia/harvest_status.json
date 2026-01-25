@@ -1,0 +1,8 @@
+{
+    "status": "PAUSED",
+    "reason": "GEMINI_QUOTA_EXCEEDED",
+    "last_successful_batch": "Locion (Partial)",
+    "next_resume_category": "Cardiologia",
+    "timestamp": "2026-01-24T13:42:00",
+    "resume_script": "tools/algolia/deep_harvest_resume.js"
+}

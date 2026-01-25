@@ -20,6 +20,8 @@ interface AlgoliaProduct {
     brand?: string;
     category?: string;
     sku?: string;
+    sales?: number;
+    stores_with_stock?: number[]; // Array of store IDs
 }
 
 interface AlgoliaResponse {
@@ -57,6 +59,7 @@ export async function searchProducts(query: string, limit = 10): Promise<Algolia
                 'brand',
                 'category',
                 'sku',
+                'sales',
             ],
         }),
     });
@@ -105,14 +108,19 @@ export async function getAggregateStock(productIdOrName: string): Promise<{
     stores_with_stock: number;
     avg_per_store: number;
     price: number | null;
+    sales: number | null;
 }> {
     // Try by ID first
     let product = await getProductById(productIdOrName);
 
-    // If not found, search by name
+    // If not found, do NOT search by name/text. This causes "Top Product" leaks (278k sales bug).
+    // The previous logic falling back to 'searchProducts(id)' returned the #1 item in the index when the ID wasn't found as a keyword.
+    // We strictly want ID match or nothing.
     if (!product) {
-        const results = await searchProducts(productIdOrName, 1);
-        product = results[0] || null;
+        // Double check: if input is numeric, we shouldn't search it as text.
+        // Returning null allows the API route to use its 'stock_history' fallback safely.
+
+        // NO-OP
     }
 
     if (!product) {
@@ -123,11 +131,13 @@ export async function getAggregateStock(productIdOrName: string): Promise<{
             stores_with_stock: 0,
             avg_per_store: 0,
             price: null,
+            sales: null,
         };
     }
 
     const totalStock = product.stock || product.totalStock || 0;
-    const storeCount = product.storetotal || 0;
+    // Fallback: If storetotal is missing, check length of stores_with_stock array
+    const storeCount = product.storetotal || (Array.isArray(product.stores_with_stock) ? product.stores_with_stock.length : 0);
 
     return {
         found: true,
@@ -136,6 +146,7 @@ export async function getAggregateStock(productIdOrName: string): Promise<{
         stores_with_stock: storeCount,
         avg_per_store: storeCount > 0 ? Math.round(totalStock / storeCount) : 0,
         price: product.price || null,
+        sales: product.sales || 0,
     };
 }
 

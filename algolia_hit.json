@@ -1,0 +1,1339 @@
+{
+  "anywaySelling": false,
+  "barcode": "7591519000948",
+  "barcodeList": [
+    "111026723",
+    "7591257000552",
+    "07591257000552",
+    "7591519000948",
+    "07591519000948"
+  ],
+  "brand": "2008M-0008623",
+  "categorie": "Dolor General",
+  "color": null,
+  "colors": null,
+  "customLabelForStockZeroByCity": [
+    {
+      "cityCode": "CCS",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VLRA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ASU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BQTO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "BRC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CABU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CAL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CBMA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CBOL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CDA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CDOJ",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CHAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CMAR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CMNA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "COR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CRNO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "CUA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "EVGA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GNRE",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GRNA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GUAC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "GUAT",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "HIG",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LEC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LTQU",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "LVIC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MAIQ",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MAT",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MCBO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MER",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "MRCY",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PAM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PDM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "POR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTJO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTLC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "PTO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SAC",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SALA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SBRA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SFA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SFEL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SJDLM",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "SNCR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TCCS",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TIG",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TQLLO",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "TUR",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "UPA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VAL",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "VDLP",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ANA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    },
+    {
+      "cityCode": "ARA",
+      "customLabel": "Pocas unidades | Solo en tiendas"
+    }
+  ],
+  "customTag": null,
+  "deliveryTime": null,
+  "departments": [
+    "Salud y Medicamentos"
+  ],
+  "desHiddenSEO": null,
+  "fullPrice": 705,
+  "fullPriceByCity": [
+    {
+      "cityCode": "COR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "BAR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SAC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PDM",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PTC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "HIG",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "MAT",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "MER",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PAM",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CUA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "LEC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "UPA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "POR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PTO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CAR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "ANA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "ARA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SFA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "VAL",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CAL",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "ASU",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "TIG",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "TUR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CDA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "EVGA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CHAR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "LVIC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "GUAT",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "LTQU",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "VDLP",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CDOJ",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CRNO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SBRA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CMNA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "GUAC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "MAIQ",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "VLRA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SNCR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "GNRE",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CMAR",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PTLC",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "PTJO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CABU",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SFEL",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "GRNA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CBMA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "TCCS",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "MCBO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "BQTO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CBOL",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "MRCY",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "CCS",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "TQLLO",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SJDLM",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "SALA",
+      "fullPrice": 705
+    },
+    {
+      "cityCode": "BRC",
+      "fullPrice": 705
+    }
+  ],
+  "genericos": 0,
+  "grayDescription": "   ",
+  "highlight": "false",
+  "id": "111026723",
+  "idOffersGroup": [
+    29780
+  ],
+  "id_highlights": [
+    33009,
+    33429,
+    33644,
+    33691,
+    34244,
+    34815
+  ],
+  "id_suggested": [
+    8919
+  ],
+  "is_cupon": 0,
+  "labelPum": "Tabletas a Bs",
+  "largeDescription": "Atamel Forte tratamiento sintomàtico de la fiebre y del dolor de leve intensidad.",
+  "lastUpdate": {
+    "jobName": "UPDATE_SUGGEST",
+    "timeStamp": 1769202300143
+  },
+  "listUrlImages": [
+    "https://lh3.googleusercontent.com/nxGwwsCijiuZ9xE2smU-qy5HGIn3uvbVFPstDByE82LhPBXwA6d2qTKoUdH_DnfFOsKeH66xZKCfJ_k7wjIp1U3NAh32RWcnA3gwpTGBpq03RHQ",
+    "https://lh3.googleusercontent.com/odX-nT3k_7ERZfMOMdgiz03sPYgSaY7LfV_K0bT8eD4LFNuRyQ8t1ikRYGAqPqc4gnRPkv7GNUdBOSHf5mrqAHhm7hNZH6GbhDcmVI2GSgNuJ50",
+    "https://lh3.googleusercontent.com/p8mqQ-EEHDRWPgi_km-djMKl3S-kCpR36VgbNUVdeqttSXooFVvRbr7K_zPOIkMn2LgnljqvoS1NEcBHPavpDAcTYG6eVQbjX5-lysXD9euH5uOa"
+  ],
+  "marca": "Calox",
+  "measurePum": 10,
+  "mediaDescription": "Acetaminofén 650 mg Atamel Forte Calox Caja x 10 Tabletas",
+  "mediaImageUrl": "https://lh3.googleusercontent.com/h3ejm-QO40m7YNuRly_yGzzJZ5KaZJnZE-YLMFaOahV1zwWJnNaIdbUrKOivixbglQOJpfFqIRyXbBPctkc0HckpKXMd99YDkcAwjBhu9CUYjEJ0",
+  "metadesSEO": "",
+  "metatituloSEO": "",
+  "offerDescription": "¡Producto Estrella!",
+  "offerEndDate": 1769399940000,
+  "offerPrice": 564,
+  "offerPriceByCity": [
+    {
+      "cityCode": "CCS",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "VLRA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "ASU",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "BAR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "BQTO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "BRC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CABU",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CAL",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CAR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CBMA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CBOL",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CDA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CDOJ",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CHAR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CMAR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CMNA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "COR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CRNO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "CUA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "EVGA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "GNRE",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "GRNA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "GUAC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "GUAT",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "HIG",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "LEC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "LTQU",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "LVIC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MAIQ",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MAT",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MCBO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MER",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "MRCY",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PAM",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PDM",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "POR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PTC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PTJO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PTLC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "PTO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SAC",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SALA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SBRA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SFA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SFEL",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SJDLM",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "SNCR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "TCCS",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "TIG",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "TQLLO",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "TUR",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "UPA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "VAL",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "VDLP",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "ANA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    },
+    {
+      "cityCode": "ARA",
+      "offerPrice": 564,
+      "offerText": "20%"
+    }
+  ],
+  "offerStartDate": 1768952700000,
+  "offerText": "20%",
+  "onlyOnline": false,
+  "outofstore": false,
+  "requirePrescription": "false",
+  "rms_class": "ANALGESICOS/ANTIPIRETICOS OTC",
+  "rms_deparment": "OTC SIST NERVIOSO CENTRAL",
+  "rms_group": "OTC",
+  "rms_subclass": "ANALGESICOS/ANTIPIRETICOS OTC",
+  "sales": 4026,
+  "spaces": 1,
+  "status": "A",
+  "stores_with_offer": [
+    146,
+    0,
+    100,
+    104,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    120,
+    121,
+    123,
+    124,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    147,
+    148,
+    149,
+    150,
+    152,
+    153,
+    154,
+    155,
+    157,
+    158,
+    159,
+    164,
+    165,
+    166,
+    167,
+    181,
+    188,
+    189,
+    192,
+    193,
+    194,
+    195,
+    196,
+    168,
+    101,
+    156,
+    160,
+    125,
+    182,
+    105,
+    102,
+    601,
+    600,
+    608,
+    484,
+    550,
+    506,
+    551,
+    309,
+    300,
+    302,
+    305,
+    308,
+    311,
+    313,
+    314,
+    322,
+    323,
+    310,
+    307,
+    400,
+    401,
+    412,
+    303,
+    321,
+    505,
+    304,
+    675,
+    703,
+    205,
+    206,
+    670,
+    210,
+    161,
+    204,
+    207,
+    425,
+    680,
+    440,
+    211,
+    603,
+    510,
+    694,
+    199,
+    197,
+    190,
+    298,
+    187,
+    198,
+    180,
+    414,
+    416,
+    171,
+    296,
+    208,
+    424,
+    415,
+    417,
+    418,
+    419,
+    413,
+    428,
+    604,
+    605,
+    606,
+    660,
+    661,
+    662,
+    663,
+    665,
+    666,
+    671,
+    669,
+    318,
+    319,
+    330,
+    267,
+    269,
+    270,
+    271,
+    277,
+    320,
+    276,
+    481,
+    483,
+    421,
+    480,
+    482,
+    297,
+    683,
+    681,
+    427,
+    410,
+    411,
+    701,
+    700,
+    702,
+    520,
+    170,
+    511,
+    500,
+    501,
+    503,
+    591,
+    504,
+    595,
+    593,
+    594,
+    682,
+    422,
+    423,
+    521,
+    272,
+    704,
+    288,
+    209,
+    273,
+    275,
+    278,
+    279,
+    281,
+    282,
+    284,
+    286,
+    287,
+    289,
+    283,
+    507,
+    426,
+    420,
+    689,
+    690
+  ],
+  "stores_with_stock": [
+    107,
+    108,
+    113,
+    124,
+    135,
+    125,
+    158,
+    166,
+    161,
+    281,
+    210,
+    277,
+    313,
+    318,
+    400,
+    414,
+    410,
+    411,
+    418,
+    424,
+    421,
+    510,
+    511,
+    501,
+    521,
+    663,
+    591,
+    703,
+    667,
+    690,
+    110,
+    109,
+    105,
+    134,
+    131,
+    136,
+    180,
+    143,
+    270,
+    198,
+    189,
+    419,
+    282,
+    275,
+    504,
+    481,
+    605,
+    660,
+    665,
+    666,
+    702,
+    699,
+    206,
+    168,
+    483,
+    104,
+    129,
+    267,
+    204,
+    196,
+    271,
+    272,
+    278,
+    279,
+    298,
+    401,
+    422,
+    412,
+    420,
+    520,
+    595,
+    662,
+    118,
+    190,
+    701,
+    482,
+    115,
+    668,
+    140,
+    141,
+    121,
+    145,
+    155,
+    187,
+    191,
+    188,
+    194,
+    195,
+    269,
+    212,
+    288,
+    297,
+    289,
+    302,
+    303,
+    320,
+    425,
+    480,
+    417,
+    675,
+    551,
+    704,
+    116,
+    608,
+    142,
+    137,
+    120,
+    197,
+    157,
+    199,
+    309,
+    287,
+    209,
+    427,
+    505,
+    428,
+    603,
+    507,
+    550,
+    606,
+    604,
+    671,
+    700,
+    697,
+    680,
+    101,
+    156,
+    310,
+    413,
+    112,
+    126,
+    146,
+    128,
+    130,
+    148,
+    149,
+    152,
+    319,
+    311,
+    170,
+    321,
+    423,
+    323,
+    426,
+    506,
+    440,
+    681,
+    661,
+    689,
+    683,
+    694,
+    111,
+    114,
+    698,
+    133,
+    132,
+    119,
+    144,
+    139,
+    153,
+    167,
+    164,
+    171,
+    193,
+    207,
+    181,
+    273,
+    286,
+    283,
+    314,
+    500,
+    322,
+    670,
+    503,
+    593,
+    100,
+    102,
+    147,
+    117,
+    138,
+    150,
+    154,
+    205,
+    165,
+    192,
+    211,
+    284,
+    296,
+    304,
+    308,
+    307,
+    416,
+    330,
+    415,
+    682,
+    669,
+    276,
+    182,
+    208,
+    484
+  ],
+  "subCategory": "Antimigrañosos",
+  "taxRate": 0,
+  "taxes": 0,
+  "totalStock": 0,
+  "unitPrice": 705,
+  "url": "111026723-acetaminofen-atamel-forte-650-mg-x-10-tabletas",
+  "urlCanonical": "",
+  "supplier_id": 5698898,
+  "is_psycho": 0,
+  "sku_searchable": 111026723,
+  "assortments": [
+    {
+      "assortment_id": "CANVI1",
+      "assortment_name": "CANALES VIRTUALES 1"
+    },
+    {
+      "assortment_id": "CVIA3A",
+      "assortment_name": "VIAJERO (3A) 1,2 m"
+    },
+    {
+      "assortment_id": "AOTC5X",
+      "assortment_name": "OTC (5X) 3,60 M"
+    },
+    {
+      "assortment_id": "AOTC6E",
+      "assortment_name": "OTC (6E) 4,8 M"
+    },
+    {
+      "assortment_id": "AOTC5A",
+      "assortment_name": "OTC (5A) 3,6 m"
+    },
+    {
+      "assortment_id": "AOTC5Y",
+      "assortment_name": "OTC (5Y) 3,60 M"
+    },
+    {
+      "assortment_id": "AOTC5E",
+      "assortment_name": "OTC (5E) 3,6 M"
+    },
+    {
+      "assortment_id": "AFAR2X",
+      "assortment_name": "CABEZAL FARMACIA A1 MATURIN BAJO"
+    },
+    {
+      "assortment_id": "AOTC6X",
+      "assortment_name": "OTC (6X) 4,80 M"
+    },
+    {
+      "assortment_id": "AOTC6A",
+      "assortment_name": "OTC (6A) 4,80M"
+    },
+    {
+      "assortment_id": "AFAR2A",
+      "assortment_name": "CABEZAL FARMACIA A1 MATURIN"
+    },
+    {
+      "assortment_id": "AOTC7E",
+      "assortment_name": "OTC (7E) 6 M"
+    }
+  ],
+  "objectID": "111026723",
+  "_highlightResult": {
+    "barcode": {
+      "value": "7591519000948",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "barcodeList": [
+      {
+        "value": "111026723",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "7591257000552",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "07591257000552",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "7591519000948",
+        "matchLevel": "none",
+        "matchedWords": []
+      },
+      {
+        "value": "07591519000948",
+        "matchLevel": "none",
+        "matchedWords": []
+      }
+    ],
+    "brand": {
+      "value": "2008M-0008623",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "grayDescription": {
+      "value": "   ",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "id": {
+      "value": "111026723",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "largeDescription": {
+      "value": "Atamel Forte tratamiento sintomàtico de la fiebre y del dolor de leve intensidad.",
+      "matchLevel": "none",
+      "matchedWords": []
+    },
+    "mediaDescription": {
+      "value": "<em>Acetaminofén</em> 650 mg Atamel Forte Calox Caja x 10 Tabletas",
+      "matchLevel": "full",
+      "fullyHighlighted": false,
+      "matchedWords": [
+        "acetaminofen"
+      ]
+    },
+    "subCategory": {
+      "value": "Antimigrañosos",
+      "matchLevel": "none",
+      "matchedWords": []
+    }
+  }
+}

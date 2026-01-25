@@ -1,0 +1,245 @@
+2026-01-23T21:10:43.204Z - Starting Product Resync
+2026-01-23T21:10:43.205Z - Scanning Category: Medicamentos
+2026-01-23T21:10:45.904Z - Error upserting batch 0 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:46.436Z - Error upserting batch 1 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:47.131Z - Error upserting batch 2 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:47.618Z - Error upserting batch 3 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:48.175Z - Error upserting batch 4 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:49.107Z - Error upserting batch 5 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:49.787Z - Error upserting batch 6 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:51.102Z - Error upserting batch 7 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:51.719Z - Error upserting batch 8 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:52.227Z - Error upserting batch 9 for Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:52.232Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:10:52.233Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:10:52.603Z - Error upserting batch 0 for Salud y Medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:52.604Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:10:52.604Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:10:53.087Z - Error upserting batch 0 for Salud y medicamentos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:53.091Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:10:53.092Z - Scanning Category: Salud Digestiva
+2026-01-23T21:10:53.573Z - Error upserting batch 0 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:53.894Z - Error upserting batch 1 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:54.352Z - Error upserting batch 2 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:54.682Z - Error upserting batch 3 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:55.069Z - Error upserting batch 4 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:55.359Z - Error upserting batch 5 for Salud Digestiva: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:55.360Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:10:55.360Z - Scanning Category: Alivio del dolor
+2026-01-23T21:10:55.535Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:10:55.535Z - Scanning Category: Dermatológicos
+2026-01-23T21:10:56.074Z - Error upserting batch 0 for Dermatológicos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:56.510Z - Error upserting batch 1 for Dermatológicos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:56.929Z - Error upserting batch 2 for Dermatológicos: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:56.930Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:10:56.930Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:10:57.284Z - Error upserting batch 0 for Salud Respiratoria y Gripe: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:57.799Z - Error upserting batch 1 for Salud Respiratoria y Gripe: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:58.406Z - Error upserting batch 2 for Salud Respiratoria y Gripe: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:58.899Z - Error upserting batch 3 for Salud Respiratoria y Gripe: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:10:58.900Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:10:58.901Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:10:59.703Z - Error upserting batch 0 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:00.072Z - Error upserting batch 1 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:00.571Z - Error upserting batch 2 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:01.117Z - Error upserting batch 3 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:01.655Z - Error upserting batch 4 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:02.105Z - Error upserting batch 5 for Vitaminas y Productos Naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:02.106Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:11:02.107Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:11:02.463Z - Error upserting batch 0 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:02.836Z - Error upserting batch 1 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:03.174Z - Error upserting batch 2 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:03.763Z - Error upserting batch 3 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:04.173Z - Error upserting batch 4 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:04.573Z - Error upserting batch 5 for Vitaminas y productos naturales: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:04.574Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:11:04.575Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:11:05.081Z - Error upserting batch 0 for Cuidado de la vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:05.413Z - Error upserting batch 1 for Cuidado de la vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:05.848Z - Error upserting batch 2 for Cuidado de la vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:06.274Z - Error upserting batch 3 for Cuidado de la vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:06.707Z - Error upserting batch 4 for Cuidado de la vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:06.708Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:11:06.709Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:11:07.255Z - Error upserting batch 0 for Cuidado De La Vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:07.769Z - Error upserting batch 1 for Cuidado De La Vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:08.167Z - Error upserting batch 2 for Cuidado De La Vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:08.674Z - Error upserting batch 3 for Cuidado De La Vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:09.123Z - Error upserting batch 4 for Cuidado De La Vista: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:09.123Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:11:09.124Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:11:09.538Z - Error upserting batch 0 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:10.077Z - Error upserting batch 1 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:10.606Z - Error upserting batch 2 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:11.091Z - Error upserting batch 3 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:11.636Z - Error upserting batch 4 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:11.965Z - Error upserting batch 5 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:12.407Z - Error upserting batch 6 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:12.859Z - Error upserting batch 7 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:13.177Z - Error upserting batch 8 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:13.593Z - Error upserting batch 9 for Botiquín y primeros auxilios: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:13.596Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:11:13.598Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:11:14.358Z - Error upserting batch 0 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:15.174Z - Error upserting batch 1 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:15.672Z - Error upserting batch 2 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:16.010Z - Error upserting batch 3 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:16.447Z - Error upserting batch 4 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:16.763Z - Error upserting batch 5 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:17.224Z - Error upserting batch 6 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:17.631Z - Error upserting batch 7 for Nutrición y vida saludable: Could not find the 'image' column of 'products' in the schema cache
+2026-01-23T21:11:17.632Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:11:17.632Z - Resync Complete. Upserted: 0
+2026-01-23T21:11:48.879Z - Starting Product Resync v2 (Corrected Schema)
+2026-01-23T21:11:48.882Z - Scanning Category: Medicamentos
+2026-01-23T21:11:53.645Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:11:53.645Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:11:53.956Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:11:53.956Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:11:54.266Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:11:54.266Z - Scanning Category: Salud Digestiva
+2026-01-23T21:11:56.576Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:11:56.576Z - Scanning Category: Alivio del dolor
+2026-01-23T21:11:56.699Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:11:56.700Z - Scanning Category: Dermatológicos
+2026-01-23T21:11:58.354Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:11:58.354Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:11:59.858Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:11:59.859Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:12:03.583Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:12:03.584Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:12:05.938Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:12:05.939Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:12:07.641Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:12:07.641Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:12:09.328Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:12:09.329Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:12:12.797Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:12:12.798Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:12:16.118Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:12:16.118Z - Resync Complete. Upserted: 6167
+2026-01-23T21:24:13.033Z - Starting Product Resync v3 (Fixed Property Mapping)
+2026-01-23T21:24:13.035Z - Scanning Category: Medicamentos
+2026-01-23T21:24:18.545Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:24:18.546Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:24:18.878Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:24:18.879Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:24:19.207Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:24:19.208Z - Scanning Category: Salud Digestiva
+2026-01-23T21:24:21.965Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:24:21.966Z - Scanning Category: Alivio del dolor
+2026-01-23T21:24:22.077Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:24:22.077Z - Scanning Category: Dermatológicos
+2026-01-23T21:24:23.660Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:24:23.661Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:24:25.542Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:24:25.543Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:24:28.288Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:24:28.289Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:24:31.242Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:24:31.243Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:24:33.638Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:24:33.639Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:24:35.292Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:24:35.293Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:24:38.955Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:24:38.957Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:24:42.192Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:24:42.192Z - Resync Complete. Upserted: 6167
+2026-01-23T21:30:26.369Z - Starting Product Resync v4 (Clean Names Re-applied)
+2026-01-23T21:30:26.372Z - Scanning Category: Medicamentos
+2026-01-23T21:30:31.322Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:30:31.323Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:30:31.626Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:30:31.626Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:30:31.940Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:30:31.940Z - Scanning Category: Salud Digestiva
+2026-01-23T21:30:33.856Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:30:33.857Z - Scanning Category: Alivio del dolor
+2026-01-23T21:30:33.975Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:30:33.976Z - Scanning Category: Dermatológicos
+2026-01-23T21:30:35.010Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:30:35.012Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:30:36.400Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:30:36.400Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:30:38.547Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:30:38.548Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:30:40.767Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:30:40.768Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:30:42.433Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:30:42.434Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:30:44.566Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:30:44.607Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:30:49.450Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:30:49.451Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:30:52.515Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:30:52.517Z - Resync Complete. Upserted: 6167
+2026-01-23T21:39:38.758Z - Starting Product Resync v4 (Clean Names Re-applied)
+2026-01-23T21:39:38.759Z - Scanning Category: Medicamentos
+2026-01-23T21:39:43.535Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:39:43.536Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:39:43.906Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:39:43.906Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:39:44.225Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:39:44.226Z - Scanning Category: Salud Digestiva
+2026-01-23T21:39:46.317Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:39:46.318Z - Scanning Category: Alivio del dolor
+2026-01-23T21:39:46.436Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:39:46.437Z - Scanning Category: Dermatológicos
+2026-01-23T21:39:47.481Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:39:47.484Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:39:49.090Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:39:49.091Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:39:51.406Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:39:51.406Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:39:53.832Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:39:53.833Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:39:56.267Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:39:56.267Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:39:58.084Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:39:58.085Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:40:01.778Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:40:01.778Z - Scanning Category: Botiquín y Primeros Auxilios
+2026-01-23T21:40:06.571Z - Finished Botiquín y Primeros Auxilios: 1000 products fetched.
+2026-01-23T21:40:06.573Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:40:09.335Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:40:09.336Z - Scanning Category: Atención y Equipos Médicos
+2026-01-23T21:40:09.452Z - Finished Atención y Equipos Médicos: 0 products fetched.
+2026-01-23T21:40:09.453Z - Scanning Category: Fórmulas Magistrales
+2026-01-23T21:40:10.776Z - Finished Fórmulas Magistrales: 318 products fetched.
+2026-01-23T21:40:10.776Z - Resync Complete. Upserted: 7485
+2026-01-23T21:48:24.136Z - Starting Product Resync v4 (Clean Names Re-applied)
+2026-01-23T21:48:24.137Z - Scanning Category: Medicamentos
+2026-01-23T21:48:28.686Z - Finished Medicamentos: 1000 products fetched.
+2026-01-23T21:48:28.687Z - Scanning Category: Salud y Medicamentos
+2026-01-23T21:48:29.004Z - Finished Salud y Medicamentos: 42 products fetched.
+2026-01-23T21:48:29.004Z - Scanning Category: Salud y medicamentos
+2026-01-23T21:48:29.313Z - Finished Salud y medicamentos: 42 products fetched.
+2026-01-23T21:48:29.314Z - Scanning Category: Salud Digestiva
+2026-01-23T21:48:31.333Z - Finished Salud Digestiva: 523 products fetched.
+2026-01-23T21:48:31.335Z - Scanning Category: Alivio del dolor
+2026-01-23T21:48:31.455Z - Finished Alivio del dolor: 0 products fetched.
+2026-01-23T21:48:31.456Z - Scanning Category: Dermatológicos
+2026-01-23T21:48:32.502Z - Finished Dermatológicos: 219 products fetched.
+2026-01-23T21:48:32.503Z - Scanning Category: Salud Respiratoria y Gripe
+2026-01-23T21:48:33.966Z - Finished Salud Respiratoria y Gripe: 390 products fetched.
+2026-01-23T21:48:33.967Z - Scanning Category: Vitaminas y Productos Naturales
+2026-01-23T21:48:36.065Z - Finished Vitaminas y Productos Naturales: 599 products fetched.
+2026-01-23T21:48:36.066Z - Scanning Category: Vitaminas y productos naturales
+2026-01-23T21:48:39.704Z - Finished Vitaminas y productos naturales: 599 products fetched.
+2026-01-23T21:48:39.705Z - Scanning Category: Cuidado de la vista
+2026-01-23T21:48:41.493Z - Finished Cuidado de la vista: 486 products fetched.
+2026-01-23T21:48:41.494Z - Scanning Category: Cuidado De La Vista
+2026-01-23T21:48:43.191Z - Finished Cuidado De La Vista: 486 products fetched.
+2026-01-23T21:48:43.192Z - Scanning Category: Botiquín y primeros auxilios
+2026-01-23T21:48:46.747Z - Finished Botiquín y primeros auxilios: 1000 products fetched.
+2026-01-23T21:48:46.748Z - Scanning Category: Botiquín y Primeros Auxilios
+2026-01-23T21:48:50.557Z - Finished Botiquín y Primeros Auxilios: 1000 products fetched.
+2026-01-23T21:48:50.558Z - Scanning Category: Nutrición y vida saludable
+2026-01-23T21:48:54.127Z - Finished Nutrición y vida saludable: 781 products fetched.
+2026-01-23T21:48:54.128Z - Scanning Category: Atención y Equipos Médicos
+2026-01-23T21:48:54.243Z - Finished Atención y Equipos Médicos: 0 products fetched.
+2026-01-23T21:48:54.245Z - Scanning Category: Formulas Magistrales
+2026-01-23T21:48:55.697Z - Finished Formulas Magistrales: 318 products fetched.
+2026-01-23T21:48:55.698Z - Resync Complete. Upserted: 7485

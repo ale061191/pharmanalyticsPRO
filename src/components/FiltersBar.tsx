@@ -33,45 +33,33 @@ export default function FiltersBar({ onSearch, isLoading }: FiltersBarProps) {
 
     const [filters, setFilters] = useState({
         lab: '',
-        atc: '',
+        atcGroup: '', // Changed from atc to atcGroup
         product: '',
         period: '1w',
         concentration: '',
-        presentation: '',
-        city: '',
-        municipality: '',
-        branch: ''
+        presentation: ''
     });
 
-    // Derived location options
-    const cities = Array.from(new Set(options.locations.map(l => l.city))).sort();
-    const municipalities = Array.from(new Set(options.locations
-        .filter(l => !filters.city || l.city === filters.city)
-        .map(l => l.municipality))).sort();
-    const branches = options.locations
-        .filter(l => (!filters.city || l.city === filters.city) &&
-            (!filters.municipality || l.municipality === filters.municipality))
-        .sort((a, b) => a.name.localeCompare(b.name));
+    // Fetch Therapeutic Groups
+    const { data: atcGroupsData } = useSWR('/api/atc/groups', fetcher);
+    const atcGroups = atcGroupsData?.data || [];
 
     const handleFilterChange = (key: string, value: string) => {
-        setFilters(prev => {
-            const newFilters = { ...prev, [key]: value };
-            // Reset dependent fields
-            if (key === 'city') {
-                newFilters.municipality = '';
-                newFilters.branch = '';
-            }
-            if (key === 'municipality') {
-                newFilters.branch = '';
-            }
-            return newFilters;
-        });
+        setFilters(prev => ({ ...prev, [key]: value }));
     };
 
     return (
         <div className="w-full mt-8 mb-4">
-            <div className="bg-white/40 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-xl shadow-blue-900/5">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                <div className="mb-6">
+                    <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                        <Search className="w-5 h-5 text-blue-600" />
+                        Búsqueda de Productos
+                    </h2>
+                    <p className="text-sm text-slate-500 mt-1">Utiliza los filtros para encontrar productos específicos en el mercado farmacéutico.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
                     {/* 1. Laboratorio */}
                     <div className="space-y-1.5">
@@ -93,20 +81,20 @@ export default function FiltersBar({ onSearch, isLoading }: FiltersBarProps) {
                         </div>
                     </div>
 
-                    {/* 2. ATC */}
+                    {/* 2. Grupo Terapéutico (Dynamic) */}
                     <div className="space-y-1.5">
                         <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1 flex items-center gap-1.5">
-                            <Tag size={14} className="text-blue-500" /> Código ATC
+                            <Tag size={14} className="text-blue-500" /> Grupo Terapéutico
                         </label>
                         <div className="relative group">
                             <select
-                                value={filters.atc}
-                                onChange={(e) => handleFilterChange('atc', e.target.value)}
+                                value={filters.atcGroup}
+                                onChange={(e) => handleFilterChange('atcGroup', e.target.value)}
                                 className="w-full bg-white/60 border border-slate-200/60 rounded-xl px-4 py-2.5 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
                             >
-                                <option value="">Todos los códigos</option>
-                                {options.atc.map(code => (
-                                    <option key={code} value={code}>{code}</option>
+                                <option value="">Todos los grupos</option>
+                                {atcGroups.map((g: any) => (
+                                    <option key={g.id} value={g.id}>{g.label}</option>
                                 ))}
                             </select>
                             <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none group-hover:text-blue-500 transition-colors" />
@@ -189,94 +177,32 @@ export default function FiltersBar({ onSearch, isLoading }: FiltersBarProps) {
                         </div>
                     </div>
 
-                    {/* 7. Ciudad */}
-                    <div className="space-y-1.5">
-                        <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1 flex items-center gap-1.5">
-                            <MapPin size={14} className="text-blue-500" /> Ciudad
-                        </label>
-                        <div className="relative group">
-                            <select
-                                value={filters.city}
-                                onChange={(e) => handleFilterChange('city', e.target.value)}
-                                className="w-full bg-white/60 border border-slate-200/60 rounded-xl px-4 py-2.5 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
-                            >
-                                <option value="">Todas las ciudades</option>
-                                {cities.map(city => (
-                                    <option key={city} value={city}>{city}</option>
-                                ))}
-                            </select>
-                            <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none group-hover:text-blue-500 transition-colors" />
-                        </div>
-                    </div>
 
-                    {/* 8. Municipio */}
-                    <div className="space-y-1.5">
-                        <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1 flex items-center gap-1.5">
-                            <Building2 size={14} className="text-blue-500" /> Municipio
-                        </label>
-                        <div className="relative group">
-                            <select
-                                value={filters.municipality}
-                                onChange={(e) => handleFilterChange('municipality', e.target.value)}
-                                className="w-full bg-white/60 border border-slate-200/60 rounded-xl px-4 py-2.5 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
-                            >
-                                <option value="">Todos los municipios</option>
-                                {municipalities.map(mun => (
-                                    <option key={mun} value={mun}>{mun}</option>
-                                ))}
-                            </select>
-                            <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none group-hover:text-blue-500 transition-colors" />
-                        </div>
-                    </div>
 
-                    {/* 9. Sucursal */}
-                    <div className="space-y-1.5">
-                        <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1 flex items-center gap-1.5">
-                            <Store size={14} className="text-blue-500" /> Sucursal
-                        </label>
-                        <div className="relative group">
-                            <select
-                                value={filters.branch}
-                                onChange={(e) => handleFilterChange('branch', e.target.value)}
-                                className="w-full bg-white/60 border border-slate-200/60 rounded-xl px-4 py-2.5 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
-                            >
-                                <option value="">Todas las sucursales</option>
-                                {branches.map(branch => (
-                                    <option key={branch.id} value={branch.id}>{branch.name}</option>
-                                ))}
-                            </select>
-                            <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none group-hover:text-blue-500 transition-colors" />
-                        </div>
-                    </div>
 
-                    {/* 10. Search Button Slot */}
-                    <div className="space-y-1.5">
-                        <label className="text-xs font-bold text-transparent select-none uppercase tracking-wider ml-1 flex items-center gap-1.5">
-                            <Search size={14} className="opacity-0" /> Buscar
-                        </label>
-                        <button
-                            onClick={() => onSearch(filters)}
-                            disabled={isLoading}
-                            className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-6 py-2.5 rounded-xl font-bold text-base transition-all shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 h-[41px]"
-                        >
-                            {isLoading ? (
-                                <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                            ) : (
-                                <Search size={18} />
-                            )}
-                            Buscar Productos
-                        </button>
-                    </div>
 
                 </div>
 
-                {/* Optional: Clear Filters or Apply button if needed */}
-                <div className="mt-6 pt-4 border-t border-white/10 flex justify-end">
+                {/* Action Buttons (Aligned with filters) */}
+                <div className="flex items-end justify-end gap-6 md:col-span-2 lg:col-span-1 xl:col-span-2 space-y-1.5 h-full pt-6 md:pt-0">
                     <button
-                        onClick={() => setFilters({ lab: '', atc: '', product: '', period: '1w', concentration: '', presentation: '', city: '', municipality: '', branch: '' })}
-                        className="text-[10px] font-bold text-slate-400 hover:text-blue-500 uppercase tracking-widest transition-colors flex items-center gap-2"
+                        onClick={() => setFilters({ lab: '', atcGroup: '', product: '', period: '1w', concentration: '', presentation: '' })}
+                        className="text-xs font-bold text-slate-400 hover:text-red-500 uppercase tracking-wider transition-colors mb-3"
                     >
-                        Limpiar todos los filtros
+                        Limpiar filtros
+                    </button>
+
+                    <button
+                        onClick={() => onSearch(filters)}
+                        disabled={isLoading}
+                        className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-8 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2 active:scale-95 hover:shadow-blue-500/30 h-[42px]"
+                    >
+                        {isLoading ? (
+                            <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        ) : (
+                            <Search size={18} />
+                        )}
+                        Buscar Productos
                     </button>
                 </div>
             </div>

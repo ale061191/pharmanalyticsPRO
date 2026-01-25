@@ -37,20 +37,30 @@ async function ingest() {
         .on('end', async () => {
             console.log(`✅ Parsed ${records.length} records.`);
 
+            // Deduplicate by atc_code to avoid PK/Unique constraints
+            // We want the NAME mainly.
+            const uniqueRecords = new Map();
+            records.forEach(r => {
+                if (!uniqueRecords.has(r.atc_code)) {
+                    uniqueRecords.set(r.atc_code, r);
+                }
+            });
+
+            const finalBatch = Array.from(uniqueRecords.values());
+            console.log(`✨ Deduplicated to ${finalBatch.length} unique codes.`);
+
             // Batch insert
             const BATCH_SIZE = 1000;
-            for (let i = 0; i < records.length; i += BATCH_SIZE) {
-                const batch = records.slice(i, i + BATCH_SIZE);
-                console.log(`   Inserting batch ${i} to ${i + batch.length}...`);
+            for (let i = 0; i < finalBatch.length; i += BATCH_SIZE) {
+                const batch = finalBatch.slice(i, i + BATCH_SIZE);
+                console.log(`   Upserting batch ${i} to ${i + batch.length}...`);
 
+                // Assuming atc_code is a unique key or we rely on just inserting
+                // Better to upsert if atc_code is unique. 
+                // If it's not unique in DB, we might get duplicates, but we deduplicated in JS.
                 const { error } = await supabase
                     .from('atc_reference')
-                    .insert(batch);
-                // Actually id is PK, atc_code might repeat for different DDDs? 
-                // Let's check CSV. A01AA has multiple rows? 
-                // "A01AA,Caries prophylactic agents"
-                // Usually code is unique for the name, but rows generally unique.
-                // Let's just insert.
+                    .upsert(batch, { onConflict: 'atc_code' });
 
                 if (error) {
                     console.error('   ❌ Error:', error);
