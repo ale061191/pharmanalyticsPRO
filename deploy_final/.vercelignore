@@ -1,0 +1,36 @@
+# Vercel Ignore File
+.vercel
+.next
+node_modules
+.git
+
+# Ignore heavy directories with scripts/data
+master/
+tools/
+.gemini/
+
+# Ignore root level scratchpad scripts
+check_*.js
+verify_*.js
+debug_*.js
+sync_*.js
+ingest_*.js
+update_*.js
+test_*.js
+fetch_*.js
+*.py
+
+# Ignore logs and data dumps
+*.log
+*.csv
+*.txt
+!robots.txt
+
+# Ignore JSONs but keep config files
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!next.config.js
+!vercel.json
+!src/**/*.json

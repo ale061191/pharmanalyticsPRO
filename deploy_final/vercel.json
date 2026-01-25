@@ -1,0 +1,8 @@
+{
+    "crons": [
+        {
+            "path": "/api/cron/sales-snapshot",
+            "schedule": "0 7 * * *"
+        }
+    ]
+}

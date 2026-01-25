@@ -1,0 +1,174 @@
+import { NextResponse } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
+
+export const dynamic = 'force-dynamic';
+
+const ATC_SPANISH: Record<string, string> = {
+    // A - TRACTO ALIMENTARIO Y METABOLISMO
+    'A01': 'PREPARADOS ESTOMATOLÓGICOS',
+    'A02': 'AGENTES PARA EL TRATAMIENTO DE ALTERACIONES CAUSADAS POR ÁCIDOS',
+    'A03': 'AGENTES CONTRA PADECIMIENTOS FUNCIONALES DEL ESTÓMAGO E INTESTINO',
+    'A04': 'ANTIEMÉTICOS Y ANTINAUSEOSOS',
+    'A05': 'TERAPIA BILIAR Y HEPÁTICA',
+    'A06': 'AGENTES CONTRA EL ESTREÑIMIENTO',
+    'A07': 'ANTIDIARREICOS, AGENTES ANTIINFLAMATORIOS/ANTIINFECCIOSOS INTESTINALES',
+    'A08': 'PREPARADOS CONTRA LA OBESIDAD, EXCLUYENDO PRODUCTOS DIETÉTICOS',
+    'A09': 'DIGESTIVOS, INCLUYENDO ENZIMAS',
+    'A10': 'FÁRMACOS USADOS EN DIABETES',
+    'A11': 'VITAMINAS',
+    'A12': 'SUPLEMENTOS MINERALES',
+    'A13': 'TÓNICOS',
+    'A14': 'AGENTES ANABÓLICOS PARA USO SISTÉMICO',
+    'A15': 'ESTIMULANTES DEL APETITO',
+    'A16': 'OTROS PRODUCTOS PARA EL TRACTO ALIMENTARIO Y METABOLISMO',
+
+    // B - SANGRE Y ÓRGANOS HEMATOPOYÉTICOS
+    'B01': 'AGENTES ANTITROMBÓTICOS',
+    'B02': 'ANTIHEMORRÁGICOS',
+    'B03': 'PREPARADOS ANTIANÉMICOS',
+    'B05': 'SUSTITUTOS DEL PLASMA Y SOLUCIONES PARA PERFUSIÓN',
+    'B06': 'OTROS AGENTES HEMATOLÓGICOS',
+
+    // C - SISTEMA CARDIOVASCULAR
+    'C01': 'TERAPIA CARDÍACA',
+    'C02': 'ANTHIPERTENSIVOS',
+    'C03': 'DIURÉTICOS',
+    'C04': 'VASODILATADORES PERIFÉRICOS',
+    'C05': 'VASOPROTECTORES',
+    'C07': 'AGENTES BETA-BLOQUEANTES',
+    'C08': 'BLOQUEADORES DE CANALES DE CALCIO',
+    'C09': 'AGENTES QUE ACTÚAN SOBRE EL SISTEMA RENINA-ANGIOTENSINA',
+    'C10': 'AGENTES MODIFICADORES DE LOS LÍPIDOS',
+
+    // D - DERMATOLÓGICOS
+    'D01': 'ANTIFÚNGICOS PARA USO DERMATOLÓGICO',
+    'D02': 'EMOLIENTES Y PROTECTORES',
+    'D03': 'PREPARADOSS PARA EL TRATAMIENTO DE HERIDAS Y ÚLCERAS',
+    'D04': 'ANTIPRURIGINOSOS, INCL. ANTIHISTAMÍNICOS, ANESTÉSICOS, ETC.',
+    'D05': 'ANTIPSORIÁSICOS',
+    'D06': 'ANTIBIÓTICOS Y QUIMIOTERÁPICOS PARA USO DERMATOLÓGICO',
+    'D07': 'CORTICOSTEROIDES, PREPARADOS DERMATOLÓGICOS',
+    'D08': 'ANTISÉPTICOS Y DESINFECTANTES',
+    'D09': 'APÓSITOS MEDICAMENTOSOS',
+    'D10': 'PREPARADOS ANTIACNÉ',
+    'D11': 'OTROS PREPARADOS DERMATOLÓGICOS',
+
+    // G - SISTEMA GENITOURINARIO Y HORMONAS SEXUALES
+    'G01': 'ANTIINFECCIOSOS Y ANTISÉPTICOS GINECOLÓGICOS',
+    'G02': 'OTROS GINECOLÓGICOS',
+    'G03': 'HORMONAS SEXUALES Y MODULADORES DEL SISTEMA GENITAL',
+    'G04': 'UROLOGÍA',
+
+    // H - PREPARADOS HORMONALES SISTÉMICOS, EXCL. HORMONAS SEXUALES E INSULINAS
+    'H01': 'HORMONAS HIPOFISARIAS E HIPOTALÁMICAS Y SUS ANÁLOGOS',
+    'H02': 'CORTICOSTEROIDES PARA USO SISTÉMICO',
+    'H03': 'TERAPIA TIROIDEA',
+    'H04': 'HORMONAS PANCREÁTICAS',
+    'H05': 'HOMEOSTASIS DEL CALCIO',
+
+    // J - ANTIINFECCIOSOS PARA USO SISTÉMICO
+    'J01': 'ANTIBACTERIANOS PARA USO SISTÉMICO',
+    'J02': 'ANTIMICÓTICOS PARA USO SISTÉMICO',
+    'J04': 'ANTIMICOBACTERIANOS',
+    'J05': 'ANTIVIRALES DE USO SISTÉMICO',
+    'J06': 'SUEROS INMUNES E INMUNOGLOBULINAS',
+    'J07': 'VACUNAS',
+
+    // L - AGENTES ANTINEOPLÁSICOS E INMUNOMODULADORES
+    'L01': 'AGENTES ANTINEOPLÁSICOS',
+    'L02': 'TERAPIA ENDOCRINA',
+    'L03': 'INMUNOESTIMULANTES',
+    'L04': 'INMUNOSUPRESORES',
+
+    // M - SISTEMA MUSCULOESQUELÉTICO
+    'M01': 'PRODUCTOS ANTIINFLAMATORIOS Y ANTIRREUMÁTICOS',
+    'M02': 'PRODUCTOS TÓPICOS PARA EL DOLOR MUSCULAR Y ARTICULAR',
+    'M03': 'RELAJANTES MUSCULARES',
+    'M04': 'PREPARADOS ANTIGOTOSOS',
+    'M05': 'DROGAS PARA EL TRATAMIENTO DE ENFERMEDADES ÓSEAS',
+    'M09': 'OTROS FÁRMACOS PARA DESÓRDENES DEL SISTEMA MUSCULOESQUELÉTICO',
+
+    // N - SISTEMA NERVIOSO
+    'N01': 'ANESTÉSICOS',
+    'N02': 'ANALGÉSICOS',
+    'N03': 'ANTIEPILÉPTICOS',
+    'N04': 'ANTIPARKINSONIANOS',
+    'N05': 'PSICOLÉPTICOS',
+    'N06': 'PSICOANALÉPTICOS',
+    'N07': 'OTROS FÁRMACOS DEL SISTEMA NERVIOSO',
+
+    // P - PRODUCTOS ANTIPARASITARIOS, INSECTICIDAS Y REPELENTES
+    'P01': 'ANTIPROTOZOARIOS',
+    'P02': 'ANTIHELMÍNTICOS',
+    'P03': 'ECTOPARASITICIDAS, INCL. SCABICIDAS, INSECTICIDAS Y REPELENTES',
+
+    // R - SISTEMA RESPIRATORIO
+    'R01': 'PREPARADOS DE USO NASAL',
+    'R02': 'PREPARADOS PARA LA GARGANTA',
+    'R03': 'AGENTES CONTRA PADECIMIENTOS OBSTRUCTIVOS DE LAS VÍAS RESPIRATORIAS',
+    'R05': 'PREPARADOS PARA LA TOS Y EL RESFRIADO',
+    'R06': 'ANTIHISTAMÍNICOS PARA USO SISTÉMICO',
+    'R07': 'OTROS PRODUCTOS PARA EL SISTEMA RESPIRATORIO',
+
+    // S - ÓRGANOS DE LOS SENTIDOS
+    'S01': 'OFTALMOLÓGICOS',
+    'S02': 'OTOLÓGICOS',
+    'S03': 'PREPARADOS OFTALMOLÓGICOS Y OTOLÓGICOS',
+
+    // V - VARIOS
+    'V01': 'ALÉRGENOS',
+    'V03': 'TODO EL RESTO DE LOS PRODUCTOS TERAPÉUTICOS',
+    'V04': 'AGENTES DE DIAGNÓSTICO',
+    'V06': 'NUTRIENTES GENERALES',
+    'V07': 'TODOS LOS DEMÁS PRODUCTOS NO TERAPÉUTICOS',
+    'V08': 'MEDIOS DE CONTRASTE',
+    'V09': 'RADIOFÁRMACOS PARA DIAGNÓSTICO',
+    'V10': 'RADIOFÁRMACOS TERAPÉUTICOS',
+    'V20': 'APÓSITOS QUIRÚRGICOS'
+};
+
+export async function GET() {
+    try {
+        // Fetch Level 2 codes (exactly 3 characters long) directly from DB.
+        // Postgres LIKE '___' matches exactly 3 characters.
+        // This avoids fetching all 10,000+ detailed codes and hitting limits.
+        const { data: level2Groups, error } = await supabase
+            .from('atc_reference')
+            .select('atc_code, atc_name')
+            .like('atc_code', '___')
+            .order('atc_code');
+
+        if (error) throw error;
+
+        // Filter and Translate
+        const uniqueGroups = new Map();
+
+        level2Groups.forEach((g: any) => {
+            if (g.atc_code.length === 3) {
+                // Use Spanish map or Title Case Original
+                const spanishName = ATC_SPANISH[g.atc_code] || g.atc_name;
+                uniqueGroups.set(g.atc_code, spanishName);
+            }
+        });
+
+        const groups = Array.from(uniqueGroups.entries()).map(([code, name]) => ({
+            id: code,
+            name: name,
+            label: `${code} - ${name}`
+        })).sort((a, b) => a.id.localeCompare(b.id));
+
+        return NextResponse.json({
+            success: true,
+            data: groups
+        });
+
+    } catch (error: any) {
+        console.error('ATC Groups API Error:', error);
+        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    }
+}
