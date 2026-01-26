@@ -43,7 +43,7 @@ export async function GET(request: Request) {
             const { data: products, error: dbError } = await supabase
                 .from('products')
                 .select('id')
-                .order('id', { ascending: true }) // CRITICAL: Ensure stable ordering
+                .order('id', { ascending: false }) // OPTIMIZATION: Scan newest IDs first (more likely to exist)
                 .range(page * DB_PAGE_SIZE, (page + 1) * DB_PAGE_SIZE - 1);
 
             if (dbError) {
