@@ -27,65 +27,64 @@ function getHourBucket(): string {
 }
 
 export async function GET(request: Request) {
-    try {
-        const fs = require('fs');
-        const log = (msg: string) => {
-            try {
-                fs.appendFileSync('cron-log.txt', `${new Date().toISOString()} - ${msg}\n`);
-            } catch (e) {
-                // ignore logging errors
-            }
-        };
+    // 0. Authorization Check (Security Fix)
+    const authHeader = request.headers.get('authorization');
+    if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+        return new NextResponse('Unauthorized', { status: 401 });
+    }
 
+    try {
         console.log('📸 [Hourly Snapshot] Starting ID-based capture...');
-        log('Starting Cron Execution');
 
         const hourBucket = getHourBucket();
         const recordedAt = new Date().toISOString();
 
-        // 1. Get ALL monitored IDs from Supabase via Pagination
+        // 1. Get ONLY Top 500 monitored IDs (Ghost Strategy: Layer 1)
+        // We focus on high-velocity items for hourly tracking to minimize Algolia API hits
         let allIds: string[] = [];
-        let page = 0;
-        const DB_PAGE_SIZE = 1000;
 
-        while (true) {
-            const { data: products, error: dbError } = await supabase
-                .from('products')
-                .select('id')
-                .range(page * DB_PAGE_SIZE, (page + 1) * DB_PAGE_SIZE - 1);
+        const { data: products, error: dbError } = await supabase
+            .from('products')
+            .select('id')
+            .order('sales', { ascending: false }) // Prioritize High Velocity
+            .limit(500); // 🚧 LIMIT TO 500 PER HOUR (360k ops/month total)
 
-            if (dbError) {
-                log(`DB Error: ${dbError.message}`);
-                throw dbError;
-            }
+        if (dbError) {
+            console.error(`DB Error: ${dbError.message}`);
+            throw dbError;
+        }
 
-            if (!products || products.length === 0) break;
-
-            allIds.push(...products.map(p => p.id));
-            // log(`Fetched page ${page}: ${products.length} IDs`); // Optional verbose log
-
-            if (products.length < DB_PAGE_SIZE) break;
-            page++;
+        if (products && products.length > 0) {
+            allIds = products.map(p => String(p.id).trim());
         }
 
         const countMsg = `[Hourly Snapshot] Found ${allIds.length} products to update.`;
         console.log(countMsg);
-        log(countMsg);
+        // countMsg already verified console.log above
 
         if (allIds.length === 0) {
-            log('No products found in DB');
+            console.log('No products found in DB');
             return NextResponse.json({ message: 'No products in DB to monitor' });
         }
 
-        // 2. Process in Batches
-        const BATCH_SIZE = 1000;
+        // 2. Process in Batches (Reduced size for reliability)
+        const BATCH_SIZE = 200; // Reduced from 1000 to prevent Algolia payload limits
         let processed = 0;
         let inserted = 0;
         let errors = 0;
+        const startTime = Date.now();
 
         for (let i = 0; i < allIds.length; i += BATCH_SIZE) {
-            const batchIds = allIds.slice(i, i + BATCH_SIZE).map(String);
-            log(`Batch ${i}: Processing ${batchIds.length} IDs. First: ${batchIds[0]}`);
+            // Check for Timeout Risk (leave 20s buffer)
+            if (Date.now() - startTime > (maxDuration - 20) * 1000) {
+                const timeoutMsg = `⚠️ Time limit approaching. Stopping at ${processed}/${allIds.length}`;
+                console.warn(timeoutMsg);
+                // timeout msg logged via console.warn above
+                break;
+            }
+
+            const batchIds = allIds.slice(i, i + BATCH_SIZE); // IDs are already strings and trimmed
+            // log(`Batch ${i}: Processing ${batchIds.length} IDs. First: ${batchIds[0]}`);
 
             try {
                 // A. Fetch from Algolia
@@ -93,17 +92,16 @@ export async function GET(request: Request) {
                     attributesToRetrieve: ['sales', 'stores_with_stock']
                 });
 
-                // Handle response format variations
-                const hits = (algoliaResponse as any).results || (algoliaResponse as any).objects || algoliaResponse.results || [];
-                // log(`Batch ${i}: Algolia returned ${hits ? hits.length : 'undefined'} hits`);
+                // Handle data
+                const hits = (algoliaResponse as any).results || (algoliaResponse as any).objects || [];
 
                 if (!hits) {
-                    log(`Batch ${i}: ALARM - Hits is undefined/null.`);
+                    console.warn(`Batch ${i}: ALARM - Hits is undefined.`);
                     continue;
                 }
 
+                // Filter valid hits
                 const validHits = hits.filter((h: any) => h !== null);
-                // log(`Batch ${i}: Valid hits (non-null) = ${validHits.length}`);
 
                 // B. Transform
                 const snapshots = validHits.map((p: any) => ({
@@ -114,7 +112,7 @@ export async function GET(request: Request) {
                     recorded_at: recordedAt
                 }));
 
-                // C. Upsert to Supabase
+                // C. Upsert
                 if (snapshots.length > 0) {
                     const { error: upsertError } = await supabase
                         .from('hourly_sales')
@@ -125,30 +123,27 @@ export async function GET(request: Request) {
                     if (upsertError) {
                         const errMsg = `❌ Upsert Error Batch ${i}: ${upsertError.message}`;
                         console.error(errMsg);
-                        log(errMsg);
+                        // console.log(errMsg);
                         errors += snapshots.length;
                     } else {
                         inserted += snapshots.length;
-                        log(`Batch ${i}: Upserted ${snapshots.length} records.`);
+                        // log(`Batch ${i}: Upserted ${snapshots.length} records.`);
                     }
-                } else {
-                    log(`Batch ${i}: No snapshots to insert (0 valid hits?)`);
                 }
 
                 processed += batchIds.length;
-                console.log(`[Hourly Snapshot] Processed batch ${(i / BATCH_SIZE) + 1}`);
 
             } catch (err: any) {
                 const failMsg = `⚠️ Batch ${i} Failed: ${err.message}`;
                 console.error(failMsg);
-                log(failMsg);
+                console.error(failMsg);
                 errors += batchIds.length;
             }
         }
 
         const finalMsg = `✅ [Hourly Snapshot] Done. Checked: ${processed}, Saved: ${inserted}, Failed: ${errors}`;
         console.log(finalMsg);
-        log(finalMsg);
+        // finalMsg logged via console.log above
 
         return NextResponse.json({
             success: true,

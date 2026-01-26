@@ -11,14 +11,14 @@ const ALGOLIA_APP_ID = "VCOJEYD2PO";
 const ALGOLIA_API_KEY = "869a91e98550dd668b8b1dc04bca9011";
 const ALGOLIA_INDEX = "products";
 
-// RESUME ITERATION KEYS (Starting from Cardiologia)
+// RESUME ITERATION KEYS (Phase 2: General Medicine)
+// RESUME ITERATION KEYS (Phase 2: General Medicine - Resumed)
 const ITERATION_KEYS = [
-    "Cardiologia", "Diabetes", "Hipertension", "Colesterol",
-    "Gastrico", "Digestivo", "Antiacido", "Laxante",
-    "Vitamina", "Suplemento", "Mineral",
-    "Oftalmico", "Otico", "Nasal", "Topico",
-    "Ginecologia", "Urologia", "Dermatologia",
-    "Psiquiatria", "Neurologia", "Convulsiones"
+    "Fiebre", "Gripe",
+    "Antibiotico", "Infeccion", "Pediatrico",
+    "Tos", "Jarabe", "Suspension", "Gotas",
+    "Alergia", "Antihistaminico",
+    "Estomago", "Vomito", "Diarrea"
 ];
 
 // SUPABASE
@@ -30,7 +30,7 @@ const supabase = createClient(
 // GEMINI
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
-    model: 'gemini-2.0-flash-exp',
+    model: 'gemini-3-flash-preview',
     generationConfig: { temperature: 0.1, responseMimeType: "application/json" }
 });
 
@@ -39,8 +39,23 @@ async function main() {
 
     // 1. Load Local State (ID Set)
     console.log('📥 Loading local database IDs...');
-    const { data: localProducts, error } = await supabase.from('products').select('id, barcode');
-    if (error) { console.error(error); return; }
+    let localProducts = [];
+    let pageNum = 0;
+    const pageSize = 1000;
+    while (true) {
+        const { data, error } = await supabase
+            .from('products')
+            .select('id, barcode')
+            .range(pageNum * pageSize, (pageNum + 1) * pageSize - 1);
+
+        if (error) { console.error('Error fetching IDs:', error); break; }
+        if (!data || data.length === 0) break;
+
+        localProducts = localProducts.concat(data);
+        // console.log(`   Fetched page ${pageNum} (${data.length} items)...`);
+        if (data.length < pageSize) break;
+        pageNum++;
+    }
 
     const localSet = new Set();
     const localBarcodes = new Set();
@@ -48,13 +63,15 @@ async function main() {
         if (p.id) localSet.add(String(p.id).trim());
         if (p.barcode) localBarcodes.add(String(p.barcode).trim());
     });
-    console.log(`✅ Loaded ${localSet.size} existing products.`);
+    console.log(`✅ Loaded ${localSet.size} existing products (Full DB).`);
 
     const client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_API_KEY);
     const index = client.initIndex(ALGOLIA_INDEX);
 
     let totalDiscovered = 0;
     let totalImported = 0;
+
+    const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
     // 2. Iterate Keywords
     for (const key of ITERATION_KEYS) {
@@ -64,6 +81,9 @@ async function main() {
         try {
             // Fetch top 300 for each keyword
             for (let page = 0; page < 4; page++) {
+                // Rate Limit: 2-4 seconds pause
+                await sleep(2000 + Math.random() * 2000);
+
                 const res = await index.search(key, {
                     page,
                     hitsPerPage: 100,
@@ -75,6 +95,9 @@ async function main() {
             }
         } catch (e) {
             console.error(`Error searching '${key}':`, e.message);
+            // Backoff: Wait 30s on error
+            console.log('   ⚠️ Pause for backoff (30s)...');
+            await sleep(30000);
             continue;
         }
 
@@ -89,6 +112,7 @@ async function main() {
 
         if (missing.length === 0) {
             console.log('   All matches already exist.');
+            await sleep(1000); // Small breathing room
             continue;
         }
 
@@ -97,6 +121,9 @@ async function main() {
 
         // 4. Batch Process with AI
         for (let i = 0; i < missing.length; i += 20) {
+            // Batch Rate Limit: 2s
+            await sleep(2000);
+
             const batch = missing.slice(i, i + 20);
             try {
                 const processed = await cleanAndClassify(batch);

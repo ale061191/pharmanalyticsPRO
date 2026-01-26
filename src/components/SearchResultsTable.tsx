@@ -205,17 +205,17 @@ export default function SearchResultsTable({ results, isVisible, hasMore, isLoad
                         <button
                             onClick={onLoadMore}
                             disabled={isLoadingMore}
-                            className="flex items-center gap-2 px-6 py-2.5 bg-white border border-slate-200 shadow-sm rounded-xl text-slate-600 font-medium hover:bg-slate-50 hover:border-blue-300 transition-all active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed"
+                            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-8 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2 active:scale-95 hover:shadow-blue-500/30"
                         >
                             {isLoadingMore ? (
                                 <>
-                                    <div className="w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-                                    <span className="text-blue-500">Cargando...</span>
+                                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                                    <span>Cargando...</span>
                                 </>
                             ) : (
                                 <>
-                                    <span className="text-sm">Cargar más productos</span>
-                                    <div className="w-5 h-5 bg-slate-100 rounded-md flex items-center justify-center text-slate-400">
+                                    <span>Cargar más productos</span>
+                                    <div className="w-5 h-5 bg-white/20 rounded-md flex items-center justify-center text-white">
                                         <MoreVertical size={14} />
                                     </div>
                                 </>
