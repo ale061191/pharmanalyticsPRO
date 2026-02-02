@@ -1,0 +1,114 @@
+Total Lines: 5376
+Classified: 2389
+Unknown: 2987
+--------------------
+LAB STATS:
+Now: 323
+Farmatodo: 319
+Nordic Vision: 138
+Leti: 116
+ASK: 103
+La Santé: 91
+Siegfried: 76
+Oftalmi: 70
+Calox: 68
+K6: 65
+Pan: 53
+SPL: 44
+Optiko: 44
+VPD: 38
+Valmor: 26
+Gullon: 25
+Megalabs: 24
+Farma: 23
+Herbaplant: 23
+Natural Systems: 22
+Elmor: 22
+Sigvaris: 22
+Europharm: 21
+Naturlife: 20
+Schar: 20
+Rowe: 18
+Cofasa: 18
+Biotech: 18
+Pharmatech: 18
+Plusandex: 17
+Dollder: 17
+3M: 17
+Arcoiris: 16
+Val: 16
+Behrens: 15
+Enterex: 15
+Going: 15
+Procare: 15
+Vivax: 15
+Nutritek: 13
+Dixson: 12
+Sunny Trading: 12
+Ebben: 12
+Gotland: 11
+Ronava: 11
+Vargas: 11
+Laproff: 11
+Aless Pharm: 11
+Tiares: 10
+Colmed: 10
+Polinac: 10
+Klinos: 10
+Grossmed: 9
+CureBand: 9
+JHC: 9
+Himalaya: 9
+FC Pharma: 9
+Angelus: 8
+Remeny: 8
+Kimiceg: 8
+Vick: 7
+St Moritz: 7
+SNC Pharma: 7
+Intervit: 7
+Sweetest: 6
+Genfar: 6
+Neilmed: 6
+Vincenti: 6
+Maja: 4
+Jerico: 4
+Pharmacorp: 4
+Genia Care: 4
+Bayer: 4
+Ana Maria Lajusticia: 4
+Procaps: 4
+Mallen: 4
+Ricola: 4
+FAHD: 3
+Quim-Far: 3
+Barilla: 3
+Ensure: 3
+Blue Medical: 3
+Biohlab: 3
+Zuzu: 3
+Meyer: 3
+Pediasure: 3
+Novartis: 2
+GreenPharma: 2
+Servitalento: 2
+Arte Medico: 2
+Nutragum: 2
+Drofarvica: 2
+Portugal: 2
+Zuoz: 2
+GVR: 2
+Galderma: 2
+La Piel: 2
+Sanofi: 2
+Ursocol: 1
+Spervend: 1
+Huazhong: 1
+Neopharma: 1
+Zisnella: 1
+Mary: 1
+Altian: 1
+Corpus: 1
+Politecnicos: 1
+Deva: 1
+Balker: 1

@@ -5,6 +5,10 @@
             "schedule": "0 7 * * *"
         },
         {
+            "path": "/api/cron/sync",
+            "schedule": "0 8 * * *"
+        },
+        {
             "path": "/api/cron/compliance-report",
             "schedule": "0 0 1 * *"
         }

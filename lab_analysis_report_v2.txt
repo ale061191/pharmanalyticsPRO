@@ -1,0 +1,194 @@
+Total Lines: 5376
+Matched: 1953
+Unmatched: 3423
+--------------------
+MATCHED COUNTS (Including Extras):
+Farmatodo: 319
+Unknown: 296
+Nordic Vision (Unlisted): 138
+Calox: 68
+K6 (Unlisted): 66
+Leti: 57
+Pan: 55
+Genven: 55
+Oftalmi: 50
+SPL: 44
+Laboratorios Farma: 44
+La Santé: 39
+Siegfried: 34
+Now: 27
+Valmor: 25
+Gullon: 25
+Natural Systems: 22
+Herbaplant: 22
+Sigvaris: 22
+Europharm: 21
+Elmor: 21
+Naturlife: 20
+Schar: 20
+3M: 19
+Cofasa: 18
+Biotech: 18
+Pharmatech: 18
+Plusandex: 17
+Megalabs: 17
+Dollder: 17
+Behrens: 15
+Enterex: 15
+Rowe: 15
+Procare: 15
+VIVAX: 15
+Aless Pharmaceuticals: 14
+Dixson (Unlisted): 12
+Sunny Trading: 12
+Gotland: 11
+Ronava: 11
+Laproff: 11
+Klinos: 11
+Vargas: 10
+Polinac: 10
+Kimiceg: 10
+Grossmed: 9
+CureBand: 9
+JHC: 9
+Himalaya: 9
+FC Pharma: 9
+Tiares: 8
+SNC Pharma: 7
+Intervit: 7
+Genfar: 6
+Vincenti: 6
+Zuzu: 4
+Jerico: 4
+Bayer: 4
+Mallen: 4
+Meyer: 4
+FAHD: 3
+Merck: 3
+Quim-Far: 3
+Barilla: 3
+Ensure: 3
+Blue Medical: 3
+Zuoz: 3
+Biohlab: 3
+Pediasure: 3
+Novartis: 2
+GreenPharma: 2
+Servitalento: 2
+Arte Medico: 2
+Procaps: 2
+Drofarvica: 2
+Portugal: 2
+Representaciones GVR: 2
+Galderma: 2
+Sanofi: 2
+Neopharma: 1
+Mary: 1
+Altian: 1
+Corp: 1
+Laboratorios Politecnicos: 1
+Deva: 1
+--------------------
+TOP POTENTIAL CANDIDATES (from Unmatched):
+Cápsulas: 53
+Santé: 33
+Ask: 26
+Gluten: 25
+Vainilla: 25
+Live&Fit: 24
+Clorfeniramina: 19
+Chocolate: 18
++2.50: 18
++1.50: 18
++2.00: 18
++3.0: 16
++2.5: 16
++1.5: 16
+Daino: 16
++2.0: 15
++1.00: 15
++1.0: 14
+Hidroclorotiazida: 13
+Magnesio: 13
+Zinc: 13
+Nutritek: 13
+Jogger: 13
+Ebben: 12
+Pharmaceutical: 12
+Fresa: 12
++3.00: 11
+Azul: 10
+Azucar: 10
+Eurociencia: 10
+Cetirizina: 9
+Negro: 9
+Metformina: 9
+Tiocolchicosido: 9
+Clavulánico: 9
+Premium: 9
+Etinilestradiol: 9
+Rice: 9
+Ambroxol: 9
+Vitae: 9
+Halo: 8
+Hioscina: 8
+Gomitas: 8
++3.50: 8
+Guardian: 8
+Varic: 8
+L-Carnitina: 7
+Step: 7
+Colmed: 7
+Remeny: 7
+--------------------
+UNMATCHED SAMPLES:
+Vitafer-L Solucion Oral
+Tapa Boca Maja Neopreno Estampado Talla S 1 Unidad
+Vitamina C
+Acetaminofen + Clorfeniramina + Cafeína Angrip Día 8
+Venpielgel Skinreg
+Vitamina C Mandarina 500 mg + Zinc Combo 3x2
+Esomeprazol
+Acetaminofen + Clorfeniramina Dayflu Noche
+Cetilpiridinio + Bencidamina Solunovar Compuesto 0,25mg/0,15mg
+Crema de Cacao y
+Aceite Ozonizado Tópico Vitaozono x 15 ml
+Complemento Alimenticio Calcium 600 + D3 100
+Furosemida
+Acetaminofén + Tramadol
+Lentes De Lectura Azul +1 UND
+Dequalinio + Lidocaina Benzodiazol Limon 0,25/5Mg
+Pistacho Crema Untable Chocolates Caraque Frasco x 200 g
+Harina de Coco Libre de Gluten Altagua x 250 gr
+Hierro
+Cinta Kinesiologica Go Plus 1 Metro Color Azul
+Amitriptilina
+Snack Simply7 Chips de Lentejas con Sal Marina
+Manga de Compresion Fria KT Tape Talla S/M
+Cabestrillo Kx Talla L
+Dextrometorfano Tilodrin
+Amlodipina
+Hierro + Ácido Fólico
+Hioscina + Ibuprofeno
+Magnevit
+Alimento Proteina Nutricap Keratine 1 Mes
+Lentes De Lectura Negro +3 UND
+Ciprofloxacina
+Clopidogrel 75 mg La Santé
+Glucosamine + Chondroitin + Acido Hialurionico + Colageno + Msm
+L-Carnitina
+Aceite de Pescado 1000 mg Omega 3 Preventud Plus
+Ketorolaco Trometamina
+Cetirizina
+Carbonato de Calcio Antiacido Acifar x60
+Corentel
+Venda Elastica Spervend 15 Cm
+VPD Muletas Ajustables Estándar Talla L Next Step
+Clorhidrato De Bromexina
+Suplemento Femi-Balance Menopausia Pharmacorp Frasco x 60 Cápsulas
+Galletas Salmas Horneadas 144 Gr
+Pasta Oro Sin Gluten Macarroni
+Oxolamina Gencer Jarabe Pediátrico 120 Ml
+Loratadina
+Gel Energético Going Guayaba x 33 gr
+CoQ10 Coenzima

@@ -1,0 +1,94 @@
+Total Lines: 5376
+Matched: 1431
+Unmatched: 3945
+--------------------
+MATCHED COUNTS:
+Farmatodo: 319
+Unknown: 296
+Nordic Vision (Unlisted): 138
+Calox: 68
+K6 (Unlisted): 66
+Leti: 57
+Genven: 55
+Oftalmi: 50
+La Santé: 39
+Siegfried: 34
+Now: 27
+Gullon: 25
+Sigvaris: 22
+Elmor: 21
+Schar: 20
+3M: 19
+Cofasa: 18
+Megalabs: 17
+Behrens: 15
+Enterex: 15
+Rowe: 15
+Aless Pharmaceuticals: 14
+Dixson (Unlisted): 12
+Vargas: 10
+Polinac: 10
+Himalaya: 9
+FC Pharma: 9
+Vincenti: 6
+Bayer: 4
+Meyer: 4
+Merck: 3
+Ensure: 3
+Pediasure: 3
+Novartis: 2
+Procaps: 2
+Galderma: 2
+Sanofi: 2
+--------------------
+UNMATCHED SAMPLES (First 50):
+Ácido Ursodesoxicólico 300 mg Ursocol Laboratorios Zuzu x 10
+Vitafer-L Solucion Oral
+Tapa Boca Maja Neopreno Estampado Talla S 1 Unidad
+Desogestrel 0,075 mg Celestrel Tiares
+Vitamina C
+Lentes de lectura Sunny Trading +3.50
+Acetaminofen + Clorfeniramina + Cafeína Angrip Día 8
+Venpielgel Skinreg
+Vitamina C Mandarina 500 mg + Zinc Combo 3x2
+Esomeprazol
+Colageno + Vit C 60capsulas Natural Systems
+Chía Pantera
+Acetaminofen + Clorfeniramina Dayflu Noche
+Cetilpiridinio + Bencidamina Solunovar Compuesto 0,25mg/0,15mg
+Crema de Cacao y
+Aceite Ozonizado Tópico Vitaozono x 15 ml
+Lentes de lectura SPL 3 pares +1.00
+Complemento Alimenticio Calcium 600 + D3 100
+Furosemida
+Lentes de lectura SPL aire +1.5
+Acetaminofén + Tramadol
+Lentes De Lectura Azul +1 UND
+Guantes de Nitrilo Negros (sin polvo) Grossmed Talla L
+Dequalinio + Lidocaina Benzodiazol Limon 0,25/5Mg
+Lentes de lectura Gotland Naranja +3.0
+Pistacho Crema Untable Chocolates Caraque Frasco x 200 g
+Harina de Coco Libre de Gluten Altagua x 250 gr
+Hierro
+Amoxicilina 500 mg FAHD Blíster x 10 Cápsulas
+Cinta Kinesiologica Go Plus 1 Metro Color Azul
+Amitriptilina
+Snack Simply7 Chips de Lentejas con Sal Marina
+Manga de Compresion Fria KT Tape Talla S/M
+Cabestrillo Kx Talla L
+Castaño De Indias + Caléndula + Centella Asiática Venasplant Jerico x 30 Cápsulas
+Dextrometorfano Tilodrin
+Amlodipina
+Hierro + Ácido Fólico
+Hioscina + Ibuprofeno
+Magnevit
+Ácido Fólico 5 mg Plusandex x 30
+Alimento Proteina Nutricap Keratine 1 Mes
+Lentes De Lectura Negro +3 UND
+Rivaroxabán 15 mg Rivaprof Valmor
+Ciprofloxacina
+Lentes de lectura Gotland Naranja sin dioptría
+Clopidogrel 75 mg La Santé
+Magnesio 4x Magnevit Advanced 500 mg Naturlife´s Frasco x 50
+Hierro + Ácido Fólico + Fumarato Ferroso + Vitamina B12 Folifer B-12 Ronava x 30
+Glucosamine + Chondroitin + Acido Hialurionico + Colageno + Msm
