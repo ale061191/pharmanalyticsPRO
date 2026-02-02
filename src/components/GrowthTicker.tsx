@@ -77,9 +77,6 @@ function GlassCard({ product }: { product: Product }) {
                             <Activity className={`w-5 h-5 ${colorClass}`} />
                         )}
                     </div>
-                    <span className={`px-2 py-1 rounded-full text-xs font-bold backdrop-blur-sm ${badgeClass}`}>
-                        {Math.min(Math.round(score), 100)}%
-                    </span>
                 </div>
 
                 {/* Info */}

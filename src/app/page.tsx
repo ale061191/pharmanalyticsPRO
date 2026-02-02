@@ -7,7 +7,7 @@ import GrowthTicker from '@/components/GrowthTicker';
 import FiltersBar from '@/components/FiltersBar';
 import SearchResultsTable from '@/components/SearchResultsTable';
 import ProductDetailSidebar from '@/components/ProductDetailSidebar';
-import ATCDistributionChart from '@/components/ATCDistributionChart'; // Import added
+
 import { TrendingUp, Package, Activity, AlertCircle, Star, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 
@@ -97,8 +97,7 @@ export default function Home() {
         {/* Growth Ticker (Glassmorphism Cards) */}
         <GrowthTicker />
 
-        {/* ATC Distribution Chart */}
-        <ATCDistributionChart />
+
 
         {/* Filter Section */}
         <FiltersBar onSearch={handleSearch} isLoading={isSearching} />
