@@ -8,6 +8,7 @@ import {
     PieChart, Pie, Legend
 } from 'recharts';
 import { TrendingUp, Package, Award, ArrowLeft, RefreshCw, Building2, ChevronDown, PieChart as PieChartIcon, ArrowUpRight } from 'lucide-react';
+import useSWR from 'swr'; // Import UseSWR
 
 // Category options - Top pharma categories
 const CATEGORIES = [
@@ -37,6 +38,8 @@ const COLORS = [
     '#84CC16', // Lime 500
 ];
 
+const fetcher = (url: string) => fetch(url).then(res => res.json());
+
 interface LabData {
     laboratory: string;
     totalSales: number;
@@ -59,7 +62,18 @@ interface TopProduct {
 }
 
 export default function MarketShareDashboard() {
-    const [selectedCategory, setSelectedCategory] = useState('Medicamentos');
+    const [selectedCategory, setSelectedCategory] = useState('');
+
+    // Fetch ATC Groups
+    const { data: atcGroupsData } = useSWR('/api/atc/groups', fetcher);
+    const atcGroups = atcGroupsData?.data || [];
+
+    // Auto-select first group when loaded
+    useEffect(() => {
+        if (atcGroups.length > 0 && !selectedCategory) {
+            setSelectedCategory(atcGroups[0].id);
+        }
+    }, [atcGroups, selectedCategory]);
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState<{
         category: string;
@@ -85,7 +99,9 @@ export default function MarketShareDashboard() {
     };
 
     useEffect(() => {
-        fetchMarketShare(selectedCategory);
+        if (selectedCategory) {
+            fetchMarketShare(selectedCategory);
+        }
     }, [selectedCategory]);
 
     // Format large numbers
@@ -150,10 +166,10 @@ export default function MarketShareDashboard() {
                             <select
                                 value={selectedCategory}
                                 onChange={(e) => setSelectedCategory(e.target.value)}
-                                className="appearance-none bg-transparent border-none text-sm font-bold text-slate-700 py-2.5 pl-1 pr-10 focus:outline-none cursor-pointer min-w-[200px]"
+                                className="appearance-none bg-transparent border-none text-sm font-bold text-slate-700 py-2.5 pl-1 pr-10 focus:outline-none cursor-pointer min-w-[240px]"
                             >
-                                {CATEGORIES.map(cat => (
-                                    <option key={cat} value={cat}>{cat}</option>
+                                {atcGroups.map((group: any) => (
+                                    <option key={group.id} value={group.id}>{group.label}</option>
                                 ))}
                             </select>
                             <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" strokeWidth={2.5} />
@@ -495,7 +511,7 @@ export default function MarketShareDashboard() {
                         <h3 className="text-xl font-bold text-slate-900 mb-2">Sin datos para esta categoría</h3>
                         <p className="text-slate-500 max-w-md mx-auto">No encontramos registros de ventas o productos para la categoría seleccionada en este periodo.</p>
                         <button
-                            onClick={() => setSelectedCategory('Medicamentos')}
+                            onClick={() => setSelectedCategory(atcGroups[0]?.id || '')}
                             className="mt-6 px-6 py-2 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
                         >
                             Volver a General
